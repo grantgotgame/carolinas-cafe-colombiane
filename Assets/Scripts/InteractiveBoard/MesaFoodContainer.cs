@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -62,4 +63,27 @@ public class MesaFoodContainer : MonoBehaviour
         return null;
     }
 
+    public void AddJamToArepas()
+    {
+
+        GameObject checkFood = CheckFilledSlotWithoutJam();
+
+        if (checkFood !=  null)
+        {
+            checkFood.GetComponent<MesaFood>().AddJamToFood();
+        }
+    }
+
+    private GameObject CheckFilledSlotWithoutJam()
+    {
+
+        foreach (GameObject mesaFood in mesaFoodList)
+        {
+            if (!mesaFood.GetComponent<MesaFood>().isEmpty &&  !mesaFood.GetComponent<MesaFood>().isJamAdded)
+            {
+                return mesaFood;
+            }
+        }
+        return null;
+    }
 }

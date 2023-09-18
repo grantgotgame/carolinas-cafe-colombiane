@@ -5,18 +5,21 @@ using UnityEngine;
 public class MesaFood : MonoBehaviour
 {
 
-   // private List<SpriteRenderer> listMesaFoodImages;
+    // private List<SpriteRenderer> listMesaFoodImages;
     Sprite emptyPlateImage;
     Sprite fullPlateImage;
+    Sprite fullJamPlateImage;
     void Start()
     {
         emptyPlateImage = Resources.Load<Sprite>("Illustration/MockedItems/emptyPlate");
         fullPlateImage = Resources.Load<Sprite>("Illustration/MockedItems/fullPlate");
+        fullJamPlateImage = Resources.Load<Sprite>("Illustration/MockedItems/fullJamPlate");
 
         isEmpty = true;
     }
 
-   public bool isEmpty;
+    public bool isEmpty;
+    public bool isJamAdded;
 
     void Update()
     {
@@ -26,7 +29,14 @@ public class MesaFood : MonoBehaviour
         }
         else
         {
-            GetComponent<SpriteRenderer>().sprite = fullPlateImage;
+            if (!isJamAdded)
+            {
+                GetComponent<SpriteRenderer>().sprite = fullPlateImage;
+            }
+            else
+            {
+                GetComponent<SpriteRenderer>().sprite = fullJamPlateImage;
+            }
         }
     }
 
@@ -34,5 +44,19 @@ public class MesaFood : MonoBehaviour
     {
         isEmpty = false;
     }
+
+    public void AddJamToFood()
+    {
+        isJamAdded = true;
+    }
+
+    //This method is called when you want trash the dish or when you give the dish to a customer
+    public void RemoveFoodFromMesa()
+    {
+        isEmpty = true;
+        isJamAdded = false;
+    }
+
+
 
 }
