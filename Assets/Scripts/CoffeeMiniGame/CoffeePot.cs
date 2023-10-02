@@ -10,6 +10,7 @@ namespace CoffeeMinigame {
 
         private Vector3 direction;
         private SpriteRenderer spriteRenderer;
+        private bool pour;
 
         private void Start() {
             spriteRenderer = GetComponent<SpriteRenderer>();
@@ -18,8 +19,13 @@ namespace CoffeeMinigame {
 
         // Update is called once per frame
         void Update() {
-            SetMoveDirection();
-            transform.Translate(direction * moveSpeed * Time.deltaTime);
+            if (!pour) {
+                SetMoveDirection();
+                transform.Translate(direction * moveSpeed * Time.deltaTime);
+                if (Input.GetMouseButtonDown(0)) {
+                    //Start Pour
+                }
+            }
         }
 
         private void SetMoveDirection() {
