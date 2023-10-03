@@ -5,15 +5,21 @@ using UnityEngine;
 namespace CoffeeMinigame {
     public class CoffeePot : MonoBehaviour {
 
+        private const string POUR = "Pour";
+
         [SerializeField] private float moveSpeed;
         [SerializeField] private float paddingDistance;
+        [SerializeField] private Transform pourLocation;
+        [SerializeField] private Mug mug;
 
         private Vector3 direction;
         private SpriteRenderer spriteRenderer;
+        private Animator animator;
         private bool pour;
 
         private void Start() {
-            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
+            animator = GetComponent<Animator>();
             direction = Vector3.left;
         }
 
@@ -23,7 +29,8 @@ namespace CoffeeMinigame {
                 SetMoveDirection();
                 transform.Translate(direction * moveSpeed * Time.deltaTime);
                 if (Input.GetMouseButtonDown(0)) {
-                    //Start Pour
+                    pour = true;
+                    animator.SetTrigger(POUR);
                 }
             }
         }
@@ -36,6 +43,18 @@ namespace CoffeeMinigame {
                 direction = Vector3.right;
             if (minMax.y >= screenMax)
                 direction = Vector3.left;
+        }
+
+        public void ResetPour() {
+            pour = false;
+        }
+
+        public void CheckInsideMug() {
+            if (mug.IsInsideMug(pourLocation.position.x)) {
+                mug.SetParticleSystem();
+            } else {
+                Debug.Log("Outside");
+            }
         }
     }
 }
