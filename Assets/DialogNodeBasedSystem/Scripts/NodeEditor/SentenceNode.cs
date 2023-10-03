@@ -13,7 +13,7 @@ namespace cherrydev
 
         public Node childNode;
 
-        private const float lableFieldSpace = 80f;
+        private const float lableFieldSpace = 40f;
         private const float textFieldWidth = 90f;
 
         /// <summary>
@@ -23,15 +23,6 @@ namespace cherrydev
         public string GetSentenceCharacterName()
         {
             return sentence.characterName;
-        }
-
-        /// <summary>
-        /// Returning point amount
-        /// </summary>
-        /// <returns></returns>
-        public int GetSentenceAmountOfPoint()
-        {
-            return sentence.amountOfPoint;
         }
 
         /// <summary>
@@ -81,11 +72,6 @@ namespace cherrydev
             EditorGUILayout.LabelField($"Sprite ", GUILayout.Width(lableFieldSpace));
             sentence.characterSprite = (Sprite)EditorGUILayout.ObjectField(sentence.characterSprite,
                 typeof(Sprite), false, GUILayout.Width(textFieldWidth));
-            EditorGUILayout.EndHorizontal();
-
-            EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField($"AmountOfPoint ", GUILayout.Width(lableFieldSpace));
-            sentence.amountOfPoint = EditorGUILayout.IntField(sentence.amountOfPoint , GUILayout.Width(textFieldWidth));
             EditorGUILayout.EndHorizontal();
 
             GUILayout.EndArea();

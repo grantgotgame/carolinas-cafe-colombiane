@@ -22,8 +22,8 @@ namespace cherrydev
         private Vector2 graphOffset;
         private Vector2 graphDrag;
 
-        private const float nodeWidth = 300f;
-        private const float nodeHeight = 500f;
+        private const float nodeWidth = 170f;
+        private const float nodeHeight = 115f;
 
         private const float connectingLineWidth = 2f;
         private const float connectingLineArrowSize = 4f;
@@ -33,7 +33,7 @@ namespace cherrydev
         private const int nodePadding = 20;
         private const int nodeBorder = 10;
 
-        private const float gridLargeLineSpacing = 20f;
+        private const float gridLargeLineSpacing = 100f;
         private const float gridSmallLineSpacing = 25;
 
         private bool isScrollWheelDragging = false;

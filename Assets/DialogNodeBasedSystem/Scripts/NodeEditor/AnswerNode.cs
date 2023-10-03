@@ -18,7 +18,7 @@ namespace cherrydev
         private const float textFieldWidth = 120f;
 
         private const float answerNodeWidth = 190f;
-        private const float answerNodeHeight = 145f; //TODO change this if we want ANSWER  NODE smaller
+        private const float answerNodeHeight = 145f;
 
 #if UNITY_EDITOR
 
