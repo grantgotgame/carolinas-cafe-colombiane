@@ -2,27 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mug : MonoBehaviour
-{
-    [SerializeField] private ParticleSystem particleSystem;
+namespace CoffeeMinigame {
+    public class Mug : MonoBehaviour {
+        [SerializeField] private ParticleSystem particles;
+        [SerializeField] private CoffeeText coffeeTextAnimator;
+        [SerializeField] private CoffeePotController potController;
+        private Bounds mugBounds;
 
-    private Bounds mugBounds;
-
-    private void Start() {
-        mugBounds = GetComponent<BoxCollider2D>().bounds;
-    }
-
-    private void Update() {
-        if (particleSystem.gameObject.activeSelf && particleSystem.isStopped) {
-            particleSystem.gameObject.SetActive(false);
+        private void Start() {
+            potController.OnPourComplete += OnPourComplete;
+            mugBounds = GetComponent<BoxCollider2D>().bounds;
         }
-    }
 
-    public bool IsInsideMug(float xPosition) {
-        return xPosition < mugBounds.max.x && xPosition > mugBounds.min.x;
-    }
+        private void Update() {
+            if (particles.gameObject.activeSelf && particles.isStopped) {
+                particles.gameObject.SetActive(false);
+            }
+        }
 
-    public void SetParticleSystem() {
-        particleSystem.gameObject.SetActive(true);
+        public bool IsInsideMug(float xPosition) {
+            return xPosition < mugBounds.max.x && xPosition > mugBounds.min.x;
+        }
+
+        private void OnPourComplete(object sender, CoffeePotController.CoffeeEventArgs e) {
+            if (e.result)
+                particles.gameObject.SetActive(true);
+        }
     }
 }
