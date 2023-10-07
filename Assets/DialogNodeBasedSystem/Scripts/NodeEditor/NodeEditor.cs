@@ -38,6 +38,16 @@ namespace cherrydev
 
         private bool isScrollWheelDragging = false;
 
+        public class ParentNode {
+            public Node parentNode;
+            public Vector2 mousePosition;
+
+            public ParentNode(Node parentNode, Vector2 mousePosition) {
+                this.parentNode = parentNode;
+                this.mousePosition = mousePosition;
+            }
+        }
+
         /// <summary>
         /// Define nodes and lable style parameters on enable
         /// </summary>
@@ -474,6 +484,8 @@ namespace cherrydev
                 {
                     currentNodeGraph.nodeToDrawLineFrom.AddToChildConnectedNode(node);
                     node.AddToParentConnectedNode(currentNodeGraph.nodeToDrawLineFrom);
+                } else {
+                    ShowContextMenu(currentEvent.mousePosition, currentNodeGraph.nodeToDrawLineFrom);
                 }
             }
         }
@@ -576,24 +588,38 @@ namespace cherrydev
             contextMenu.ShowAsContext();
         }
 
+        private void ShowContextMenu(Vector2 mousePosition, Node parentNode) {
+            ParentNode parentNodeObject = new ParentNode(parentNode, mousePosition);
+            if (parentNode.GetType() == typeof(AnswerNode)) {
+                CreateSentenceNode(parentNodeObject);
+            } else {
+                GenericMenu contextMenu = new GenericMenu();
+
+                contextMenu.AddItem(new GUIContent("Create Child Sentence Node"), false, CreateSentenceNode, parentNodeObject);
+                contextMenu.AddItem(new GUIContent("Create Child Answer Node"), false, CreateAnswerNode, parentNodeObject);
+
+                contextMenu.ShowAsContext();
+            }
+        }
+
         /// <summary>
         /// Create Sentence Node at mouse position and add it to Node Graph asset
         /// </summary>
-        /// <param name="mousePositionObject"></param>
-        private void CreateSentenceNode(object mousePositionObject)
+        /// <param name="objectParameter"></param>
+        private void CreateSentenceNode(object objectParameter)
         {
             SentenceNode sentenceNode = ScriptableObject.CreateInstance<SentenceNode>();
-            InitialiseNode(mousePositionObject, sentenceNode, "Sentence Node");
+            InitialiseNode(objectParameter, sentenceNode, "Sentence Node");
         }
 
         /// <summary>
         /// Create Answer Node at mouse position and add it to Node Graph asset
         /// </summary>
-        /// <param name="mousePositionObject"></param>
-        private void CreateAnswerNode(object mousePositionObject)
+        /// <param name="objectParameter"></param>
+        private void CreateAnswerNode(object objectParameter)
         {
             AnswerNode answerNode = ScriptableObject.CreateInstance<AnswerNode>();
-            InitialiseNode(mousePositionObject, answerNode, "Answer Node");
+            InitialiseNode(objectParameter, answerNode, "Answer Node");
         }
 
         /// <summary>
@@ -640,18 +666,27 @@ namespace cherrydev
         /// <summary>
         /// Create Node at mouse position and add it to Node Graph asset
         /// </summary>
-        /// <param name="mousePositionObject"></param>
-        /// <param name="node"></param>
+        /// <param name="objectParameter"></param>
+        /// <param name="newNode"></param>
         /// <param name="nodeName"></param>
-        private void InitialiseNode(object mousePositionObject, Node node, string nodeName)
-        {
-            Vector2 mousePosition = (Vector2)mousePositionObject;
+        private void InitialiseNode(object objectParameter, Node newNode, string nodeName) {
+            currentNodeGraph.nodesList.Add(newNode);
+            if (objectParameter.GetType() == typeof(Vector2)) {
+                Vector2 mousePosition = (Vector2)objectParameter;
 
-            currentNodeGraph.nodesList.Add(node);
 
-            node.Initialise(new Rect(mousePosition, new Vector2(nodeWidth, nodeHeight)), nodeName, currentNodeGraph);
+                newNode.Initialise(new Rect(mousePosition, new Vector2(nodeWidth, nodeHeight)), nodeName, currentNodeGraph);
+            } else if (objectParameter.GetType() == typeof(ParentNode)) {
+                ParentNode parentNode = (ParentNode) objectParameter;
 
-            AssetDatabase.AddObjectToAsset(node, currentNodeGraph);
+                newNode.Initialise(new Rect(parentNode.mousePosition, new Vector2(nodeWidth, nodeHeight)), nodeName, currentNodeGraph);
+
+                parentNode.parentNode.AddToChildConnectedNode(newNode);
+                newNode.AddToParentConnectedNode(parentNode.parentNode);
+            }
+
+
+            AssetDatabase.AddObjectToAsset(newNode, currentNodeGraph);
             AssetDatabase.SaveAssets();
         }
 

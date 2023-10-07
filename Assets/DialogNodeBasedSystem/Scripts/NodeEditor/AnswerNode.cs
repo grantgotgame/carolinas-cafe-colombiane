@@ -49,10 +49,18 @@ namespace cherrydev
         {
             base.Draw(nodeStyle, lableStyle);
 
+            string thisTitle = (nodeTitle == null || nodeTitle.Length == 0) ? "Answer Node" : nodeTitle;
+
+            if (thisTitle != prevTitle) {
+                prevTitle = thisTitle;
+                name = thisTitle;
+                AssetDatabase.SaveAssets();
+            }
+
             rect.size = new Vector2(answerNodeWidth, answerNodeHeight);
 
             GUILayout.BeginArea(rect, nodeStyle);
-            EditorGUILayout.LabelField("Answer Node", lableStyle);
+            EditorGUILayout.LabelField(thisTitle, lableStyle);
 
             DrawAnswerLine(1, EditorIcons.GreenDot);
             DrawAnswerLine(2, EditorIcons.GreenDot);

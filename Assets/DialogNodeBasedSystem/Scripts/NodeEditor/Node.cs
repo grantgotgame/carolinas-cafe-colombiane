@@ -13,6 +13,9 @@ namespace cherrydev
         [HideInInspector] public bool isDragging;
         [HideInInspector] public bool isSelected;
 
+        public string nodeTitle;
+        [HideInInspector] protected string prevTitle;
+
 #if UNITY_EDITOR
 
         /// <summary>

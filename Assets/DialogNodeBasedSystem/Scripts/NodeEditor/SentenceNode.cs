@@ -54,9 +54,17 @@ namespace cherrydev
         {
             base.Draw(nodeStyle, lableStyle);
 
-            GUILayout.BeginArea(rect, nodeStyle);
+            string thisTitle = (nodeTitle == null || nodeTitle.Length == 0) ? "Sentence Node" : nodeTitle;
 
-            EditorGUILayout.LabelField("Sentence Node", lableStyle);
+            if (thisTitle != prevTitle) {
+                prevTitle = thisTitle;
+                name = thisTitle;
+                AssetDatabase.SaveAssets();
+            }
+
+            GUILayout.BeginArea(rect, nodeStyle);
+            
+            EditorGUILayout.LabelField(thisTitle, lableStyle);
 
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField($"Name ", GUILayout.Width(lableFieldSpace));
