@@ -1,0 +1,318 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9172817741912061024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0a Beatriz
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 17
+    y: 150
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  nodeTitle: 0a Beatriz
+  count: 0
+  storedData: 
+  sentence:
+    characterName: Beatriz
+    text: "\xA1Ay, Carolina! This caf\xE9 could use some work. \xA1Que desastre!"
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 0}
+  childNode: {fileID: -5169217737662493829}
+  letter: a
+--- !u!114 &-5169217737662493829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 1a Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 260
+    y: 149
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  nodeTitle: 1a Carolina
+  count: 1
+  storedData: 
+  sentence:
+    characterName: Carolina
+    text: "\xA1Lo siento, abuela!"
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -9172817741912061024}
+  childNode: {fileID: 2585274442085282728}
+  letter: a
+--- !u!114 &-4648232859666055735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0c Beatriz
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 12
+    y: 447
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  nodeTitle: 0c Beatriz
+  count: 0
+  storedData: 
+  sentence:
+    characterName: Beatriz
+    text: "\xA1Carolina! Ese caf\xE9 . . . \xA1Magnifica! Muy bien."
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 0}
+  childNode: {fileID: 1980250182899741077}
+  letter: c
+--- !u!114 &-2363258191872063395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0b Beatriz
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 12
+    y: 293
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  nodeTitle: 0b Beatriz
+  count: 0
+  storedData: 
+  sentence:
+    characterName: Beatriz
+    text: "That sure tasted bien, posiblemente I was too hasty to judge you on your
+      time spent ahora. It seems you\u2019re putting it to good use after all."
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 0}
+  childNode: {fileID: -1250064397276402528}
+  letter: b
+--- !u!114 &-1250064397276402528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 1b Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 270
+    y: 298
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  nodeTitle: 1b Carolina
+  count: 1
+  storedData: 
+  sentence:
+    characterName: Carolina
+    text: Thanks, abuela! I appreciate you liking it. You know how much I care about
+      cooking.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -2363258191872063395}
+  childNode: {fileID: 2585274442085282728}
+  letter: b
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: Beatriz_Day1_AfterMinigame
+  m_EditorClassIdentifier: 
+  nodesList:
+  - {fileID: -9172817741912061024}
+  - {fileID: -2363258191872063395}
+  - {fileID: -4648232859666055735}
+  - {fileID: -5169217737662493829}
+  - {fileID: -1250064397276402528}
+  - {fileID: 1980250182899741077}
+  - {fileID: 2585274442085282728}
+  - {fileID: 4873730424442884575}
+  - {fileID: 346656480165158167}
+  nodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &346656480165158167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 4 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 961
+    y: 306
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  nodeTitle: 4 Carolina
+  count: 4
+  storedData: 
+  sentence:
+    characterName: Carolina
+    text: "\xA1Adi\xF3s!"
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 4873730424442884575}
+  childNode: {fileID: 0}
+  letter: 
+--- !u!114 &1980250182899741077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 1c Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 268
+    y: 452
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  nodeTitle: 1c Carolina
+  count: 1
+  storedData: 
+  sentence:
+    characterName: Carolina
+    text: "\xA1Muchas gracias, abuelita! I\u2019m so glad you enjoyed it!"
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -4648232859666055735}
+  childNode: {fileID: 2585274442085282728}
+  letter: c
+--- !u!114 &2585274442085282728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 2 Beatriz
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 540
+    y: 302
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  nodeTitle: 2 Beatriz
+  count: 2
+  storedData: 
+  sentence:
+    characterName: Beatriz
+    text: "Todav\xEDa I worry about you not getting tiempo suficiente for yourself,
+      cari\xF1a. Remember to take breaks and enjoy your youth while you still can!"
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 1980250182899741077}
+  childNode: {fileID: 4873730424442884575}
+  letter: 
+--- !u!114 &4873730424442884575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 3 Beatriz
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 756
+    y: 308
+    width: 170
+    height: 115
+  isDragging: 0
+  isSelected: 0
+  nodeTitle: 3 Beatriz
+  count: 3
+  storedData: 
+  sentence:
+    characterName: Beatriz
+    text: "It\u2019s getting late now, I better get going. Don\u2019t stay up too
+      late, hon! Hasta ma\xF1ana."
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 2585274442085282728}
+  childNode: {fileID: 346656480165158167}
+  letter: 
