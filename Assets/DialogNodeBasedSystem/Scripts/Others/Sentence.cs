@@ -6,6 +6,7 @@ namespace cherrydev
     public struct Sentence
     {
         public string characterName;
+        [TextArea(3, 10)]
         public string text;
         public Sprite characterSprite;
 
@@ -15,5 +16,11 @@ namespace cherrydev
             this.characterName = characterName;
             this.text = text;
         }
+    }
+
+    [System.Serializable]
+    public class Answer {
+        [TextArea(3, 10)]
+        public string answer;
     }
 }

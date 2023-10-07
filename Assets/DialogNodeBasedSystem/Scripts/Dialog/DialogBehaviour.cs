@@ -81,7 +81,7 @@ namespace cherrydev
                 {
                     if (answerNode.childSentenceNodes[i] != null)
                     {
-                        OnAnswerNodeSetUp?.Invoke(i, answerNode.answers[i]);
+                        OnAnswerNodeSetUp?.Invoke(i, answerNode.answers[i].answer);
                         OnAnswerButtonSetUp?.Invoke(i, answerNode);
 
                         amountOfActiveButtons++;

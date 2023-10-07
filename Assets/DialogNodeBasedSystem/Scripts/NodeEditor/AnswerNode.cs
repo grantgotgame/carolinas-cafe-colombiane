@@ -9,7 +9,7 @@ namespace cherrydev
     {
         private const int amountOfAnswers = 4;
 
-        public List<string> answers = new List<string>();
+        public List<Answer> answers = new List<Answer>();
 
         public SentenceNode parentSentenceNode;
         public SentenceNode[] childSentenceNodes;
@@ -36,7 +36,9 @@ namespace cherrydev
 
             for (int i = 0; i < amountOfAnswers; i++)
             {
-                answers.Add(string.Empty);
+                Answer newAnswer = new Answer();
+                newAnswer.answer = "";
+                answers.Add(newAnswer);
             }
         }
 
@@ -74,7 +76,7 @@ namespace cherrydev
         {
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField($"{answerNumber}. ", GUILayout.Width(lableFieldSpace));
-            answers[answerNumber - 1] = EditorGUILayout.TextField(answers[answerNumber - 1], GUILayout.Width(textFieldWidth));
+            answers[answerNumber - 1].answer = EditorGUILayout.TextField(answers[answerNumber - 1].answer, GUILayout.Width(textFieldWidth));
             EditorGUILayout.LabelField(EditorGUIUtility.IconContent(iconPathOrName), GUILayout.Width(lableFieldSpace));
             EditorGUILayout.EndHorizontal();
         }
