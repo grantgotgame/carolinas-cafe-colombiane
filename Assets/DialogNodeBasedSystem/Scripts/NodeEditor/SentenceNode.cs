@@ -15,8 +15,7 @@ namespace cherrydev
 
         private const float lableFieldSpace = 40f;
         private const float textFieldWidth = 90f;
-        private int answerPos;
-        private string letter = "";
+        public string letter = "";
 
         /// <summary>
         /// Returning sentence character name
@@ -115,10 +114,12 @@ namespace cherrydev
                 {
                     return false;
                 }
+                sentenceNodeToAdd.SetLetter(letter);
             }
 
             childNode = nodeToAdd;
             childNode.count = count + 1;
+
             return true;
         }
 
