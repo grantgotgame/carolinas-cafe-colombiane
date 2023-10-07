@@ -14,7 +14,8 @@ namespace cherrydev
         [HideInInspector] public bool isSelected;
 
         public string nodeTitle;
-        [HideInInspector] protected string prevTitle;
+        protected string prevTitle;
+        public int count = 0;
 
 #if UNITY_EDITOR
 
@@ -44,6 +45,10 @@ namespace cherrydev
 
         public virtual bool AddToChildConnectedNode(Node nodeToAdd)
         { return true; }
+
+        public virtual string GetCharacterName() {
+            return "";
+        }
 
         /// <summary>
         /// Process node events

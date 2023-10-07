@@ -15,12 +15,14 @@ namespace cherrydev
 
         private const float lableFieldSpace = 40f;
         private const float textFieldWidth = 90f;
+        private int answerPos;
+        private string letter = "";
 
         /// <summary>
         /// Returning sentence character name
         /// </summary>
         /// <returns></returns>
-        public string GetSentenceCharacterName()
+        public override string GetCharacterName()
         {
             return sentence.characterName;
         }
@@ -54,17 +56,18 @@ namespace cherrydev
         {
             base.Draw(nodeStyle, lableStyle);
 
-            string thisTitle = (nodeTitle == null || nodeTitle.Length == 0) ? "Sentence Node" : nodeTitle;
+            
+            nodeTitle = $"{count}{letter} {sentence.characterName}";
 
-            if (thisTitle != prevTitle) {
-                prevTitle = thisTitle;
-                name = thisTitle;
+            if (nodeTitle != prevTitle) {
+                prevTitle = nodeTitle;
+                name = nodeTitle;
                 AssetDatabase.SaveAssets();
             }
 
             GUILayout.BeginArea(rect, nodeStyle);
             
-            EditorGUILayout.LabelField(thisTitle, lableStyle);
+            EditorGUILayout.LabelField(nodeTitle, lableStyle);
 
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField($"Name ", GUILayout.Width(lableFieldSpace));
@@ -115,6 +118,7 @@ namespace cherrydev
             }
 
             childNode = nodeToAdd;
+            childNode.count = count + 1;
             return true;
         }
 
@@ -154,6 +158,10 @@ namespace cherrydev
             }
 
             return true;
+        }
+
+        public void SetLetter(string letter) {
+            this.letter = letter;
         }
 
 #endif

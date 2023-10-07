@@ -591,7 +591,9 @@ namespace cherrydev
         private void ShowContextMenu(Vector2 mousePosition, Node parentNode) {
             ParentNode parentNodeObject = new ParentNode(parentNode, mousePosition);
             if (parentNode.GetType() == typeof(AnswerNode)) {
-                CreateSentenceNode(parentNodeObject);
+                AnswerNode pNode = (AnswerNode)parentNode;
+                if (!pNode.AreChildrenMaxedOut())
+                    CreateSentenceNode(parentNodeObject);
             } else {
                 GenericMenu contextMenu = new GenericMenu();
 

@@ -7,7 +7,9 @@ namespace cherrydev
     [CreateAssetMenu(menuName = "Scriptable Objects/Nodes/Answer Node", fileName = "New Answer Node")]
     public class AnswerNode : Node
     {
-        private const int amountOfAnswers = 4;
+        private const int amountOfAnswers = 3;
+
+        public string characterName;
 
         public List<Answer> answers = new List<Answer>();
 
@@ -42,6 +44,10 @@ namespace cherrydev
             }
         }
 
+        public override string GetCharacterName() {
+            return characterName;
+        }
+
         /// <summary>
         /// Draw Answer Node method
         /// </summary>
@@ -51,23 +57,28 @@ namespace cherrydev
         {
             base.Draw(nodeStyle, lableStyle);
 
-            string thisTitle = (nodeTitle == null || nodeTitle.Length == 0) ? "Answer Node" : nodeTitle;
+            nodeTitle = $"{count} {characterName}";
 
-            if (thisTitle != prevTitle) {
-                prevTitle = thisTitle;
-                name = thisTitle;
+            if (nodeTitle != prevTitle) {
+                prevTitle = nodeTitle;
+                name = nodeTitle;
                 AssetDatabase.SaveAssets();
             }
 
             rect.size = new Vector2(answerNodeWidth, answerNodeHeight);
 
             GUILayout.BeginArea(rect, nodeStyle);
-            EditorGUILayout.LabelField(thisTitle, lableStyle);
+            EditorGUILayout.LabelField(nodeTitle, lableStyle);
+
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Name", GUILayout.Width(40f));
+            characterName = EditorGUILayout.TextField(characterName, GUILayout.Width(110f));
+            EditorGUILayout.EndHorizontal();
 
             DrawAnswerLine(1, EditorIcons.GreenDot);
             DrawAnswerLine(2, EditorIcons.GreenDot);
             DrawAnswerLine(3, EditorIcons.GreenDot);
-            DrawAnswerLine(4, EditorIcons.GreenDot);
+            //DrawAnswerLine(4, EditorIcons.GreenDot);
 
             GUILayout.EndArea();
         }
@@ -116,17 +127,23 @@ namespace cherrydev
                 return false;
             }
 
+            char letter = 'a';
             for (int i = 0; i < amountOfAnswers; i++)
             {
                 if (childSentenceNodes[i] == null && sentenceNodeToAdd.parentNode == null)
                 {
-                    childSentenceNodes[i] = (SentenceNode)nodeToAdd;
-
+                    childSentenceNodes[i] = sentenceNodeToAdd;
+                    sentenceNodeToAdd.count = count + 1;
+                    sentenceNodeToAdd.SetLetter($"{(char)(letter + i)}");
                     return true;
                 }
             }
 
             return false;
+        }
+
+        public bool AreChildrenMaxedOut() {
+            return childSentenceNodes[amountOfAnswers - 1] != null;
         }
 
 #endif

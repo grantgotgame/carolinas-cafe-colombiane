@@ -22,6 +22,7 @@ MonoBehaviour:
     height: 115
   isDragging: 0
   isSelected: 0
+  nodeTitle: 
   sentence:
     characterName: cherrydev
     text: Next for second sentence
@@ -50,6 +51,7 @@ MonoBehaviour:
     height: 115
   isDragging: 0
   isSelected: 0
+  nodeTitle: 
   sentence:
     characterName: cherrydev
     text: Third answer sentence
@@ -78,6 +80,7 @@ MonoBehaviour:
     height: 115
   isDragging: 0
   isSelected: 0
+  nodeTitle: 
   sentence:
     characterName: cherrydev
     text: Next for fourth sentence
@@ -106,6 +109,7 @@ MonoBehaviour:
     height: 115
   isDragging: 0
   isSelected: 0
+  nodeTitle: 
   sentence:
     characterName: cherrydev
     text: Fourth answer sentence
@@ -134,11 +138,13 @@ MonoBehaviour:
     height: 145
   isDragging: 0
   isSelected: 0
+  nodeTitle: 
+  characterName: 
   answers:
-  - End dialog
-  - 
-  - 
-  - 
+  - answer: 
+  - answer: 
+  - answer: 
+  - answer: 
   parentSentenceNode: {fileID: -4174725588328313673}
   childSentenceNodes:
   - {fileID: 169977738270986999}
@@ -167,6 +173,7 @@ MonoBehaviour:
     height: 115
   isDragging: 0
   isSelected: 0
+  nodeTitle: 
   sentence:
     characterName: cherrydev
     text: Second answer sentence
@@ -195,6 +202,7 @@ MonoBehaviour:
     height: 115
   isDragging: 0
   isSelected: 0
+  nodeTitle: 
   sentence:
     characterName: cherrydev
     text: Next for third sentence
@@ -250,6 +258,7 @@ MonoBehaviour:
     height: 115
   isDragging: 0
   isSelected: 0
+  nodeTitle: 
   sentence:
     characterName: cherrydev
     text: Last sentence
@@ -272,12 +281,13 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 67
-    y: 278.2
+    x: 81
+    y: 280.2
     width: 170
     height: 115
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
+  nodeTitle: 
   sentence:
     characterName: cherrydev
     text: Hello! This is an example of dialog
@@ -306,6 +316,7 @@ MonoBehaviour:
     height: 115
   isDragging: 0
   isSelected: 0
+  nodeTitle: 
   sentence:
     characterName: cherrydev
     text: First answer sentence
@@ -333,12 +344,14 @@ MonoBehaviour:
     width: 190
     height: 145
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
+  nodeTitle: 
+  characterName: 
   answers:
-  - First answer
-  - Second answer
-  - Third answer
-  - Fourth answer
+  - answer: asdf
+  - answer: fdas
+  - answer: 
+  - answer: 
   parentSentenceNode: {fileID: 2970576600738842132}
   childSentenceNodes:
   - {fileID: 4252937235876148062}
@@ -367,6 +380,7 @@ MonoBehaviour:
     height: 115
   isDragging: 0
   isSelected: 0
+  nodeTitle: 
   sentence:
     characterName: cherrydev
     text: Next for first sentence

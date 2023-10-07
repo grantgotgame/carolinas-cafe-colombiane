@@ -65,7 +65,7 @@ namespace cherrydev
                 SentenceNode sentenceNode = (SentenceNode)currentNode;
 
                 OnSentenceNodeActive?.Invoke();
-                OnSentenceNodeActiveWithParameter?.Invoke(sentenceNode.GetSentenceCharacterName(),
+                OnSentenceNodeActiveWithParameter?.Invoke(sentenceNode.GetCharacterName(),
                     sentenceNode.GetCharacterSprite());
 
                 WriteDialogText(sentenceNode.GetSentenceText());
