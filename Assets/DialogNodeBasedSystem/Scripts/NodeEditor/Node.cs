@@ -17,7 +17,7 @@ namespace cherrydev
         protected string nodeTitle;
         protected string prevTitle;
         public int count = 0;
-        public string storedData;
+        public DialogData storedData;
 
 #if UNITY_EDITOR
 

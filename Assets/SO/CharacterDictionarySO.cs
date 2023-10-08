@@ -28,4 +28,5 @@ public class CharacterDictionarySO : ScriptableObject
         return characterDictionary[((int)characterID)];
     }
 
+
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using Character = CharacterDictionarySO.Character;
@@ -9,7 +10,7 @@ namespace cherrydev
     public class DialogBehaviour : MonoBehaviour
     {
         [SerializeField] private float dialogCharDelay;
-        [SerializeField] private KeyCode nextSentenceKeyCode;
+        [SerializeField] private List<KeyCode> nextSentenceKeyCode;
 
         [SerializeField] private UnityEvent onDialogStart;
         [SerializeField] private UnityEvent onDialogFinished;
@@ -19,17 +20,19 @@ namespace cherrydev
         private DialogNodeGraph currentNodeGraph;
         private Node currentNode;
 
-        public static event Action OnSentenceNodeActive;
+        public static event Action<DialogData> OnSentenceNodeActive;
 
         public static event Action OnDialogSentenceEnd;
 
-        public static event Action<string, Sprite> OnSentenceNodeActiveWithParameter;
+        public static event Action<Character, Character, bool> OnSentenceNodeStart;
 
-        public static event Action OnAnswerNodeActive;
+        public static event Action<DialogData> OnAnswerNodeActive;
 
         public static event Action<int, AnswerNode> OnAnswerButtonSetUp;
 
-        public static event Action<int> OnAnswerNodeActiveWithParameter;
+        public static event Action<int> OnAnswerNodeButtonActivate;
+
+        public static event Action<Character, Character, bool> OnAnswerNodeStart;
 
         public static event Action<int, string> OnAnswerNodeSetUp;
 
@@ -39,7 +42,7 @@ namespace cherrydev
         /// Start a dialog
         /// </summary>
         /// <param name="dialogNodeGraph"></param>
-        public void StartDialog(DialogNodeGraph dialogNodeGraph)
+        public void StartDialog(DialogNodeGraph dialogNodeGraph, DialogData data = null)
         {
             if (dialogNodeGraph.nodesList == null)
             {
@@ -50,7 +53,20 @@ namespace cherrydev
             onDialogStart?.Invoke();
 
             currentNodeGraph = dialogNodeGraph;
-            currentNode = currentNodeGraph.nodesList[0];
+            if (data == null) {
+                currentNode = currentNodeGraph.nodesList[0];
+            } else {
+                foreach (Node node in currentNodeGraph.nodesList) {
+                    if (node.storedData == data) {
+                        currentNode = node;
+                        break;
+                    }
+                }
+                if (currentNode == null) {
+                    Debug.LogError("No node with matching data");
+                    return;
+                }
+            }
 
             HandleDialogGraphCurrentNode(currentNode);
         }
@@ -63,16 +79,15 @@ namespace cherrydev
         {
             StopAllCoroutines();
 
+            Character character = characterDictionarySO.GetCharacterByID(currentNode.character);
+            Character otherCharacter = characterDictionarySO.GetCharacterByID(currentNode.storedData.otherSpeaker);
             if (currentNode.GetType() == typeof(SentenceNode))
             {
                 SentenceNode sentenceNode = (SentenceNode)currentNode;
 
-                Character character = characterDictionarySO.GetCharacterByID(sentenceNode.character);
 
-
-                OnSentenceNodeActive?.Invoke();
-                OnSentenceNodeActiveWithParameter?.Invoke(character.name,
-                    character.characterSprite);
+                OnSentenceNodeActive?.Invoke(currentNode.storedData);
+                OnSentenceNodeStart?.Invoke(character, otherCharacter, currentNode.storedData.isOnLeftSide);
 
                 WriteDialogText(sentenceNode.GetSentenceText());
             }
@@ -81,7 +96,7 @@ namespace cherrydev
                 AnswerNode answerNode = (AnswerNode)currentNode;
                 int amountOfActiveButtons = 0;
 
-                OnAnswerNodeActive?.Invoke();
+                OnAnswerNodeActive?.Invoke(answerNode.storedData);
 
                 for (int i = 0; i < answerNode.childSentenceNodes.Length; i++)
                 {
@@ -104,7 +119,8 @@ namespace cherrydev
                     return;
                 }
 
-                OnAnswerNodeActiveWithParameter?.Invoke(amountOfActiveButtons);
+                OnAnswerNodeButtonActivate?.Invoke(amountOfActiveButtons);
+                OnAnswerNodeStart?.Invoke(character, otherCharacter, currentNode.storedData.isOnLeftSide);
             }
         }
 
@@ -141,10 +157,17 @@ namespace cherrydev
                 OnDialogTextCharWrote?.Invoke(textChar);
             }
 
-            yield return new WaitUntil(() => Input.GetKeyDown(nextSentenceKeyCode));
+            yield return new WaitUntil(() => IsEndCurrentNode());
 
             OnDialogSentenceEnd?.Invoke();
             CheckForDialogNextNode();
+        }
+
+        private bool IsEndCurrentNode() {
+            foreach (KeyCode keyCode in nextSentenceKeyCode) {
+                if (Input.GetKeyDown(keyCode)) return true;
+            }
+            return false;
         }
 
         /// <summary>

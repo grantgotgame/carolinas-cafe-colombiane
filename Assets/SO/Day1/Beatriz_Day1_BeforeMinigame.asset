@@ -16,15 +16,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 590
-    y: 314
+    x: 241
+    y: 264
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 0
   count: 2
-  storedData: '{"dialogueChoice": "1a"}'
+  storedData:
+    nodeName: 
+    dialogueChoice: a
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 1
   sentence:
     sentence: Hola abuela, I'm waiting for the customers to arrive for today. Since
       it's so hot outside, I bet people will want to come over for some refreshing
@@ -48,15 +53,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 851
-    y: 317
+    x: 502
+    y: 267
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
   count: 3
-  storedData: 
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
   sentence:
     sentence: But this place looks so quiet right now, surely even you can take some
       time off every once in a while?
@@ -79,15 +89,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 603
-    y: 592
+    x: 254
+    y: 542
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 0
   count: 2
-  storedData: '{"dialogueChoice": "1c"}'
+  storedData:
+    nodeName: 
+    dialogueChoice: c
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 1
   sentence:
     sentence: Holaaaa! I was here specifically waiting just for you, you know? You
       brighten up my day more than that sun ever could!
@@ -110,15 +125,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 845
-    y: 593
+    x: 496
+    y: 543
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
   count: 3
-  storedData: 
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
   sentence:
     sentence: Awww. Well, I'm very glad to hear that. But you should still go outside
       more so that you won't wilt away, sitting inside here all by yourself.
@@ -141,15 +161,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 33
-    y: 405
+    x: -316
+    y: 354
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
   count: 0
-  storedData: 
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
   sentence:
     sentence: "Buenos d\xEDas, my sweet nieta, mmwah! How are you doing today? El
       sol is shining so beautifully, why aren't you outside with the others?"
@@ -172,15 +197,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 324
-    y: 378
+    x: -25
+    y: 328
     width: 200
     height: 145
   isDragging: 0
   isSelected: 0
   character: 0
   count: 1
-  storedData: 
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 1
   answers:
   - answer: Waiting for customers
   - answer: Researching new recipes
@@ -206,15 +236,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 598
-    y: 452
+    x: 249
+    y: 402
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 0
   count: 2
-  storedData: '{"dialogueChoice": "1b"}'
+  storedData:
+    nodeName: 
+    dialogueChoice: b
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 1
   sentence:
     sentence: Ay, hola! I'm just researching some new recipes to liven up my menu.
   parentNode: {fileID: -2363295812326772994}
@@ -236,15 +271,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1174
-    y: 447
+    x: 825
+    y: 397
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
   count: 4
-  storedData: 
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
   sentence:
     sentence: Well, now that I'm here anyway . . . would you at least mind making
       me un cafe negro, por favor?
@@ -291,15 +331,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 849
-    y: 454
+    x: 500
+    y: 404
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
   count: 3
-  storedData: 
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
   sentence:
     sentence: I'm sure you could do that later. Go on, my child. Go enjoy yourself
       out there!

@@ -16,15 +16,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 286
-    y: 228
+    x: 312
+    y: 236
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 0
   count: 1
-  storedData: 
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 1
   sentence:
     sentence: "\xA1Muchas gracias, abuelita! I\u2019m so glad you enjoyed it!"
   parentNode: {fileID: 8874464829402830102}
@@ -70,15 +75,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 837
-    y: 370
+    x: 863
+    y: 378
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
   count: 3
-  storedData: 
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
   sentence:
     sentence: "It's getting late now, I better get going. Don't stay up too late,
       hon! Hasta ma\xF1ana."
@@ -101,15 +111,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 286
-    y: 365
+    x: 312
+    y: 373
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 0
   count: 1
-  storedData: 
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 1
   sentence:
     sentence: Thanks, abuela! I appreciate you liking it. You know how much I care
       about cooking.
@@ -132,15 +147,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 287
-    y: 500
+    x: 313
+    y: 508
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 0
   count: 1
-  storedData: 
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 1
   sentence:
     sentence: "\xA1Lo siento, abuela!"
   parentNode: {fileID: 7405338451168006974}
@@ -162,15 +182,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1086
-    y: 369
+    x: 1112
+    y: 377
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 0
   count: 4
-  storedData: 
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 1
   sentence:
     sentence: "\xA1Adi\xF3s!"
   parentNode: {fileID: 613979837184969077}
@@ -192,15 +217,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 598
-    y: 371
+    x: 624
+    y: 379
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
   count: 2
-  storedData: 
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
   sentence:
     sentence: "Todav\xEDa I worry about you not getting tiempo suficiente for yourself,
       cari\xF1a. Remember to take breaks and enjoy your youth while you still can!"
@@ -223,15 +253,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 23
-    y: 358
+    x: 49
+    y: 366
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
   count: 0
-  storedData: '{"miniGameResult": "1b"}'
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
   sentence:
     sentence: That sure tasted bien, posiblemente I was too hasty to judge you on
       your time spent ahora. It seems you're putting it to good use after all.
@@ -254,15 +289,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 24
-    y: 501
+    x: 50
+    y: 509
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
   count: 0
-  storedData: '{"miniGameResult": "1c"}'
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
   sentence:
     sentence: "\xA1Ay, Carolina! This caf\xE9 could use some work. \xA1Que desastre!"
   parentNode: {fileID: 0}
@@ -284,15 +324,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 21
-    y: 230
+    x: 47
+    y: 238
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
   count: 0
-  storedData: '{"miniGameResult": "1a"}'
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
   sentence:
     sentence: "\xA1Carolina! Ese caf\xE9 . . . \xA1Magnifica! Muy bien."
   parentNode: {fileID: 0}
