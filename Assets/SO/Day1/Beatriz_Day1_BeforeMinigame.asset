@@ -1,39 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7243965210927127469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 3c Beatriz
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 790
-    y: 497
-    width: 170
-    height: 115
-  isDragging: 0
-  isSelected: 0
-  nodeTitle: 3c Beatriz
-  count: 3
-  storedData: 
-  sentence:
-    characterName: Beatriz
-    text: "Awww. Well, I\u2019m very glad to hear that. But you should still go outside
-      more so that you won\u2019t wilt away, sitting inside here all by yourself."
-    characterSprite: {fileID: 0}
-  parentNode: {fileID: 721678297259777114}
-  childNode: {fileID: 3381307084851874570}
-  letter: c
---- !u!114 &-6474562117306753555
+--- !u!114 &-8502003957652294537
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,25 +16,23 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 549
-    y: 163
-    width: 170
-    height: 115
+    x: 590
+    y: 314
+    width: 200
+    height: 100
   isDragging: 0
   isSelected: 0
-  nodeTitle: 2a Carolina
+  character: 0
   count: 2
-  storedData: 
+  storedData: '{"dialogueChoice": "1a"}'
   sentence:
-    characterName: Carolina
-    text: "Hola Abuela, I\u2019m waiting for the customers to arrive for today. Since
-      it\u2019s so hot outside, I bet people will want to come over for some refreshing
-      drinks to cool themselves off!"
-    characterSprite: {fileID: 0}
-  parentNode: {fileID: 7077946685273463803}
-  childNode: {fileID: -1737815215446581393}
+    sentence: Hola abuela, I'm waiting for the customers to arrive for today. Since
+      it's so hot outside, I bet people will want to come over for some refreshing
+      drinks to cool themselves off!
+  parentNode: {fileID: -2363295812326772994}
+  childNode: {fileID: -6657815150877844700}
   letter: a
---- !u!114 &-1737815215446581393
+--- !u!114 &-6657815150877844700
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,81 +48,22 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 793
-    y: 160
-    width: 170
-    height: 115
+    x: 851
+    y: 317
+    width: 200
+    height: 100
   isDragging: 0
   isSelected: 0
-  nodeTitle: 3a Beatriz
+  character: 1
   count: 3
   storedData: 
   sentence:
-    characterName: Beatriz
-    text: But this place looks so quiet right now, surely even you can take some
+    sentence: But this place looks so quiet right now, surely even you can take some
       time off every once in a while?
-    characterSprite: {fileID: 0}
-  parentNode: {fileID: -6474562117306753555}
-  childNode: {fileID: 3381307084851874570}
+  parentNode: {fileID: -8502003957652294537}
+  childNode: {fileID: -365124873906156713}
   letter: a
---- !u!114 &-1570721449025096667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Beatriz
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: -8
-    y: 327
-    width: 170
-    height: 115
-  isDragging: 0
-  isSelected: 0
-  nodeTitle: 0 Beatriz
-  count: 0
-  storedData: 
-  sentence:
-    characterName: Beatriz
-    text: "Buenos d\xEDas, my sweet nieta, mmwah! How are you doing today? El sol
-      is shining so beautifully, why aren\u2019t you outside with the others?"
-    characterSprite: {fileID: 0}
-  parentNode: {fileID: 0}
-  childNode: {fileID: 7077946685273463803}
-  letter: 
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
-  m_Name: Beatriz_Day1_BeforeMinigame
-  m_EditorClassIdentifier: 
-  nodesList:
-  - {fileID: -1570721449025096667}
-  - {fileID: 7077946685273463803}
-  - {fileID: -6474562117306753555}
-  - {fileID: 8992737445941179068}
-  - {fileID: 721678297259777114}
-  - {fileID: -1737815215446581393}
-  - {fileID: 7767402528375782908}
-  - {fileID: -7243965210927127469}
-  - {fileID: 3381307084851874570}
-  nodeToDrawLineFrom: {fileID: 0}
-  linePosition: {x: 0, y: 0}
---- !u!114 &721678297259777114
+--- !u!114 &-6626850694785998050
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,24 +79,22 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 547
-    y: 499
-    width: 170
-    height: 115
+    x: 603
+    y: 592
+    width: 200
+    height: 100
   isDragging: 0
   isSelected: 0
-  nodeTitle: 2c Carolina
+  character: 0
   count: 2
-  storedData: 
+  storedData: '{"dialogueChoice": "1c"}'
   sentence:
-    characterName: Carolina
-    text: Holaaaa! I was here specifically waiting just for you, you know? You brighten
-      up my day more than that sun ever could!
-    characterSprite: {fileID: 0}
-  parentNode: {fileID: 7077946685273463803}
-  childNode: {fileID: -7243965210927127469}
+    sentence: Holaaaa! I was here specifically waiting just for you, you know? You
+      brighten up my day more than that sun ever could!
+  parentNode: {fileID: -2363295812326772994}
+  childNode: {fileID: -5981867550934697002}
   letter: c
---- !u!114 &3381307084851874570
+--- !u!114 &-5981867550934697002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,29 +104,59 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 4 Beatriz
+  m_Name: 3c Beatriz
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1065
-    y: 328
-    width: 170
-    height: 115
+    x: 845
+    y: 593
+    width: 200
+    height: 100
   isDragging: 0
   isSelected: 0
-  nodeTitle: 4 Beatriz
-  count: 4
+  character: 1
+  count: 3
   storedData: 
   sentence:
-    characterName: Beatriz
-    text: 
-    characterSprite: {fileID: 0}
-  parentNode: {fileID: -1737815215446581393}
-  childNode: {fileID: 0}
+    sentence: Awww. Well, I'm very glad to hear that. But you should still go outside
+      more so that you won't wilt away, sitting inside here all by yourself.
+  parentNode: {fileID: -6626850694785998050}
+  childNode: {fileID: -365124873906156713}
+  letter: c
+--- !u!114 &-5075336518872037438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Beatriz
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 33
+    y: 405
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 1
+  count: 0
+  storedData: 
+  sentence:
+    sentence: "Buenos d\xEDas, my sweet nieta, mmwah! How are you doing today? El
+      sol is shining so beautifully, why aren't you outside with the others?"
+  parentNode: {fileID: 0}
+  childNode: {fileID: -2363295812326772994}
   letter: 
---- !u!114 &7077946685273463803
+--- !u!114 &-2363295812326772994
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,59 +172,25 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 243
-    y: 314
-    width: 190
+    x: 324
+    y: 378
+    width: 200
     height: 145
   isDragging: 0
   isSelected: 0
-  nodeTitle: 1 Carolina
+  character: 0
   count: 1
   storedData: 
-  characterName: Carolina
   answers:
   - answer: Waiting for customers
   - answer: Researching new recipes
   - answer: Waiting just for you!
-  parentSentenceNode: {fileID: -1570721449025096667}
+  parentSentenceNode: {fileID: -5075336518872037438}
   childSentenceNodes:
-  - {fileID: -6474562117306753555}
-  - {fileID: 8992737445941179068}
-  - {fileID: 721678297259777114}
---- !u!114 &7767402528375782908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 3b Beatriz
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 795
-    y: 328
-    width: 170
-    height: 115
-  isDragging: 0
-  isSelected: 0
-  nodeTitle: 3b Beatriz
-  count: 3
-  storedData: 
-  sentence:
-    characterName: Beatriz
-    text: "I\u2019m sure you could do that later. Go on, my child. Go enjoy yourself
-      out there!"
-    characterSprite: {fileID: 0}
-  parentNode: {fileID: 8992737445941179068}
-  childNode: {fileID: 3381307084851874570}
-  letter: b
---- !u!114 &8992737445941179068
+  - {fileID: -8502003957652294537}
+  - {fileID: -1164846812483117232}
+  - {fileID: -6626850694785998050}
+--- !u!114 &-1164846812483117232
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -306,19 +206,103 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 547
-    y: 331
-    width: 170
-    height: 115
+    x: 598
+    y: 452
+    width: 200
+    height: 100
   isDragging: 0
   isSelected: 0
-  nodeTitle: 2b Carolina
+  character: 0
   count: 2
+  storedData: '{"dialogueChoice": "1b"}'
+  sentence:
+    sentence: Ay, hola! I'm just researching some new recipes to liven up my menu.
+  parentNode: {fileID: -2363295812326772994}
+  childNode: {fileID: 7247482593100053424}
+  letter: b
+--- !u!114 &-365124873906156713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 4 Beatriz
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1174
+    y: 447
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 1
+  count: 4
   storedData: 
   sentence:
-    characterName: Carolina
-    text: "Ay, hola! I\u2019m just researching some new recipes to liven up my menu!"
-    characterSprite: {fileID: 0}
-  parentNode: {fileID: 7077946685273463803}
-  childNode: {fileID: 7767402528375782908}
+    sentence: Well, now that I'm here anyway . . . would you at least mind making
+      me un cafe negro, por favor?
+  parentNode: {fileID: -5981867550934697002}
+  childNode: {fileID: 0}
+  letter: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: Beatriz_Day1_BeforeMinigame
+  m_EditorClassIdentifier: 
+  nodesList:
+  - {fileID: -5075336518872037438}
+  - {fileID: -2363295812326772994}
+  - {fileID: -8502003957652294537}
+  - {fileID: -1164846812483117232}
+  - {fileID: -6626850694785998050}
+  - {fileID: -6657815150877844700}
+  - {fileID: 7247482593100053424}
+  - {fileID: -5981867550934697002}
+  - {fileID: -365124873906156713}
+  nodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &7247482593100053424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 3b Beatriz
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 849
+    y: 454
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 1
+  count: 3
+  storedData: 
+  sentence:
+    sentence: I'm sure you could do that later. Go on, my child. Go enjoy yourself
+      out there!
+  parentNode: {fileID: -1164846812483117232}
+  childNode: {fileID: -365124873906156713}
   letter: b

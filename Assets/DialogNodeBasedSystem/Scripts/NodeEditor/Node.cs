@@ -13,7 +13,8 @@ namespace cherrydev
         [HideInInspector] public bool isDragging;
         [HideInInspector] public bool isSelected;
 
-        public string nodeTitle;
+        public CharacterDictionarySO.CharacterID character;
+        protected string nodeTitle;
         protected string prevTitle;
         public int count = 0;
         public string storedData;
@@ -46,10 +47,6 @@ namespace cherrydev
 
         public virtual bool AddToChildConnectedNode(Node nodeToAdd)
         { return true; }
-
-        public virtual string GetCharacterName() {
-            return "";
-        }
 
         /// <summary>
         /// Process node events

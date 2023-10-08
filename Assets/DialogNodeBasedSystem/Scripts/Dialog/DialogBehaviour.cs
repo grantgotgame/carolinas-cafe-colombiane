@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using Character = CharacterDictionarySO.Character;
 
 namespace cherrydev
 {
@@ -12,6 +13,8 @@ namespace cherrydev
 
         [SerializeField] private UnityEvent onDialogStart;
         [SerializeField] private UnityEvent onDialogFinished;
+
+        [SerializeField] private CharacterDictionarySO characterDictionarySO;
 
         private DialogNodeGraph currentNodeGraph;
         private Node currentNode;
@@ -64,9 +67,12 @@ namespace cherrydev
             {
                 SentenceNode sentenceNode = (SentenceNode)currentNode;
 
+                Character character = characterDictionarySO.GetCharacterByID(sentenceNode.character);
+
+
                 OnSentenceNodeActive?.Invoke();
-                OnSentenceNodeActiveWithParameter?.Invoke(sentenceNode.GetCharacterName(),
-                    sentenceNode.GetCharacterSprite());
+                OnSentenceNodeActiveWithParameter?.Invoke(character.name,
+                    character.characterSprite);
 
                 WriteDialogText(sentenceNode.GetSentenceText());
             }

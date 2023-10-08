@@ -14,17 +14,8 @@ namespace cherrydev
         public Node childNode;
 
         private const float lableFieldSpace = 40f;
-        private const float textFieldWidth = 90f;
+        private const float textFieldWidth = 120f;
         public string letter = "";
-
-        /// <summary>
-        /// Returning sentence character name
-        /// </summary>
-        /// <returns></returns>
-        public override string GetCharacterName()
-        {
-            return sentence.characterName;
-        }
 
         /// <summary>
         /// Returning sentence text
@@ -32,16 +23,7 @@ namespace cherrydev
         /// <returns></returns>
         public string GetSentenceText()
         {
-            return sentence.text;
-        }
-
-        /// <summary>
-        /// Returning sentence character sprite
-        /// </summary>
-        /// <returns></returns>
-        public Sprite GetCharacterSprite()
-        {
-            return sentence.characterSprite;
+            return sentence.sentence;
         }
 
 #if UNITY_EDITOR
@@ -56,7 +38,7 @@ namespace cherrydev
             base.Draw(nodeStyle, lableStyle);
 
             
-            nodeTitle = $"{count}{letter} {sentence.characterName}";
+            nodeTitle = $"{count}{letter} {character.ToString()}";
 
             if (nodeTitle != prevTitle) {
                 prevTitle = nodeTitle;
@@ -70,19 +52,21 @@ namespace cherrydev
 
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField($"Name ", GUILayout.Width(lableFieldSpace));
-            sentence.characterName = EditorGUILayout.TextField(sentence.characterName, GUILayout.Width(textFieldWidth));
+            character = (CharacterDictionarySO.CharacterID) EditorGUILayout.EnumPopup(character, GUILayout.Width(textFieldWidth));
             EditorGUILayout.EndHorizontal();
 
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField($"Text ", GUILayout.Width(lableFieldSpace));
-            sentence.text = EditorGUILayout.TextField(sentence.text, GUILayout.Width(textFieldWidth));
+            sentence.sentence = EditorGUILayout.TextField(sentence.sentence, GUILayout.Width(textFieldWidth));
             EditorGUILayout.EndHorizontal();
 
+            /*
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField($"Sprite ", GUILayout.Width(lableFieldSpace));
             sentence.characterSprite = (Sprite)EditorGUILayout.ObjectField(sentence.characterSprite,
                 typeof(Sprite), false, GUILayout.Width(textFieldWidth));
             EditorGUILayout.EndHorizontal();
+            */
 
             GUILayout.EndArea();
         }

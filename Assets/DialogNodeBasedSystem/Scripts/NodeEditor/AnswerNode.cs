@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using Character = CharacterDictionarySO.Character;
 
 namespace cherrydev
 {
@@ -9,18 +10,20 @@ namespace cherrydev
     {
         private const int amountOfAnswers = 3;
 
-        public string characterName;
-
         public List<Answer> answers = new List<Answer>();
 
-        public SentenceNode parentSentenceNode;
-        public SentenceNode[] childSentenceNodes;
+        [HideInInspector] public SentenceNode parentSentenceNode;
+        [HideInInspector] public SentenceNode[] childSentenceNodes;
 
-        private const float lableFieldSpace = 15f;
+        private const float labelFieldSpaceChoice = 15f;
+        private const float textFieldWidthChoice = 130f;
+
+        private const float labelFieldSpace = 40f;
         private const float textFieldWidth = 120f;
 
-        private const float answerNodeWidth = 190f;
+        private const float answerNodeWidth = 200f;
         private const float answerNodeHeight = 145f;
+
 
 #if UNITY_EDITOR
 
@@ -44,10 +47,6 @@ namespace cherrydev
             }
         }
 
-        public override string GetCharacterName() {
-            return characterName;
-        }
-
         /// <summary>
         /// Draw Answer Node method
         /// </summary>
@@ -57,7 +56,7 @@ namespace cherrydev
         {
             base.Draw(nodeStyle, lableStyle);
 
-            nodeTitle = $"{count} {characterName}";
+            nodeTitle = $"{count} {character.ToString()}";
 
             if (nodeTitle != prevTitle) {
                 prevTitle = nodeTitle;
@@ -71,8 +70,8 @@ namespace cherrydev
             EditorGUILayout.LabelField(nodeTitle, lableStyle);
 
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("Name", GUILayout.Width(40f));
-            characterName = EditorGUILayout.TextField(characterName, GUILayout.Width(110f));
+            EditorGUILayout.LabelField("Name", GUILayout.Width(labelFieldSpace));
+            character = (CharacterDictionarySO.CharacterID) EditorGUILayout.EnumPopup(character, GUILayout.Width(textFieldWidth));
             EditorGUILayout.EndHorizontal();
 
             DrawAnswerLine(1, EditorIcons.GreenDot);
@@ -86,9 +85,9 @@ namespace cherrydev
         private void DrawAnswerLine(int answerNumber, string iconPathOrName)
         {
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField($"{answerNumber}. ", GUILayout.Width(lableFieldSpace));
-            answers[answerNumber - 1].answer = EditorGUILayout.TextField(answers[answerNumber - 1].answer, GUILayout.Width(textFieldWidth));
-            EditorGUILayout.LabelField(EditorGUIUtility.IconContent(iconPathOrName), GUILayout.Width(lableFieldSpace));
+            EditorGUILayout.LabelField($"{answerNumber}. ", GUILayout.Width(labelFieldSpaceChoice));
+            answers[answerNumber - 1].answer = EditorGUILayout.TextField(answers[answerNumber - 1].answer, GUILayout.Width(textFieldWidthChoice));
+            EditorGUILayout.LabelField(EditorGUIUtility.IconContent(iconPathOrName), GUILayout.Width(labelFieldSpaceChoice));
             EditorGUILayout.EndHorizontal();
         }
 
