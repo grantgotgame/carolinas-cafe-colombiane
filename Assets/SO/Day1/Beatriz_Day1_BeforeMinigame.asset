@@ -313,6 +313,7 @@ MonoBehaviour:
   - {fileID: 7247482593100053424}
   - {fileID: -5981867550934697002}
   - {fileID: -365124873906156713}
+  nextDialog: {fileID: 11400000, guid: f1543b1ade88ace4b91d6b4b36401182, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
 --- !u!114 &7247482593100053424

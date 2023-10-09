@@ -7,6 +7,7 @@ namespace cherrydev
     public class DialogNodeGraph : ScriptableObject
     {
         public List<Node> nodesList = new List<Node>();
+        public DialogNodeGraph nextDialog;
 
 #if UNITY_EDITOR
 

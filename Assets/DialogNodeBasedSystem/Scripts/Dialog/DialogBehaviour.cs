@@ -9,6 +9,8 @@ namespace cherrydev
 {
     public class DialogBehaviour : MonoBehaviour
     {
+        public static DialogBehaviour Instance;
+
         [SerializeField] private float dialogCharDelay;
         [SerializeField] private List<KeyCode> nextSentenceKeyCode;
 
@@ -38,11 +40,16 @@ namespace cherrydev
 
         public static event Action<char> OnDialogTextCharWrote;
 
+        private void Awake() {
+            if (Instance == null) Instance = this;
+            else Destroy(gameObject);
+        }
+
         /// <summary>
         /// Start a dialog
         /// </summary>
         /// <param name="dialogNodeGraph"></param>
-        public void StartDialog(DialogNodeGraph dialogNodeGraph, DialogData data = null)
+        public void StartDialog(DialogNodeGraph dialogNodeGraph, string data = "")
         {
             if (dialogNodeGraph.nodesList == null)
             {
@@ -53,11 +60,11 @@ namespace cherrydev
             onDialogStart?.Invoke();
 
             currentNodeGraph = dialogNodeGraph;
-            if (data == null) {
+            if (data == "") {
                 currentNode = currentNodeGraph.nodesList[0];
             } else {
                 foreach (Node node in currentNodeGraph.nodesList) {
-                    if (node.storedData == data) {
+                    if (node.storedData.miniGameValue == data) {
                         currentNode = node;
                         break;
                     }

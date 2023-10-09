@@ -57,6 +57,7 @@ MonoBehaviour:
   - {fileID: 3221583654589593412}
   - {fileID: 613979837184969077}
   - {fileID: 3145892099213135872}
+  nextDialog: {fileID: 0}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
 --- !u!114 &613979837184969077
@@ -253,8 +254,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 49
-    y: 366
+    x: 50
+    y: 367
     width: 200
     height: 100
   isDragging: 0
@@ -264,7 +265,7 @@ MonoBehaviour:
   storedData:
     nodeName: 
     dialogueChoice: 
-    miniGameValue: 
+    miniGameValue: 2
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
@@ -300,7 +301,7 @@ MonoBehaviour:
   storedData:
     nodeName: 
     dialogueChoice: 
-    miniGameValue: 
+    miniGameValue: 1
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
@@ -335,7 +336,7 @@ MonoBehaviour:
   storedData:
     nodeName: 
     dialogueChoice: 
-    miniGameValue: 
+    miniGameValue: 3
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:

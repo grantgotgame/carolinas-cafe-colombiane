@@ -941,7 +941,19 @@ MonoBehaviour:
       m_Calls: []
   onDialogFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1830102278}
+        m_TargetAssemblyTypeName: DayManager, Assembly-CSharp
+        m_MethodName: StartNextNodeGraph
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   characterDictionarySO: {fileID: 11400000, guid: a3dbab7da59ef5341bd9afd30ad0e9ca, type: 2}
 --- !u!1 &628650194
 GameObject:
@@ -3341,7 +3353,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBehaviour: {fileID: 572098997}
-  dialogGraph: {fileID: 11400000, guid: f1ecfcf08bb0f7740b8bee3146971107, type: 2}
+  dialogGraph:
+  - {fileID: 11400000, guid: f1ecfcf08bb0f7740b8bee3146971107, type: 2}
 --- !u!4 &1830102279
 Transform:
   m_ObjectHideFlags: 0

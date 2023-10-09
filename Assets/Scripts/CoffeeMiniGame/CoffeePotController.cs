@@ -36,6 +36,7 @@ namespace CoffeeMinigame {
                 pour = false;
                 OnPour?.Invoke(this, new CoffeeEventArgs { result = false });
             } else {
+                MiniGameResult.SetResult(streak.ToString());
                 OnGameEnd?.Invoke(this, EventArgs.Empty);
             }
         }
