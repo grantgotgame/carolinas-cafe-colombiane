@@ -33,6 +33,9 @@ public class DayManager : MonoBehaviour
     public void OnNodeGraphStarted() {
         string result = MiniGameResult.GetResult();
         MiniGameResult.ResetMinigame();
+        if (DialogBehaviour.Instance != null) {
+            DialogBehaviour.Instance.AddListenerToOnDialogFinished(OnNodeGraphFinished);
+        }
         if (result == string.Empty) {
             DialogBehaviour.Instance.StartDialog(dialogGraph[currentDialog]);
         } else {
