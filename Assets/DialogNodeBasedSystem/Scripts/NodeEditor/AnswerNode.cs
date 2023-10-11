@@ -5,7 +5,7 @@ using Character = CharacterDictionarySO.Character;
 
 namespace cherrydev
 {
-    [CreateAssetMenu(menuName = "Scriptable Objects/Nodes/Answer Node", fileName = "New Answer Node")]
+    //[CreateAssetMenu(menuName = "Scriptable Objects/Nodes/Answer Node", fileName = "New Answer Node")]
     public class AnswerNode : Node
     {
         private const int amountOfAnswers = 3;

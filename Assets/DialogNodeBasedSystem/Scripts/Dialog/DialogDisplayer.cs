@@ -58,17 +58,17 @@ namespace cherrydev
         /// Disable dialog answer and sentence panel
         /// </summary>
         private void DisableDialogPanel() {
-            StartCoroutine(TransitionToMinigame());
+            //StartCoroutine(TransitionToMinigame());
             dialogSentencePanel.TransitionToMinigame();
         }
-
+        /*
         IEnumerator TransitionToMinigame()
         {
             yield return new WaitForSeconds(1f);
 
             Loader.Instance.PlayMinigame();
         }
-
+        */
         /// <summary>
         /// Enable dialog answer panel
         /// </summary>

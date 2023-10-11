@@ -7,7 +7,8 @@ public class DayManager : MonoBehaviour
 {
     public static DayManager Instance;
 
-    [SerializeField] private DialogBehaviour dialogBehaviour;
+    [SerializeField, Range(0f, 5f)] private float transitionDelay;
+
     [SerializeField] private List<DialogNodeGraph> dialogGraph;
 
     private int currentDialog;
@@ -23,6 +24,7 @@ public class DayManager : MonoBehaviour
     }
 
     private void Start() {
+        
         currentDialog = 0;
         //dialogBehaviour.StartDialog(dialogGraph[currentDialog]);
         OnNodeGraphStarted();
@@ -30,6 +32,7 @@ public class DayManager : MonoBehaviour
 
     public void OnNodeGraphStarted() {
         string result = MiniGameResult.GetResult();
+        MiniGameResult.ResetMinigame();
         if (result == string.Empty) {
             DialogBehaviour.Instance.StartDialog(dialogGraph[currentDialog]);
         } else {
@@ -38,5 +41,24 @@ public class DayManager : MonoBehaviour
     }
 
     public void OnNodeGraphFinished() {
+        DialogNodeGraph currentNodeGraph = DialogBehaviour.Instance.GetCurrentDialogNodeGraph();
+        if (dialogGraph.Contains(currentNodeGraph)) {
+            StartCoroutine(TransitionToMinigame());
+        } else {
+            StartCoroutine(TransitionToNextCustomer());
+        }
+    }
+
+    IEnumerator TransitionToMinigame() {
+        yield return new WaitForSeconds(transitionDelay);
+
+        Loader.Instance.PlayMinigame();
+    }
+    IEnumerator TransitionToNextCustomer() {
+        currentDialog++;
+
+        yield return new WaitForSeconds(transitionDelay);
+
+        OnNodeGraphStarted();
     }
 }

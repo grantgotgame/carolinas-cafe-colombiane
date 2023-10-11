@@ -17,11 +17,11 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 241
-    y: 264
+    y: 262
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 0
   count: 2
   storedData:
@@ -31,11 +31,9 @@ MonoBehaviour:
     isOnLeftSide: 1
     otherSpeaker: 1
   sentence:
-    sentence: Hola abuela, I'm waiting for the customers to arrive for today. Since
-      it's so hot outside, I bet people will want to come over for some refreshing
-      drinks to cool themselves off!
+    sentence: Hola abuela, I'm waiting for the customers to arrive for today.
   parentNode: {fileID: -2363295812326772994}
-  childNode: {fileID: -6657815150877844700}
+  childNode: {fileID: -2466089301646573092}
   letter: a
 --- !u!114 &-6657815150877844700
 MonoBehaviour:
@@ -47,20 +45,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 3a Beatriz
+  m_Name: 4a Beatriz
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 502
-    y: 267
+    x: 713
+    y: 256
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
-  count: 3
+  count: 4
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -70,7 +68,7 @@ MonoBehaviour:
   sentence:
     sentence: But this place looks so quiet right now, surely even you can take some
       time off every once in a while?
-  parentNode: {fileID: -8502003957652294537}
+  parentNode: {fileID: -2466089301646573092}
   childNode: {fileID: -365124873906156713}
   letter: a
 --- !u!114 &-6626850694785998050
@@ -90,7 +88,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 254
-    y: 542
+    y: 540
     width: 200
     height: 100
   isDragging: 0
@@ -125,8 +123,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 496
-    y: 543
+    x: 597
+    y: 538
     width: 200
     height: 100
   isDragging: 0
@@ -162,7 +160,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: -316
-    y: 354
+    y: 352
     width: 200
     height: 100
   isDragging: 0
@@ -181,6 +179,42 @@ MonoBehaviour:
   parentNode: {fileID: 0}
   childNode: {fileID: -2363295812326772994}
   letter: 
+--- !u!114 &-2466089301646573092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 3a Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 485
+    y: 256
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 3
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 1
+  sentence:
+    sentence: Since it's so hot outside, I bet people will want to come over for
+      some refreshing drinks to cool themselves off!
+  parentNode: {fileID: -8502003957652294537}
+  childNode: {fileID: -6657815150877844700}
+  letter: a
 --- !u!114 &-2363295812326772994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,7 +232,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: -25
-    y: 328
+    y: 326
     width: 200
     height: 145
   isDragging: 0
@@ -237,7 +271,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 249
-    y: 402
+    y: 400
     width: 200
     height: 100
   isDragging: 0
@@ -265,20 +299,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 4 Beatriz
+  m_Name: 5 Beatriz
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 825
-    y: 397
+    x: 950
+    y: 390
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
-  count: 4
+  count: 5
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -313,6 +347,7 @@ MonoBehaviour:
   - {fileID: 7247482593100053424}
   - {fileID: -5981867550934697002}
   - {fileID: -365124873906156713}
+  - {fileID: -2466089301646573092}
   nextDialog: {fileID: 11400000, guid: f1543b1ade88ace4b91d6b4b36401182, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -332,8 +367,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 500
-    y: 404
+    x: 590
+    y: 394
     width: 200
     height: 100
   isDragging: 0

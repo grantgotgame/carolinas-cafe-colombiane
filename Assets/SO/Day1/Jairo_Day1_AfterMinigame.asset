@@ -1,0 +1,498 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8899263832669250087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 8 Jairo
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 2489
+    y: 247
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 2
+  count: 8
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: "Okay ni\xF1a, I promise. Pues, I have to go now. \xA1Nos vemos!"
+  parentNode: {fileID: -5464822132658365179}
+  childNode: {fileID: 0}
+  letter: 
+--- !u!114 &-7225411791044193976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 3 Jairo
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1317
+    y: 253
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 2
+  count: 3
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: Well, you see . . . I came across this beautiful . . . mujer today.
+      We've actually been talking for a while, and she said we should go out for
+      la cena sometime.
+  parentNode: {fileID: -3282468668416244653}
+  childNode: {fileID: 246705765685791389}
+  letter: 
+--- !u!114 &-6809408241879779236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 1c Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 752
+    y: 361
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 1
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 2
+  sentence:
+    sentence: "\xA1Lo siento, pap\xE1! I'll try harder!"
+  parentNode: {fileID: -4501883206747754515}
+  childNode: {fileID: -3282468668416244653}
+  letter: c
+--- !u!114 &-5464822132658365179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 7 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 2240
+    y: 250
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 7
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 2
+  sentence:
+    sentence: "Pap\xE1aaaa, promise me you aren't turning this into a habit again.
+      For the sake of others\u2026"
+  parentNode: {fileID: -4886012247137283076}
+  childNode: {fileID: -8899263832669250087}
+  letter: 
+--- !u!114 &-4886012247137283076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 6 Jairo
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 2012
+    y: 248
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 2
+  count: 6
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: Well, what can I say? I have to enjoy my youth and vitality while I
+      still have it in me! How can I say no to so many caros hermosos out there?
+      ~
+  parentNode: {fileID: 7577390307713999992}
+  childNode: {fileID: -5464822132658365179}
+  letter: 
+--- !u!114 &-4501883206747754515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0c Jairo
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 488
+    y: 358
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 2
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: "\xA1Uf! Estas arepas are falling all over the place! Not your best
+      work, hija."
+  parentNode: {fileID: 0}
+  childNode: {fileID: -6809408241879779236}
+  letter: c
+--- !u!114 &-3282468668416244653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 2 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1084
+    y: 255
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 2
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 2
+  sentence:
+    sentence: Are you sure the jogging alone is the reason for your cheery mood?
+  parentNode: {fileID: -6809408241879779236}
+  childNode: {fileID: -7225411791044193976}
+  letter: 
+--- !u!114 &-2628795535736319521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 1b Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 757
+    y: 250
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 1
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 2
+  sentence:
+    sentence: "Gracias, pap\xE1. I can only get better!"
+  parentNode: {fileID: 2228388940424086338}
+  childNode: {fileID: -3282468668416244653}
+  letter: b
+--- !u!114 &-642030021715284675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 1a Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 760
+    y: 141
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 1
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 2
+  sentence:
+    sentence: "*Giggles* Gracias, pap\xE1, I've worked mucho on the recipe and my
+      technique!"
+  parentNode: {fileID: 1920049338547725660}
+  childNode: {fileID: -3282468668416244653}
+  letter: a
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: Jairo_Day1_AfterMinigame
+  m_EditorClassIdentifier: 
+  nodesList:
+  - {fileID: 1920049338547725660}
+  - {fileID: 2228388940424086338}
+  - {fileID: -4501883206747754515}
+  - {fileID: -6809408241879779236}
+  - {fileID: -2628795535736319521}
+  - {fileID: -642030021715284675}
+  - {fileID: -3282468668416244653}
+  - {fileID: -7225411791044193976}
+  - {fileID: 246705765685791389}
+  - {fileID: 7577390307713999992}
+  - {fileID: -4886012247137283076}
+  - {fileID: -5464822132658365179}
+  - {fileID: -8899263832669250087}
+  nextDialog: {fileID: 0}
+  nodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &246705765685791389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 4 Jairo
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1550
+    y: 252
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 2
+  count: 4
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: "I felt so alive that I could have corrido for kil\xF3metros! And,
+      pues, that\u2019s what I did, jaja!"
+  parentNode: {fileID: -7225411791044193976}
+  childNode: {fileID: 7577390307713999992}
+  letter: 
+--- !u!114 &1920049338547725660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0a Jairo
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 494
+    y: 144
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 2
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: "\xA1Dios mio! Carolina, I've always said you make the best arepas
+      de la ciudad!"
+  parentNode: {fileID: 0}
+  childNode: {fileID: -642030021715284675}
+  letter: a
+--- !u!114 &2228388940424086338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0b Jairo
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 494
+    y: 249
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 2
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: Bien, bien. You make a pretty good arepa, hija. Not perfect but good.
+      *Smiles*
+  parentNode: {fileID: 0}
+  childNode: {fileID: -2628795535736319521}
+  letter: b
+--- !u!114 &7577390307713999992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 5 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1791
+    y: 252
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 5
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 2
+  sentence:
+    sentence: "Pap\xE1 . . . you're married. Try to keep it en sus pantalones, por
+      favor! I know that you're wild and rowdy but the rest of the familia doesn't,
+      and I'd like to keep it that way!"
+  parentNode: {fileID: 246705765685791389}
+  childNode: {fileID: -4886012247137283076}
+  letter: 

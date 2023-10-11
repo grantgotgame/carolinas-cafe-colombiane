@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace cherrydev
 {
-    [CreateAssetMenu(menuName = "Scriptable Objects/Nodes/Node Graph", fileName = "New Node Graph")]
+    [CreateAssetMenu(menuName = "Dialog Graph SO", fileName = "New Dialog Graph")]
     public class DialogNodeGraph : ScriptableObject
     {
         public List<Node> nodesList = new List<Node>();

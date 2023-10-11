@@ -9,7 +9,7 @@ namespace cherrydev
     {
         [Header("Left Speaker"), Space()]
         [SerializeField] private GameObject lSpeakerObject;
-        [SerializeField] private GameObject lNonSpeakerObject;
+        [SerializeField] private Image lNonSpeakerImage;
         [SerializeField] private TextMeshProUGUI lDialogNameText;
         [SerializeField] private TextMeshProUGUI lDialogText;
         [SerializeField] private GameObject lDialogObject;
@@ -17,7 +17,7 @@ namespace cherrydev
         [SerializeField] private Image lDialogCharacterImage;
         [Header("Right Speaker"), Space()]
         [SerializeField] private GameObject rSpeakerObject;
-        [SerializeField] private GameObject rNonSpeakerObject;
+        [SerializeField] private Image rNonSpeakerImage;
         [SerializeField] private TextMeshProUGUI rDialogNameText;
         [SerializeField] private TextMeshProUGUI rDialogText;
         [SerializeField] private GameObject rDialogObject;
@@ -50,10 +50,12 @@ namespace cherrydev
                 lDialogNameText.text = character.name;
                 lDialogNameBadgeImage.sprite = character.nameBadgeSprite;
                 lDialogCharacterImage.sprite = character.characterSprite;
+                lNonSpeakerImage.sprite = otherCharacter.characterSprite;
             } else {
                 rDialogNameText.text = character.name;
                 rDialogNameBadgeImage.sprite = character.nameBadgeSprite;
                 rDialogCharacterImage.sprite = character.characterSprite;
+                rNonSpeakerImage.sprite = otherCharacter.characterSprite;
             }
             /*rDialogNameText.text = name;
 
@@ -84,9 +86,9 @@ namespace cherrydev
             rDialogObject.SetActive(true);
             lDialogObject.SetActive(true);
             lSpeakerObject.SetActive(isLeftSpeaker);
-            lNonSpeakerObject.SetActive(isLeftSpeaker);
+            lNonSpeakerImage.gameObject.SetActive(isLeftSpeaker);
             rSpeakerObject.SetActive(!isLeftSpeaker);
-            rNonSpeakerObject.SetActive(!isLeftSpeaker);
+            rNonSpeakerImage.gameObject.SetActive(!isLeftSpeaker);
         }
 
         public void ActivateSentence() {
@@ -97,15 +99,15 @@ namespace cherrydev
         public void DeactivateSentence() {
             lDialogText.gameObject.SetActive(false);
             rDialogText.gameObject.SetActive(false);
-            lNonSpeakerObject.SetActive(false);
-            rNonSpeakerObject.SetActive(false);
+            lNonSpeakerImage.gameObject.SetActive(false);
+            rNonSpeakerImage.gameObject.SetActive(false);
         }
 
         public void TransitionToMinigame() {
             lSpeakerObject.SetActive(true);
             rSpeakerObject.SetActive(true);
-            lNonSpeakerObject.SetActive(false);
-            rNonSpeakerObject.SetActive(false);
+            lNonSpeakerImage.gameObject.SetActive(false);
+            rNonSpeakerImage.gameObject.SetActive(false);
             rDialogObject.SetActive(false);
             lDialogObject.SetActive(false);
         }

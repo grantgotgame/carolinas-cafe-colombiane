@@ -211,5 +211,9 @@ namespace cherrydev
         {
             onDialogFinished.AddListener(action);
         }
+
+        public DialogNodeGraph GetCurrentDialogNodeGraph() {
+            return currentNodeGraph;
+        }
     }
 }
