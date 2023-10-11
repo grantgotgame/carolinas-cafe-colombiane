@@ -10,6 +10,8 @@ namespace CoffeeMinigame {
         public event EventHandler<CoffeeEventArgs> OnPourComplete;
         public event EventHandler OnGameEnd;
 
+        [SerializeField, Range(0f, 5f)] private float transitionDelay = 1.5f;
+
         public class CoffeeEventArgs : EventArgs {
             public bool result;
         }
@@ -36,9 +38,17 @@ namespace CoffeeMinigame {
                 pour = false;
                 OnPour?.Invoke(this, new CoffeeEventArgs { result = false });
             } else {
-                MiniGameResult.SetResult(streak.ToString());
                 OnGameEnd?.Invoke(this, EventArgs.Empty);
+                StartCoroutine(EndMiniGame());
             }
+        }
+
+        IEnumerator EndMiniGame() {
+            MiniGameResult.SetResult(streak.ToString());
+
+            yield return new WaitForSeconds(transitionDelay);
+
+            Loader.Instance.GoBackToMainScene();
         }
 
         public void PourResult(bool success) {

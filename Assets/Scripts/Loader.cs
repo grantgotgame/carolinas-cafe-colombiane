@@ -32,10 +32,12 @@ public class Loader : MonoBehaviour {
     }
 
     private void Update() {
+        /*
         if (Input.GetKeyDown(KeyCode.P)) {
             PlayMinigame();
         } else if (Input.GetKeyDown(KeyCode.L)) {
             GoBackToMainScene();
         }
+        */
     }
 }
