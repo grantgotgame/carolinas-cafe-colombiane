@@ -16,7 +16,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 2489
+    x: 2490
     y: 247
     width: 200
     height: 100
@@ -51,7 +51,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1317
+    x: 1318
     y: 253
     width: 200
     height: 100
@@ -88,7 +88,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 752
+    x: 753
     y: 361
     width: 200
     height: 100
@@ -123,7 +123,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 2240
+    x: 2241
     y: 250
     width: 200
     height: 100
@@ -159,7 +159,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 2012
+    x: 2013
     y: 248
     width: 200
     height: 100
@@ -196,7 +196,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 488
+    x: 489
     y: 358
     width: 200
     height: 100
@@ -207,7 +207,7 @@ MonoBehaviour:
   storedData:
     nodeName: 
     dialogueChoice: 
-    miniGameValue: 
+    miniGameValue: 1
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
@@ -232,7 +232,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1084
+    x: 1085
     y: 255
     width: 200
     height: 100
@@ -267,7 +267,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 757
+    x: 758
     y: 250
     width: 200
     height: 100
@@ -302,7 +302,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 760
+    x: 761
     y: 141
     width: 200
     height: 100
@@ -367,7 +367,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1550
+    x: 1551
     y: 252
     width: 200
     height: 100
@@ -403,7 +403,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 494
+    x: 495
     y: 144
     width: 200
     height: 100
@@ -414,7 +414,7 @@ MonoBehaviour:
   storedData:
     nodeName: 
     dialogueChoice: 
-    miniGameValue: 
+    miniGameValue: 3
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
@@ -439,7 +439,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 494
+    x: 495
     y: 249
     width: 200
     height: 100
@@ -450,7 +450,7 @@ MonoBehaviour:
   storedData:
     nodeName: 
     dialogueChoice: 
-    miniGameValue: 
+    miniGameValue: 2
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
@@ -475,7 +475,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1791
+    x: 1792
     y: 252
     width: 200
     height: 100
