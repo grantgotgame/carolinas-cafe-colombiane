@@ -691,10 +691,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1978667671}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 496.4534, y: -179.03}
-  m_SizeDelta: {x: -992.9058, y: -358.06}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -210, y: 360.97}
+  m_SizeDelta: {x: 927.0942, y: 721.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &510276846
 MonoBehaviour:
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0d714dcb35ec39a4b8ab4fb23a9e2ea9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c07c8bcaad607a540ae811c1505cd95b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -944,7 +944,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1830102278}
         m_TargetAssemblyTypeName: DayManager, Assembly-CSharp
-        m_MethodName: StartNextNodeGraph
+        m_MethodName: OnNodeGraphFinished
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1433,14 +1433,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lSpeakerObject: {fileID: 365401900}
-  lNonSpeakerObject: {fileID: 510276844}
+  lNonSpeakerImage: {fileID: 510276846}
   lDialogNameText: {fileID: 1897931805}
   lDialogText: {fileID: 1828603675}
   lDialogObject: {fileID: 1606242128}
   lDialogNameBadgeImage: {fileID: 430207633}
   lDialogCharacterImage: {fileID: 793618498}
   rSpeakerObject: {fileID: 1496630422}
-  rNonSpeakerObject: {fileID: 1546092745}
+  rNonSpeakerImage: {fileID: 1546092747}
   rDialogNameText: {fileID: 1926433330}
   rDialogText: {fileID: 19207767}
   rDialogObject: {fileID: 1646526698}
@@ -1614,7 +1614,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 273, y: 394.84}
+  m_AnchoredPosition: {x: 233, y: 394.84}
   m_SizeDelta: {x: 1014.081, y: 789.6789}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793618498
@@ -2663,9 +2663,9 @@ RectTransform:
   m_Father: {fileID: 1978667671}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -660, y: -180.06}
-  m_SizeDelta: {x: -995.5493, y: -360.1175}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 212, y: 362}
+  m_SizeDelta: {x: 924.4507, y: 719.8825}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1546092747
 MonoBehaviour:
@@ -2687,7 +2687,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 923ef858d3190ca42a4d024d4d619232, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c07c8bcaad607a540ae811c1505cd95b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3354,9 +3354,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b4708d0886b44a4389a2665b4464be7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBehaviour: {fileID: 572098997}
+  transitionDelay: 1.1
   dialogGraph:
+  - {fileID: 11400000, guid: 21595d036252ca74084688e080d064fb, type: 2}
+  - {fileID: 11400000, guid: 4addc8231e371064a87411a1741acc4e, type: 2}
   - {fileID: 11400000, guid: f1ecfcf08bb0f7740b8bee3146971107, type: 2}
+  - {fileID: 11400000, guid: 886149a4199ec27408a2ea8ce5efb43d, type: 2}
+  - {fileID: 11400000, guid: bed4e0abcd2eb474da59c397267a8122, type: 2}
 --- !u!4 &1830102279
 Transform:
   m_ObjectHideFlags: 0
@@ -3525,10 +3529,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 430207632}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -104, y: -46}
+  m_SizeDelta: {x: 235, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1897931805
 MonoBehaviour:
@@ -3662,7 +3666,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 235, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1926433330
 MonoBehaviour:
@@ -3684,7 +3688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Beatriz
+  m_text: Alejandro
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 605433b68313d491a8ab88bc03a41651, type: 2}
   m_sharedMaterial: {fileID: 2830636965969884548, guid: 605433b68313d491a8ab88bc03a41651, type: 2}
