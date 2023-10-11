@@ -40,6 +40,8 @@ namespace cherrydev
 
         public static event Action<char> OnDialogTextCharWrote;
 
+        public static event Action<Character, Character, bool> OnLastNode;
+
         private void Awake() {
             if (Instance == null) Instance = this;
             else Destroy(gameObject);
@@ -95,6 +97,10 @@ namespace cherrydev
 
                 OnSentenceNodeActive?.Invoke(currentNode.storedData);
                 OnSentenceNodeStart?.Invoke(character, otherCharacter, currentNode.storedData.isOnLeftSide);
+
+                if (sentenceNode.childNode == null) {
+                    OnLastNode?.Invoke(character, otherCharacter, currentNode.storedData.isOnLeftSide);
+                }
 
                 WriteDialogText(sentenceNode.GetSentenceText());
             }
@@ -165,8 +171,7 @@ namespace cherrydev
             }
 
             yield return new WaitUntil(() => IsEndCurrentNode());
-
-            OnDialogSentenceEnd?.Invoke();
+            
             CheckForDialogNextNode();
         }
 
@@ -186,8 +191,8 @@ namespace cherrydev
             {
                 SentenceNode sentenceNode = (SentenceNode)currentNode;
 
-                if (sentenceNode.childNode != null)
-                {
+                if (sentenceNode.childNode != null) {
+                    OnDialogSentenceEnd?.Invoke();
                     currentNode = sentenceNode.childNode;
                     HandleDialogGraphCurrentNode(currentNode);
                 }

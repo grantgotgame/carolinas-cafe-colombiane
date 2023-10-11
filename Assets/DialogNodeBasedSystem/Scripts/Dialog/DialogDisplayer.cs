@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace cherrydev
@@ -56,10 +57,16 @@ namespace cherrydev
         /// <summary>
         /// Disable dialog answer and sentence panel
         /// </summary>
-        public void DisableDialogPanel()
+        private void DisableDialogPanel() {
+            StartCoroutine(TransitionToMinigame());
+            dialogSentencePanel.TransitionToMinigame();
+        }
+
+        IEnumerator TransitionToMinigame()
         {
-            DisableDialogAnswerPanel();
-            DisableDialogSentencePanel(null);
+            yield return new WaitForSeconds(1f);
+
+            Loader.Instance.PlayMinigame();
         }
 
         /// <summary>

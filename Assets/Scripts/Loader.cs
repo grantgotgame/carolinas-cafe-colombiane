@@ -4,8 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Loader : MonoBehaviour {
+    public static Loader Instance { get; private set; }
+
     [SerializeField] private Animator transition;
     [SerializeField, Range(0f, 5f)] private float transitionSeconds;
+
+    private void Awake() {
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+    }
 
     public void PlayMinigame() {
         StartCoroutine(LoadLevel(1));

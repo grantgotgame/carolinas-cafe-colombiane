@@ -12,6 +12,7 @@ namespace cherrydev
         [SerializeField] private GameObject lNonSpeakerObject;
         [SerializeField] private TextMeshProUGUI lDialogNameText;
         [SerializeField] private TextMeshProUGUI lDialogText;
+        [SerializeField] private GameObject lDialogObject;
         [SerializeField] private Image lDialogNameBadgeImage;
         [SerializeField] private Image lDialogCharacterImage;
         [Header("Right Speaker"), Space()]
@@ -19,6 +20,7 @@ namespace cherrydev
         [SerializeField] private GameObject rNonSpeakerObject;
         [SerializeField] private TextMeshProUGUI rDialogNameText;
         [SerializeField] private TextMeshProUGUI rDialogText;
+        [SerializeField] private GameObject rDialogObject;
         [SerializeField] private Image rDialogNameBadgeImage;
         [SerializeField] private Image rDialogCharacterImage;
 
@@ -49,9 +51,9 @@ namespace cherrydev
                 lDialogNameBadgeImage.sprite = character.nameBadgeSprite;
                 lDialogCharacterImage.sprite = character.characterSprite;
             } else {
-                lDialogNameText.text = character.name;
-                lDialogNameBadgeImage.sprite = character.nameBadgeSprite;
-                lDialogCharacterImage.sprite = character.characterSprite;
+                rDialogNameText.text = character.name;
+                rDialogNameBadgeImage.sprite = character.nameBadgeSprite;
+                rDialogCharacterImage.sprite = character.characterSprite;
             }
             /*rDialogNameText.text = name;
 
@@ -79,6 +81,8 @@ namespace cherrydev
 
         public void ActivatePanels(DialogData data) {
             isLeftSpeaker = data.isOnLeftSide;
+            rDialogObject.SetActive(true);
+            lDialogObject.SetActive(true);
             lSpeakerObject.SetActive(isLeftSpeaker);
             lNonSpeakerObject.SetActive(isLeftSpeaker);
             rSpeakerObject.SetActive(!isLeftSpeaker);
@@ -95,6 +99,20 @@ namespace cherrydev
             rDialogText.gameObject.SetActive(false);
             lNonSpeakerObject.SetActive(false);
             rNonSpeakerObject.SetActive(false);
+        }
+
+        public void TransitionToMinigame() {
+            lSpeakerObject.SetActive(true);
+            rSpeakerObject.SetActive(true);
+            lNonSpeakerObject.SetActive(false);
+            rNonSpeakerObject.SetActive(false);
+            rDialogObject.SetActive(false);
+            lDialogObject.SetActive(false);
+        }
+
+        public void SetupMinigameSprites(Character speak, Character speak_other, bool isLeft) {
+            lDialogCharacterImage.sprite = (isLeft) ? speak.characterSprite : speak_other.characterSprite;
+            rDialogCharacterImage.sprite = (isLeft) ? speak_other.characterSprite : speak.characterSprite;
         }
     }
 }

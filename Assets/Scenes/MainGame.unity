@@ -384,7 +384,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -507.04, y: 394.84}
+  m_AnchoredPosition: {x: -232, y: 394.84}
   m_SizeDelta: {x: 1014.081, y: 789.6789}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &147588118
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0d714dcb35ec39a4b8ab4fb23a9e2ea9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c07c8bcaad607a540ae811c1505cd95b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -934,7 +934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54577d38420c01d44a9b28330b6a8517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogCharDelay: 0.03
+  dialogCharDelay: 0.001
   nextSentenceKeyCode: 200000004301000044010000
   onDialogStart:
     m_PersistentCalls:
@@ -1436,12 +1436,14 @@ MonoBehaviour:
   lNonSpeakerObject: {fileID: 510276844}
   lDialogNameText: {fileID: 1897931805}
   lDialogText: {fileID: 1828603675}
+  lDialogObject: {fileID: 1606242128}
   lDialogNameBadgeImage: {fileID: 430207633}
   lDialogCharacterImage: {fileID: 793618498}
   rSpeakerObject: {fileID: 1496630422}
   rNonSpeakerObject: {fileID: 1546092745}
   rDialogNameText: {fileID: 1926433330}
   rDialogText: {fileID: 19207767}
+  rDialogObject: {fileID: 1646526698}
   rDialogNameBadgeImage: {fileID: 640610549}
   rDialogCharacterImage: {fileID: 147588118}
 --- !u!1 &740486931
@@ -2849,7 +2851,7 @@ GameObject:
   - component: {fileID: 1606242131}
   - component: {fileID: 1606242130}
   m_Layer: 5
-  m_Name: Dialog Box (1)
+  m_Name: Dialog Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
