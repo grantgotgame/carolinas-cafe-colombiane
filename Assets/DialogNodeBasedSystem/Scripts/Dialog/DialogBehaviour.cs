@@ -190,9 +190,9 @@ namespace cherrydev
             if (currentNode.GetType() == typeof(SentenceNode))
             {
                 SentenceNode sentenceNode = (SentenceNode)currentNode;
+                OnDialogSentenceEnd?.Invoke();
 
                 if (sentenceNode.childNode != null) {
-                    OnDialogSentenceEnd?.Invoke();
                     currentNode = sentenceNode.childNode;
                     HandleDialogGraphCurrentNode(currentNode);
                 }
