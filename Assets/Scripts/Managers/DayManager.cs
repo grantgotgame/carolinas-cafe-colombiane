@@ -27,6 +27,7 @@ public class DayManager : MonoBehaviour
         dayCollection.Add(dayOne);
         dayCollection.Add(dayTwo);
         day = 0;
+        currentDay = dayCollection[day++];
     }
 
     private void Start() {

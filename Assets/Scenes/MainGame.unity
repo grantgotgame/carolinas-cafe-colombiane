@@ -3365,7 +3365,7 @@ MonoBehaviour:
     currentDialogue: 0
   dayTwo:
     dialogGraphs:
-    - {fileID: 11400000, guid: 4addc8231e371064a87411a1741acc4e, type: 2}
+    - {fileID: 11400000, guid: c3239065664612f44990784df3534b2e, type: 2}
     currentDialogue: 0
 --- !u!4 &1830102279
 Transform:
