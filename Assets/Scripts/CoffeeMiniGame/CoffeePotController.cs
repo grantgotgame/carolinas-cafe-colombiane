@@ -44,7 +44,20 @@ namespace CoffeeMinigame {
         }
 
         IEnumerator EndMiniGame() {
-            MiniGameResult.SetResult(streak.ToString());
+            // NOTE: Currently, Dialog needs Result set to "1" for Mal,
+            // "2" for Bien, "3" for Perfecto. Let me know if you'd like
+            // to change this design.
+            switch (streak) {
+                case 0:
+                    MiniGameResult.SetResult("1"); // "1" = Mal
+                    break;
+                case 1 or 2:
+                    MiniGameResult.SetResult("2"); // "2" = Bien
+                    break;
+                default:
+                    MiniGameResult.SetResult("3"); // "3" = Perfecto
+                    break;
+            }
 
             yield return new WaitForSeconds(transitionDelay);
 
