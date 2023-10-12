@@ -3355,12 +3355,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionDelay: 1.1
-  dialogGraph:
-  - {fileID: 11400000, guid: f1ecfcf08bb0f7740b8bee3146971107, type: 2}
-  - {fileID: 11400000, guid: 886149a4199ec27408a2ea8ce5efb43d, type: 2}
-  - {fileID: 11400000, guid: 4addc8231e371064a87411a1741acc4e, type: 2}
-  - {fileID: 11400000, guid: bed4e0abcd2eb474da59c397267a8122, type: 2}
-  - {fileID: 11400000, guid: 21595d036252ca74084688e080d064fb, type: 2}
+  dayOne:
+    dialogGraphs:
+    - {fileID: 11400000, guid: f1ecfcf08bb0f7740b8bee3146971107, type: 2}
+    - {fileID: 11400000, guid: 886149a4199ec27408a2ea8ce5efb43d, type: 2}
+    - {fileID: 11400000, guid: 4addc8231e371064a87411a1741acc4e, type: 2}
+    - {fileID: 11400000, guid: bed4e0abcd2eb474da59c397267a8122, type: 2}
+    - {fileID: 11400000, guid: 21595d036252ca74084688e080d064fb, type: 2}
+    currentDialogue: 0
+  dayTwo:
+    dialogGraphs:
+    - {fileID: 11400000, guid: 4addc8231e371064a87411a1741acc4e, type: 2}
+    currentDialogue: 0
 --- !u!4 &1830102279
 Transform:
   m_ObjectHideFlags: 0
