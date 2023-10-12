@@ -13,7 +13,8 @@ public class DayManager : MonoBehaviour
     public DayDialogue dayTwo;
 
     private DayDialogue currentDay;
-    private List<DayDialogue> dayCollection;
+    private List<DayDialogue> dayCollection = new List<DayDialogue>();
+    private int day;
 
     private void Awake() {
         if (Instance == null) {
@@ -25,6 +26,7 @@ public class DayManager : MonoBehaviour
         }
         dayCollection.Add(dayOne);
         dayCollection.Add(dayTwo);
+        day = 0;
     }
 
     private void Start() {
@@ -38,6 +40,7 @@ public class DayManager : MonoBehaviour
             DialogBehaviour.Instance.AddListenerToOnDialogFinished(OnNodeGraphFinished);
         }
         if (result == string.Empty) {
+            if (currentDay.IsOutOfDialogue()) currentDay = dayCollection[day++];
             DialogBehaviour.Instance.StartDialog(currentDay.GetCurrentConversation());
         } else {
             DialogBehaviour.Instance.StartDialog(currentDay.GetNextConversation(), result);
@@ -78,5 +81,8 @@ public class DayDialogue {
 
     public DialogNodeGraph GetNextConversation() {
         return dialogGraphs[currentDialogue].nextDialog;
+    }
+    public bool IsOutOfDialogue() {
+        return currentDialogue >= dialogGraphs.Count;
     }
 }
