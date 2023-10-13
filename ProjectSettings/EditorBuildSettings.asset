@@ -7,10 +7,8 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainGame.unity
-    guid: 9c5d38ab6ba2b2e47ae168be5e6fc250
+    guid: bd04b2d5105e68743af614baa99b9e24
   - enabled: 1
     path: Assets/Scenes/StackingMiniGame.unity
-    guid: 60aa7c5f79421484ba31e67de53549b2
-  m_configObjects:
-    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 6795fd67d65ca414b91e45786dbf9cf0, type: 2}
-    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 8cace268194086044adc99cb68a5236d, type: 2}
+    guid: 649bdf8a48d89f84ab6d0544a7d7fc40
+  m_configObjects: {}

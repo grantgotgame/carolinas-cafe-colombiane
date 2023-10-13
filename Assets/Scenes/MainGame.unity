@@ -561,7 +561,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &365401901
 RectTransform:
   m_ObjectHideFlags: 0
@@ -857,7 +857,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2053,7 +2053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &972764656
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2544,7 +2544,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3208,7 +3208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1828603674
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3248,7 +3248,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ay, hola! I'm just researching some new recipes to liven up my menu.
+  m_text: 'While I''m sad to see you go, I''m happy you''ve found your calling en
+    la vida. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8ecd17aeceaba4c10b42ac497ccbfcff, type: 2}
   m_sharedMaterial: {fileID: 2830636965969884548, guid: 8ecd17aeceaba4c10b42ac497ccbfcff, type: 2}
@@ -3336,7 +3337,7 @@ GameObject:
   - component: {fileID: 1830102279}
   - component: {fileID: 1830102278}
   m_Layer: 0
-  m_Name: Day One Manager
+  m_Name: Day Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3355,12 +3356,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionDelay: 1.1
-  dialogGraph:
-  - {fileID: 11400000, guid: f1ecfcf08bb0f7740b8bee3146971107, type: 2}
-  - {fileID: 11400000, guid: 886149a4199ec27408a2ea8ce5efb43d, type: 2}
-  - {fileID: 11400000, guid: 4addc8231e371064a87411a1741acc4e, type: 2}
-  - {fileID: 11400000, guid: bed4e0abcd2eb474da59c397267a8122, type: 2}
-  - {fileID: 11400000, guid: 21595d036252ca74084688e080d064fb, type: 2}
+  dayOne:
+    dialogGraphs:
+    - {fileID: 11400000, guid: f1ecfcf08bb0f7740b8bee3146971107, type: 2}
+    - {fileID: 11400000, guid: 886149a4199ec27408a2ea8ce5efb43d, type: 2}
+    - {fileID: 11400000, guid: 4addc8231e371064a87411a1741acc4e, type: 2}
+    - {fileID: 11400000, guid: bed4e0abcd2eb474da59c397267a8122, type: 2}
+    - {fileID: 11400000, guid: 21595d036252ca74084688e080d064fb, type: 2}
+    currentDialogue: 0
+  dayTwo:
+    dialogGraphs:
+    - {fileID: 11400000, guid: c3239065664612f44990784df3534b2e, type: 2}
+    - {fileID: 11400000, guid: 81ed4db35240d554f8e2ac03806fcfce, type: 2}
+    - {fileID: 11400000, guid: b0996c1762f4c7141b1239c3dcff85c3, type: 2}
+    - {fileID: 11400000, guid: ee7d1e66667224146b0ff3fecfcd53ad, type: 2}
+    - {fileID: 11400000, guid: 75db3832b6a914c4a842d4b92bb4ac97, type: 2}
+    currentDialogue: 0
+  dayThree:
+    dialogGraphs:
+    - {fileID: 11400000, guid: 78193cc1f362e3d40b3c725167d69abd, type: 2}
+    - {fileID: 11400000, guid: cda59b928ec06644ca0350a9360111f3, type: 2}
+    - {fileID: 11400000, guid: 931758ade1319fb44804cf29f57b0e4b, type: 2}
+    - {fileID: 11400000, guid: 5e9cbb91d5cc34b468ad62b1558c5af7, type: 2}
+    - {fileID: 11400000, guid: 220cd95787114bc49bbc44ca96e374af, type: 2}
+    currentDialogue: 0
+  dayFour:
+    dialogGraphs:
+    - {fileID: 11400000, guid: e8529acd3c1b71b429fd0edbda6e8f8c, type: 2}
+    - {fileID: 11400000, guid: e1bf9315331efc948ba1dadb23c7d162, type: 2}
+    - {fileID: 11400000, guid: 8c35a67c0ce771240a5ff886ccffd836, type: 2}
+    - {fileID: 11400000, guid: ae8728f4f47ecce4194034ff227ad16a, type: 2}
+    - {fileID: 11400000, guid: d87e636317b52aa4ba410f266211a319, type: 2}
+    currentDialogue: 0
+  dayFive:
+    dialogGraphs:
+    - {fileID: 11400000, guid: 4c4d5239bdbc9004da35de8f066c36cd, type: 2}
+    - {fileID: 11400000, guid: 929ca2cb47625784595b58ab9daa1ae6, type: 2}
+    - {fileID: 11400000, guid: 5af29bc61c4c3df439066ce5a75bb69f, type: 2}
+    - {fileID: 11400000, guid: 05f163981e353074d960370b65bdde69, type: 2}
+    - {fileID: 11400000, guid: 0a65808f70c0ca941bf313709b04a8d9, type: 2}
+    currentDialogue: 0
 --- !u!4 &1830102279
 Transform:
   m_ObjectHideFlags: 0
@@ -3931,6 +3966,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3686070505587151961, guid: 6ffa54976cee690429da2e3562f376ac, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6607507497862352291, guid: 6ffa54976cee690429da2e3562f376ac, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
