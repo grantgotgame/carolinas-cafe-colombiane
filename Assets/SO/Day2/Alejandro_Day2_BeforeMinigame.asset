@@ -60,7 +60,7 @@ MonoBehaviour:
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 0
   count: 2
   storedData:
@@ -202,7 +202,7 @@ MonoBehaviour:
   - {fileID: 5621308924228090038}
   - {fileID: 6773365534587484731}
   - {fileID: -1132634251394859006}
-  nextDialog: {fileID: 0}
+  nextDialog: {fileID: 11400000, guid: 4d5d06b6906977048924daa86145357d, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
 --- !u!114 &275951378976146315
@@ -221,12 +221,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 476
+    x: 475
     y: 459
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 2
   storedData:
@@ -262,7 +262,7 @@ MonoBehaviour:
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 0
   count: 2
   storedData:

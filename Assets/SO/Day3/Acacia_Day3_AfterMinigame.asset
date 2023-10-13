@@ -1,210 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5330901759658240618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 7c Acacia
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 1570
-    y: 323
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 0
-  character: 5
-  count: 7
-  storedData:
-    nodeName: 
-    dialogueChoice: 
-    miniGameValue: 
-    isOnLeftSide: 0
-    otherSpeaker: 0
-  sentence:
-    sentence: '*Smiles* I won''t let you down, Carolinita!'
-  parentNode: {fileID: 6105877412798163507}
-  childNode: {fileID: 5569214508655569630}
-  letter: c
---- !u!114 &-4185444306467765107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 2c Carolina
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 423
-    y: 327
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 0
-  character: 0
-  count: 2
-  storedData:
-    nodeName: 
-    dialogueChoice: 
-    miniGameValue: 
-    isOnLeftSide: 1
-    otherSpeaker: 5
-  sentence:
-    sentence: So, wha happun?
-  parentNode: {fileID: -1619312170484715179}
-  childNode: {fileID: 4528466143863795688}
-  letter: c
---- !u!114 &-3893654160483447961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 5c Acacia
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 1098
-    y: 321
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 0
-  character: 5
-  count: 5
-  storedData:
-    nodeName: 
-    dialogueChoice: 
-    miniGameValue: 
-    isOnLeftSide: 0
-    otherSpeaker: 0
-  sentence:
-    sentence: You really think so?
-  parentNode: {fileID: 6568762375426557624}
-  childNode: {fileID: 6105877412798163507}
-  letter: c
---- !u!114 &-1619312170484715179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 1c Carolina
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 118
-    y: 448
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 0
-  character: 0
-  count: 1
-  storedData:
-    nodeName: 
-    dialogueChoice: 
-    miniGameValue: 
-    isOnLeftSide: 1
-    otherSpeaker: 5
-  sentence:
-    sentence: "Sorry Acacia, la cagu\xE9."
-  parentNode: {fileID: 4132824026192502562}
-  childNode: {fileID: -4185444306467765107}
-  letter: c
---- !u!114 &-986198960875581146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0b Acacia
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: -164
-    y: 336
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 0
-  character: 5
-  count: 0
-  storedData:
-    nodeName: 
-    dialogueChoice: 
-    miniGameValue: 2
-    isOnLeftSide: 0
-    otherSpeaker: 0
-  sentence:
-    sentence: Mmmmm, bien.
-  parentNode: {fileID: 0}
-  childNode: {fileID: 8700293932115300753}
-  letter: b
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
-  m_Name: Acacia_Day2_AfterMinigame
-  m_EditorClassIdentifier: 
-  nodesList:
-  - {fileID: 4132824026192502562}
-  - {fileID: -986198960875581146}
-  - {fileID: 6769841916456517205}
-  - {fileID: 8432404315595282929}
-  - {fileID: 8700293932115300753}
-  - {fileID: -1619312170484715179}
-  - {fileID: -4185444306467765107}
-  - {fileID: 4528466143863795688}
-  - {fileID: 6568762375426557624}
-  - {fileID: -3893654160483447961}
-  - {fileID: 6105877412798163507}
-  - {fileID: -5330901759658240618}
-  - {fileID: 5569214508655569630}
-  nextDialog: {fileID: 0}
-  nodeToDrawLineFrom: {fileID: 0}
-  linePosition: {x: 0, y: 0}
---- !u!114 &4132824026192502562
+--- !u!114 &-7997546229538959697
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -162
-    y: 452
+    x: -1305
+    y: 521
     width: 200
     height: 100
   isDragging: 0
@@ -235,11 +31,11 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: '*Making a face*'
+    sentence: Does it . . . smell burnt here o estoy loca?
   parentNode: {fileID: 0}
-  childNode: {fileID: -1619312170484715179}
+  childNode: {fileID: 5269798587566030205}
   letter: c
---- !u!114 &4528466143863795688
+--- !u!114 &-4745814456433439098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -249,18 +45,53 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 3c Acacia
+  m_Name: 5 Acacia
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 650
-    y: 328
+    x: 149
+    y: 365
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
+  character: 5
+  count: 5
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: I guess I should give it a look then.
+  parentNode: {fileID: 7070825452077921786}
+  childNode: {fileID: 7028695307559917019}
+  letter: 
+--- !u!114 &-2216968302539843195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 3 Acacia
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -418
+    y: 370
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
   character: 5
   count: 3
   storedData:
@@ -270,13 +101,12 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: Pueeeees . . . I've come to this town as una artista viajera. I've
-      heard las oportunidades here are better, but I'm not sure if I'm actually skilled
-      enough to pull this through . . .
-  parentNode: {fileID: -4185444306467765107}
-  childNode: {fileID: 6568762375426557624}
-  letter: c
---- !u!114 &5569214508655569630
+    sentence: I can't just sit on my hands all day, I have to pick myself back up
+      and find myself un trabajo!
+  parentNode: {fileID: 1713485128899867527}
+  childNode: {fileID: 7070825452077921786}
+  letter: 
+--- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,105 +115,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 8c Carolina
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: Acacia_Day3_AfterMinigame
   m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 1838
-    y: 321
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 0
-  character: 0
-  count: 8
-  storedData:
-    nodeName: 
-    dialogueChoice: 
-    miniGameValue: 
-    isOnLeftSide: 1
-    otherSpeaker: 5
-  sentence:
-    sentence: That's the spirit!
-  parentNode: {fileID: -5330901759658240618}
-  childNode: {fileID: 0}
-  letter: c
---- !u!114 &6105877412798163507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 6c Carolina
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 1336
-    y: 321
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 0
-  character: 0
-  count: 6
-  storedData:
-    nodeName: 
-    dialogueChoice: 
-    miniGameValue: 
-    isOnLeftSide: 1
-    otherSpeaker: 5
-  sentence:
-    sentence: "Go for it! Follow your coraz\xF3n! *Smiles* This town could use some
-      more performers anyway."
-  parentNode: {fileID: -3893654160483447961}
-  childNode: {fileID: -5330901759658240618}
-  letter: c
---- !u!114 &6568762375426557624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 4c Carolina
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 872
-    y: 325
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 0
-  character: 0
-  count: 4
-  storedData:
-    nodeName: 
-    dialogueChoice: 
-    miniGameValue: 
-    isOnLeftSide: 1
-    otherSpeaker: 5
-  sentence:
-    sentence: Aww, why's that? I've seen your moves, bailas tan bien! And I can tell
-      that you have a lot of passion for this.
-  parentNode: {fileID: 4528466143863795688}
-  childNode: {fileID: -3893654160483447961}
-  letter: c
---- !u!114 &6769841916456517205
+  nodesList:
+  - {fileID: 8602133760039365024}
+  - {fileID: 23429052629100366}
+  - {fileID: -7997546229538959697}
+  - {fileID: 961756232550372099}
+  - {fileID: 7434726603147452961}
+  - {fileID: 5269798587566030205}
+  - {fileID: 1713485128899867527}
+  - {fileID: -2216968302539843195}
+  - {fileID: 7070825452077921786}
+  - {fileID: -4745814456433439098}
+  - {fileID: 7028695307559917019}
+  - {fileID: 7106074917741991838}
+  nextDialog: {fileID: 0}
+  nodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &23429052629100366
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -399,7 +150,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -165
+    x: -1312
     y: 231
     width: 200
     height: 100
@@ -414,11 +165,11 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: S-Still muy goodie-goodie, as always!
+    sentence: This must be your best baking hasta ahora!
   parentNode: {fileID: 0}
-  childNode: {fileID: 8432404315595282929}
+  childNode: {fileID: 961756232550372099}
   letter: a
---- !u!114 &8432404315595282929
+--- !u!114 &961756232550372099
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -428,20 +179,55 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 1a Acacia
+  m_Name: 1a Carolina
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 122
-    y: 226
+    x: -1024
+    y: 229
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 1
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 5
+  sentence:
+    sentence: Espera until you try out my other stuff *Winks*
+  parentNode: {fileID: 23429052629100366}
+  childNode: {fileID: 1713485128899867527}
+  letter: a
+--- !u!114 &1713485128899867527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 2 Acacia
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -677
+    y: 370
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 5
-  count: 1
+  count: 2
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -449,11 +235,158 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: '*Smiles* You got it, chica.'
-  parentNode: {fileID: 6769841916456517205}
-  childNode: {fileID: -4185444306467765107}
-  letter: a
---- !u!114 &8700293932115300753
+    sentence: 'Lina Lina Lina, do you happen to know if there are any local dance
+      clubs or theatres in this town that would be looking for candidatos? '
+  parentNode: {fileID: 5269798587566030205}
+  childNode: {fileID: -2216968302539843195}
+  letter: 
+--- !u!114 &5269798587566030205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 1c Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -1021
+    y: 521
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 1
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 5
+  sentence:
+    sentence: I've got to go back to la cocina to see if the oven's alright, be right
+      back!
+  parentNode: {fileID: -7997546229538959697}
+  childNode: {fileID: 1713485128899867527}
+  letter: c
+--- !u!114 &7028695307559917019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 6 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 452
+    y: 363
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 6
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 5
+  sentence:
+    sentence: And no se preocupe if there's nothing in there for you yet. The board
+      gets updated weekly. So if you're just patient enough, something should eventually
+      show up. ~
+  parentNode: {fileID: -4745814456433439098}
+  childNode: {fileID: 7106074917741991838}
+  letter: 
+--- !u!114 &7070825452077921786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 4 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -137
+    y: 369
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 4
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 5
+  sentence:
+    sentence: There is a bulletin-board near the plaza that's owned by the Art &
+      Cultural Committee, I'm sure it should have something in there that could fit
+      your needs!
+  parentNode: {fileID: -2216968302539843195}
+  childNode: {fileID: -4745814456433439098}
+  letter: 
+--- !u!114 &7106074917741991838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 7 Acacia
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 739
+    y: 360
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 5
+  count: 7
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: "Bueno, now I've got a lead for my plans. Thank you so much Lina querida,
+      \xA1\xA1nos vemos!! Mmwah."
+  parentNode: {fileID: 7028695307559917019}
+  childNode: {fileID: 0}
+  letter: 
+--- !u!114 &7434726603147452961
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -469,8 +402,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 126
-    y: 339
+    x: -1018
+    y: 373
     width: 200
     height: 100
   isDragging: 0
@@ -484,7 +417,43 @@ MonoBehaviour:
     isOnLeftSide: 1
     otherSpeaker: 5
   sentence:
-    sentence: Gracias, Acacia.
-  parentNode: {fileID: -986198960875581146}
-  childNode: {fileID: -4185444306467765107}
+    sentence: It . . . actually isn't supposed to be crunchy. But I'm glad you liked
+      it regardless, supongo.
+  parentNode: {fileID: 8602133760039365024}
+  childNode: {fileID: 1713485128899867527}
+  letter: b
+--- !u!114 &8602133760039365024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0b Acacia
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -1311
+    y: 372
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 5
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 2
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: Oooo, crujiente! I haven't quite tasted it like this ever before!
+  parentNode: {fileID: 0}
+  childNode: {fileID: 7434726603147452961}
   letter: b

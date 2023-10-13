@@ -26,7 +26,7 @@ MonoBehaviour:
   count: 2
   storedData:
     nodeName: 
-    dialogueChoice: 
+    dialogueChoice: 2
     miniGameValue: 
     isOnLeftSide: 1
     otherSpeaker: 4
@@ -97,7 +97,7 @@ MonoBehaviour:
   count: 2
   storedData:
     nodeName: 
-    dialogueChoice: 
+    dialogueChoice: 0
     miniGameValue: 
     isOnLeftSide: 1
     otherSpeaker: 4
@@ -162,12 +162,12 @@ MonoBehaviour:
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 0
   count: 2
   storedData:
     nodeName: 
-    dialogueChoice: 
+    dialogueChoice: 1
     miniGameValue: 
     isOnLeftSide: 1
     otherSpeaker: 4
@@ -197,7 +197,7 @@ MonoBehaviour:
   - {fileID: 554277498100811394}
   - {fileID: -5068825324817472449}
   - {fileID: 1329490928279342093}
-  nextDialog: {fileID: 0}
+  nextDialog: {fileID: 11400000, guid: ed1a28457706d9e47bf819a84455f944, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
 --- !u!114 &554277498100811394
@@ -256,7 +256,7 @@ MonoBehaviour:
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 4
   count: 4
   storedData:
@@ -266,7 +266,8 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: 
+    sentence: "Maybe eating something could help me clear my cabeza a little. Dos
+      arepas, con queso en el medio. Guess un caf\xE9 couldn't hurt either, right?"
   parentNode: {fileID: -5068825324817472449}
   childNode: {fileID: 0}
   letter: c
@@ -291,7 +292,7 @@ MonoBehaviour:
     width: 200
     height: 145
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 0
   count: 1
   storedData:

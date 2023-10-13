@@ -3248,9 +3248,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "I knew it . . . I'd like to call this karma, but la familia es la familia
-    and like I said, I want to help. I can try to talk to mam\xE1 about it. But on
-    one condition, you'll never do anything like that ever again!"
+  m_text: 'While I''m sad to see you go, I''m happy you''ve found your calling en
+    la vida. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8ecd17aeceaba4c10b42ac497ccbfcff, type: 2}
   m_sharedMaterial: {fileID: 2830636965969884548, guid: 8ecd17aeceaba4c10b42ac497ccbfcff, type: 2}
