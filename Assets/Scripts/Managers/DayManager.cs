@@ -9,9 +9,15 @@ public class DayManager : MonoBehaviour
 
     [SerializeField, Range(0f, 5f)] private float transitionDelay;
 
-    [SerializeField] private List<DialogNodeGraph> dialogGraph;
+    public DayDialogue dayOne;
+    public DayDialogue dayTwo;
+    public DayDialogue dayThree;
+    public DayDialogue dayFour;
+    public DayDialogue dayFive;
 
-    private int currentDialog;
+    private DayDialogue currentDay;
+    private List<DayDialogue> dayCollection = new List<DayDialogue>();
+    private int day;
 
     private void Awake() {
         if (Instance == null) {
@@ -21,12 +27,16 @@ public class DayManager : MonoBehaviour
             Instance.OnNodeGraphStarted();
             Destroy(gameObject);
         }
+        dayCollection.Add(dayOne);
+        dayCollection.Add(dayTwo);
+        dayCollection.Add(dayThree);
+        dayCollection.Add(dayFour);
+        dayCollection.Add(dayFive);
+        day = 0;
+        currentDay = dayCollection[day++];
     }
 
     private void Start() {
-        
-        currentDialog = 0;
-        //dialogBehaviour.StartDialog(dialogGraph[currentDialog]);
         OnNodeGraphStarted();
     }
 
@@ -37,15 +47,16 @@ public class DayManager : MonoBehaviour
             DialogBehaviour.Instance.AddListenerToOnDialogFinished(OnNodeGraphFinished);
         }
         if (result == string.Empty) {
-            DialogBehaviour.Instance.StartDialog(dialogGraph[currentDialog]);
+            if (currentDay.IsOutOfDialogue()) currentDay = dayCollection[day++];
+            DialogBehaviour.Instance.StartDialog(currentDay.GetCurrentConversation());
         } else {
-            DialogBehaviour.Instance.StartDialog(dialogGraph[currentDialog].nextDialog, result);
+            DialogBehaviour.Instance.StartDialog(currentDay.GetNextConversation(), result);
         }
     }
 
     public void OnNodeGraphFinished() {
         DialogNodeGraph currentNodeGraph = DialogBehaviour.Instance.GetCurrentDialogNodeGraph();
-        if (dialogGraph.Contains(currentNodeGraph)) {
+        if (currentDay.dialogGraphs.Contains(currentNodeGraph)) {
             StartCoroutine(TransitionToMinigame());
         } else {
             StartCoroutine(TransitionToNextCustomer());
@@ -58,10 +69,27 @@ public class DayManager : MonoBehaviour
         Loader.Instance.PlayMinigame();
     }
     IEnumerator TransitionToNextCustomer() {
-        currentDialog++;
+        currentDay.currentDialogue++;
 
         yield return new WaitForSeconds(transitionDelay);
 
         OnNodeGraphStarted();
+    }
+}
+
+[System.Serializable]
+public class DayDialogue {
+    public List<DialogNodeGraph> dialogGraphs;
+    [HideInInspector] public int currentDialogue = 0;
+
+    public DialogNodeGraph GetCurrentConversation() {
+        return dialogGraphs[currentDialogue];
+    }
+
+    public DialogNodeGraph GetNextConversation() {
+        return dialogGraphs[currentDialogue].nextDialog;
+    }
+    public bool IsOutOfDialogue() {
+        return currentDialogue >= dialogGraphs.Count;
     }
 }
