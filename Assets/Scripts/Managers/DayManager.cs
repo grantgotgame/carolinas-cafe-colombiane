@@ -11,6 +11,9 @@ public class DayManager : MonoBehaviour
 
     public DayDialogue dayOne;
     public DayDialogue dayTwo;
+    public DayDialogue dayThree;
+    public DayDialogue dayFour;
+    public DayDialogue dayFive;
 
     private DayDialogue currentDay;
     private List<DayDialogue> dayCollection = new List<DayDialogue>();
@@ -26,6 +29,9 @@ public class DayManager : MonoBehaviour
         }
         dayCollection.Add(dayOne);
         dayCollection.Add(dayTwo);
+        dayCollection.Add(dayThree);
+        dayCollection.Add(dayFour);
+        dayCollection.Add(dayFive);
         day = 0;
         currentDay = dayCollection[day++];
     }

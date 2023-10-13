@@ -3367,6 +3367,34 @@ MonoBehaviour:
   dayTwo:
     dialogGraphs:
     - {fileID: 11400000, guid: c3239065664612f44990784df3534b2e, type: 2}
+    - {fileID: 11400000, guid: 81ed4db35240d554f8e2ac03806fcfce, type: 2}
+    - {fileID: 11400000, guid: b0996c1762f4c7141b1239c3dcff85c3, type: 2}
+    - {fileID: 11400000, guid: ee7d1e66667224146b0ff3fecfcd53ad, type: 2}
+    - {fileID: 11400000, guid: 75db3832b6a914c4a842d4b92bb4ac97, type: 2}
+    currentDialogue: 0
+  dayThree:
+    dialogGraphs:
+    - {fileID: 11400000, guid: 78193cc1f362e3d40b3c725167d69abd, type: 2}
+    - {fileID: 11400000, guid: cda59b928ec06644ca0350a9360111f3, type: 2}
+    - {fileID: 11400000, guid: 931758ade1319fb44804cf29f57b0e4b, type: 2}
+    - {fileID: 11400000, guid: 5e9cbb91d5cc34b468ad62b1558c5af7, type: 2}
+    - {fileID: 11400000, guid: 220cd95787114bc49bbc44ca96e374af, type: 2}
+    currentDialogue: 0
+  dayFour:
+    dialogGraphs:
+    - {fileID: 11400000, guid: e8529acd3c1b71b429fd0edbda6e8f8c, type: 2}
+    - {fileID: 11400000, guid: e1bf9315331efc948ba1dadb23c7d162, type: 2}
+    - {fileID: 11400000, guid: 8c35a67c0ce771240a5ff886ccffd836, type: 2}
+    - {fileID: 11400000, guid: ae8728f4f47ecce4194034ff227ad16a, type: 2}
+    - {fileID: 11400000, guid: d87e636317b52aa4ba410f266211a319, type: 2}
+    currentDialogue: 0
+  dayFive:
+    dialogGraphs:
+    - {fileID: 11400000, guid: 4c4d5239bdbc9004da35de8f066c36cd, type: 2}
+    - {fileID: 11400000, guid: 929ca2cb47625784595b58ab9daa1ae6, type: 2}
+    - {fileID: 11400000, guid: 5af29bc61c4c3df439066ce5a75bb69f, type: 2}
+    - {fileID: 11400000, guid: 05f163981e353074d960370b65bdde69, type: 2}
+    - {fileID: 11400000, guid: 0a65808f70c0ca941bf313709b04a8d9, type: 2}
     currentDialogue: 0
 --- !u!4 &1830102279
 Transform:
