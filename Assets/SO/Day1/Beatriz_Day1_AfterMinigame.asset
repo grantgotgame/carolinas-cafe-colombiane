@@ -269,7 +269,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: That sure tasted bien, posiblemente I was too hasty to judge you on
+    sentence: That sure tasted rico, posiblemente I was too hasty to judge you on
       your time spent ahora. It seems you're putting it to good use after all.
   parentNode: {fileID: 0}
   childNode: {fileID: 1709156060217591742}
