@@ -1,316 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3595768328904062241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Beatriz
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: -121
-    y: 255
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 0
-  character: 1
-  count: 0
-  storedData:
-    nodeName: 
-    dialogueChoice: 
-    miniGameValue: 
-    isOnLeftSide: 0
-    otherSpeaker: 0
-  sentence:
-    sentence: Hola Carolina. Somehow it feels so . . . gloomy today.
-  parentNode: {fileID: 0}
-  childNode: {fileID: 3924634122061330406}
-  letter: 
---- !u!114 &-1865076720373619432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 2a Carolina
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 418
-    y: 194
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 1
-  character: 0
-  count: 2
-  storedData:
-    nodeName: 
-    dialogueChoice: 0
-    miniGameValue: 
-    isOnLeftSide: 1
-    otherSpeaker: 1
-  sentence:
-    sentence: Well, it has been raining a lot.
-  parentNode: {fileID: 3924634122061330406}
-  childNode: {fileID: 5696776384943779229}
-  letter: a
---- !u!114 &-1233098429298022851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 3c Beatriz
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 677
-    y: 443
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 0
-  character: 1
-  count: 3
-  storedData:
-    nodeName: 
-    dialogueChoice: 
-    miniGameValue: 
-    isOnLeftSide: 0
-    otherSpeaker: 0
-  sentence:
-    sentence: I'll have to see about this dulce.
-  parentNode: {fileID: 7618539075023049842}
-  childNode: {fileID: -655888089642569973}
-  letter: c
---- !u!114 &-655888089642569973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 4c Beatriz
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 1011
-    y: 328
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 0
-  character: 1
-  count: 4
-  storedData:
-    nodeName: 
-    dialogueChoice: 
-    miniGameValue: 
-    isOnLeftSide: 0
-    otherSpeaker: 0
-  sentence:
-    sentence: Could you please make me some chocolate caliente con queso to cheer
-      me up?
-  parentNode: {fileID: -1233098429298022851}
-  childNode: {fileID: 0}
-  letter: c
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
-  m_Name: Beatriz_Day2_BeforeMinigame
-  m_EditorClassIdentifier: 
-  nodesList:
-  - {fileID: -3595768328904062241}
-  - {fileID: 3924634122061330406}
-  - {fileID: -1865076720373619432}
-  - {fileID: 7117857993593169638}
-  - {fileID: 7618539075023049842}
-  - {fileID: 5696776384943779229}
-  - {fileID: 4461108587365215855}
-  - {fileID: -1233098429298022851}
-  - {fileID: -655888089642569973}
-  nextDialog: {fileID: 0}
-  nodeToDrawLineFrom: {fileID: 0}
-  linePosition: {x: 0, y: 0}
---- !u!114 &3924634122061330406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
-  m_Name: 1 Carolina
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 126
-    y: 243
-    width: 200
-    height: 145
-  isDragging: 0
-  isSelected: 0
-  character: 0
-  count: 1
-  storedData:
-    nodeName: 
-    dialogueChoice: 
-    miniGameValue: 
-    isOnLeftSide: 1
-    otherSpeaker: 1
-  answers:
-  - answer: It's been raining a lot
-  - answer: Are you sure it's the weather?
-  - answer: Something sweet will cheer you up
-  parentSentenceNode: {fileID: -3595768328904062241}
-  childSentenceNodes:
-  - {fileID: -1865076720373619432}
-  - {fileID: 7117857993593169638}
-  - {fileID: 7618539075023049842}
---- !u!114 &4461108587365215855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 3b Beatriz
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 696
-    y: 318
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 0
-  character: 1
-  count: 3
-  storedData:
-    nodeName: 
-    dialogueChoice: 
-    miniGameValue: 
-    isOnLeftSide: 0
-    otherSpeaker: 0
-  sentence:
-    sentence: I'm not sure if I want to talk about it ahora . . .
-  parentNode: {fileID: 7117857993593169638}
-  childNode: {fileID: -655888089642569973}
-  letter: b
---- !u!114 &5696776384943779229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 3a Beatriz
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 683
-    y: 194
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 0
-  character: 1
-  count: 3
-  storedData:
-    nodeName: 
-    dialogueChoice: 
-    miniGameValue: 
-    isOnLeftSide: 0
-    otherSpeaker: 0
-  sentence:
-    sentence: "S\xED . . ."
-  parentNode: {fileID: -1865076720373619432}
-  childNode: {fileID: -655888089642569973}
-  letter: a
---- !u!114 &7117857993593169638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 2b Carolina
-  m_EditorClassIdentifier: 
-  connectedNodesList: []
-  nodeGraph: {fileID: 11400000}
-  rect:
-    serializedVersion: 2
-    x: 430
-    y: 314
-    width: 200
-    height: 100
-  isDragging: 0
-  isSelected: 1
-  character: 0
-  count: 2
-  storedData:
-    nodeName: 
-    dialogueChoice: 1
-    miniGameValue: 
-    isOnLeftSide: 1
-    otherSpeaker: 1
-  sentence:
-    sentence: Are you sure el clima is the only thing that's wrong?
-  parentNode: {fileID: 3924634122061330406}
-  childNode: {fileID: 4461108587365215855}
-  letter: b
---- !u!114 &7618539075023049842
+--- !u!114 &-8380493023018248569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -326,23 +16,296 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 423
-    y: 442
+    x: 300
+    y: 482
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 2
   storedData:
     nodeName: 
-    dialogueChoice: 2
+    dialogueChoice: 
     miniGameValue: 
     isOnLeftSide: 1
-    otherSpeaker: 1
+    otherSpeaker: 4
   sentence:
-    sentence: Awww . . . abuela. I know just the thing that will cheer you up, algo
-      dulce!
-  parentNode: {fileID: 3924634122061330406}
-  childNode: {fileID: -1233098429298022851}
+    sentence: I bet your new training's making you hungrier than usual. I'll make
+      you algo muy rico to keep up your motivation!
+  parentNode: {fileID: 2902127690111533796}
+  childNode: {fileID: -5068825324817472449}
   letter: c
+--- !u!114 &-7917716492398346459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Santiago
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -255
+    y: 286
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 4
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: Caro . . .
+  parentNode: {fileID: 0}
+  childNode: {fileID: 2902127690111533796}
+  letter: 
+--- !u!114 &-5991920689170370419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 2a Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 302
+    y: 245
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 2
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 4
+  sentence:
+    sentence: Santiago, have you started training again like we discussed ayer?
+  parentNode: {fileID: 2902127690111533796}
+  childNode: {fileID: 554277498100811394}
+  letter: a
+--- !u!114 &-5068825324817472449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 3c Santiago
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 676
+    y: 473
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 4
+  count: 3
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: Mmhm . . .
+  parentNode: {fileID: -8380493023018248569}
+  childNode: {fileID: 1329490928279342093}
+  letter: c
+--- !u!114 &-1831620899686916348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 2b Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 292
+    y: 358
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 2
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 4
+  sentence:
+    sentence: Hey. Did you come here to comer, to hablar, or both?
+  parentNode: {fileID: 2902127690111533796}
+  childNode: {fileID: 554277498100811394}
+  letter: b
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: Santiago_Day2_BeforeMinigame
+  m_EditorClassIdentifier: 
+  nodesList:
+  - {fileID: -7917716492398346459}
+  - {fileID: 2902127690111533796}
+  - {fileID: -5991920689170370419}
+  - {fileID: -1831620899686916348}
+  - {fileID: -8380493023018248569}
+  - {fileID: 554277498100811394}
+  - {fileID: -5068825324817472449}
+  - {fileID: 1329490928279342093}
+  nextDialog: {fileID: 0}
+  nodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &554277498100811394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 3b Santiago
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 671
+    y: 297
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 4
+  count: 3
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: Yeah . . .
+  parentNode: {fileID: -1831620899686916348}
+  childNode: {fileID: 1329490928279342093}
+  letter: b
+--- !u!114 &1329490928279342093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 4c Santiago
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1012
+    y: 369
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 1
+  character: 4
+  count: 4
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: 
+  parentNode: {fileID: -5068825324817472449}
+  childNode: {fileID: 0}
+  letter: c
+--- !u!114 &2902127690111533796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: 1 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 7
+    y: 273
+    width: 200
+    height: 145
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 1
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 4
+  answers:
+  - answer: Have you started training?
+  - answer: Eat, talk, or both?
+  - answer: I bet training's making you hungry
+  parentSentenceNode: {fileID: -7917716492398346459}
+  childSentenceNodes:
+  - {fileID: -5991920689170370419}
+  - {fileID: -1831620899686916348}
+  - {fileID: -8380493023018248569}
