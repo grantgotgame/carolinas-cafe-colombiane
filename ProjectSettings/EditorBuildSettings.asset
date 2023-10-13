@@ -12,4 +12,5 @@ EditorBuildSettings:
     path: Assets/Scenes/StackingMiniGame.unity
     guid: 60aa7c5f79421484ba31e67de53549b2
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 6795fd67d65ca414b91e45786dbf9cf0, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 8cace268194086044adc99cb68a5236d, type: 2}
