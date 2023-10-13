@@ -102,7 +102,7 @@ MonoBehaviour:
     isOnLeftSide: 1
     otherSpeaker: 1
   sentence:
-    sentence: Holaaaa! I was here specifically waiting just for you, you know? You
+    sentence: Holaaaa. I was here specifically waiting just for you, you know? You
       brighten up my day more than that sun ever could!
   parentNode: {fileID: -2363295812326772994}
   childNode: {fileID: -5981867550934697002}

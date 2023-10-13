@@ -202,7 +202,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Well, looks like it's la hora de comer. I know you'll make me something
-      good!
+      good . . . Arepa con chorizo, mi favorito!
   parentNode: {fileID: -3876914024690768950}
   childNode: {fileID: 0}
   letter: c

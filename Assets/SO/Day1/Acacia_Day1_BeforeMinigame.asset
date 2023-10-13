@@ -237,8 +237,9 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: "Since this is un restaurante, I would like to try something out. \xA1Sorpr\xE9ndeme!
-      ~"
+    sentence: "Since this is un restaurante, I would like to try something out. ~
+      Una arepa con queso. And . . . oh! Something to wash it down with, \xA1un caf\xE9
+      peque\xF1o, por favor!"
   parentNode: {fileID: -6253023537050527299}
   childNode: {fileID: 0}
   letter: 
@@ -308,7 +309,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: Soy bailarina after all! Hehe ~ The name's Acacia by the way.
+    sentence: "Soy bailarina after all, \xA1jiji! The name's Acacia by the way."
   parentNode: {fileID: 7064589338173365701}
   childNode: {fileID: 6491501076535921083}
   letter: b
@@ -344,7 +345,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Oh, I'm just practicing my new movimientos de baile. Hope it's not
-      too distracting ~ I'm Acacia.
+      too distracting. ~ I'm Acacia.
   parentNode: {fileID: 631445545799981008}
   childNode: {fileID: 6491501076535921083}
   letter: a

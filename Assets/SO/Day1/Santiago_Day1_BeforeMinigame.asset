@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 721
-    y: 492
+    x: 632
+    y: 486
     width: 200
     height: 100
   isDragging: 0
@@ -51,8 +51,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -41
-    y: 321
+    x: -130
+    y: 315
     width: 200
     height: 100
   isDragging: 0
@@ -86,12 +86,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 458
-    y: 491
+    x: 369
+    y: 485
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 2
   storedData:
@@ -122,12 +122,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 460
-    y: 254
+    x: 371
+    y: 248
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 2
   storedData:
@@ -157,12 +157,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 459
-    y: 364
+    x: 370
+    y: 358
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 2
   storedData:
@@ -192,12 +192,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 722
-    y: 374
+    x: 633
+    y: 368
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 4
   count: 3
   storedData:
@@ -252,8 +252,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 206
-    y: 297
+    x: 117
+    y: 291
     width: 200
     height: 145
   isDragging: 0
@@ -285,29 +285,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 4c Santiago
+  m_Name: 4c Carolina
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1001
-    y: 376
+    x: 934
+    y: 371
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
-  character: 4
+  isSelected: 0
+  character: 0
   count: 4
   storedData:
     nodeName: 
     dialogueChoice: 
     miniGameValue: 
     isOnLeftSide: 0
-    otherSpeaker: 0
+    otherSpeaker: 4
   sentence:
-    sentence: "\xBFSabe que? I could actually go for a bite after all. Give me your
-      best shot!"
+    sentence: "You're not fooling me, I can tell you're hungry. I'll whip you up
+      una arepa con chorizo y aj\xED."
   parentNode: {fileID: -6658509208884220142}
   childNode: {fileID: 0}
   letter: c
@@ -327,8 +327,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 714
-    y: 247
+    x: 625
+    y: 241
     width: 200
     height: 100
   isDragging: 0

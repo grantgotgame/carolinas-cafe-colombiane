@@ -32,7 +32,8 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: "The jog was amazing, but \xA1uf! have I burnt some calories while
-      at it! A good hearty meal after a jog that size just makes it more rewarding!"
+      at it! A good hearty meal after a jog that size just makes it more rewarding!
+      Dos arepas should do the trick!"
   parentNode: {fileID: 2162170517126070015}
   childNode: {fileID: 0}
   letter: 
@@ -137,7 +138,7 @@ MonoBehaviour:
     isOnLeftSide: 1
     otherSpeaker: 2
   sentence:
-    sentence: "Buenos d\xEDas, pap\xE1, were you running track again?"
+    sentence: "Buenos d\xEDas, pap\xE1, were you out running again?"
   parentNode: {fileID: 3193044837912632406}
   childNode: {fileID: 2162170517126070015}
   letter: c
@@ -267,7 +268,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: "Pues who wouldn't be happy on such a bright sunny d\xEDa!"
+    sentence: "Pues, who wouldn't be happy on such a bright sunny d\xEDa!"
   parentNode: {fileID: -7302894440834232962}
   childNode: {fileID: -8265850730425884174}
   letter: b
@@ -304,7 +305,7 @@ MonoBehaviour:
   answers:
   - answer: You'll ruin your nice clothes
   - answer: You seem cheery
-  - answer: Running track again?
+  - answer: Out running again?
   parentSentenceNode: {fileID: -197607288538249446}
   childSentenceNodes:
   - {fileID: -1490011571839730682}
