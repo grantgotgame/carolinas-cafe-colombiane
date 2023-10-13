@@ -303,7 +303,7 @@ MonoBehaviour:
     nodeName: 
     dialogueChoice: 
     miniGameValue: 
-    isOnLeftSide: 0
+    isOnLeftSide: 1
     otherSpeaker: 4
   sentence:
     sentence: "You're not fooling me, I can tell you're hungry. I'll whip you up
