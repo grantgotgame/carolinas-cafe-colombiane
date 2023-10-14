@@ -16,12 +16,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 158
-    y: 320
+    x: 556
+    y: 339
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 5
   count: 2
   storedData:
@@ -31,7 +31,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: It might be a while before I'll be able to get back
+    sentence: It might be a while before I'll be able to get back.
   parentNode: {fileID: -456395018192069137}
   childNode: {fileID: 8266512503589940803}
   letter: 
@@ -51,8 +51,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -405
-    y: 326
+    x: -7
+    y: 345
     width: 200
     height: 100
   isDragging: 0
@@ -86,8 +86,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 659
-    y: 304
+    x: 1057
+    y: 323
     width: 200
     height: 100
   isDragging: 0
@@ -122,12 +122,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -126
-    y: 327
+    x: 272
+    y: 346
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 5
   count: 1
   storedData:
@@ -138,7 +138,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: But it turns out they're going to be holding the theater en Europa,
-      touring all over it, so I'll have to temporarily move there. .
+      touring all over it, so I'll have to temporarily move there.
   parentNode: {fileID: -7510733985766660303}
   childNode: {fileID: -7949093227830037057}
   letter: 
@@ -179,12 +179,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 408
-    y: 312
+    x: 806
+    y: 331
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 5
   count: 3
   storedData:
