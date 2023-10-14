@@ -15,10 +15,14 @@ public class Loader : MonoBehaviour {
     }
 
     public void PlayMinigame() {
-        StartCoroutine(LoadLevel(1));
+        StartCoroutine(LoadLevel(2));
     }
 
     public void GoBackToMainScene() {
+        StartCoroutine(LoadLevel(1));
+    }
+
+    public void LoadNewDay() {
         StartCoroutine(LoadLevel(0));
     }
 

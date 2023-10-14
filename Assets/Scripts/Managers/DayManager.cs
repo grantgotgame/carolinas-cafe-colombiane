@@ -53,7 +53,11 @@ public class DayManager : MonoBehaviour
             DialogBehaviour.Instance.AddListenerToOnDialogFinished(OnNodeGraphFinished);
         }
         if (result == string.Empty) {
-            if (currentDay.IsOutOfDialogue()) currentDay = dayCollection[day++];
+            if (currentDay.IsOutOfDialogue()) {
+                currentDay = dayCollection[day++];
+                StartCoroutine(TransitionToNewDay());
+                return;
+            }
             DialogBehaviour.Instance.StartDialog(currentDay.GetCurrentConversation());
         } else {
             DialogBehaviour.Instance.StartDialog(currentDay.GetNextConversation(), result);
@@ -80,6 +84,12 @@ public class DayManager : MonoBehaviour
         yield return new WaitForSeconds(transitionDelay);
 
         OnNodeGraphStarted();
+    }
+
+    IEnumerator TransitionToNewDay() {
+        yield return new WaitForSeconds(transitionDelay);
+
+        Loader.Instance.LoadNewDay();
     }
 
     public int GetDay() {

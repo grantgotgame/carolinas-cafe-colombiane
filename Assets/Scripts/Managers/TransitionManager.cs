@@ -13,10 +13,9 @@ public class TransitionManager : MonoBehaviour {
 
     private void Start() {
         if (DayManager.Instance != null) {
-            Debug.Log("There's Manager");
             int day = DayManager.Instance.GetDay();
-            dayBefore.text = day.ToString();
-            dayAfter.text = (day + 1).ToString();
+            dayBefore.text = (day - 1).ToString();
+            dayAfter.text = (day).ToString();
         }
 
         StartCoroutine(TransitionToNewDay());
