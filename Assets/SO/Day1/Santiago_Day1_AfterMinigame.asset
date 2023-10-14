@@ -31,7 +31,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: I could burn as bright as el sol again ~ *Smirks*
+    sentence: I could burn as bright as el sol again. ~ *Smirks*
   parentNode: {fileID: 5387802496492926242}
   childNode: {fileID: 617597753873724810}
   letter: 
@@ -517,7 +517,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: "S\xE9 que s\xE9 ~ I'd still want to try it out again after all of
+    sentence: "S\xE9 que s\xE9. ~ I'd still want to try it out again after all of
       these years. Wrestling, I mean."
   parentNode: {fileID: 3976949057631816306}
   childNode: {fileID: 2812465040441724575}
