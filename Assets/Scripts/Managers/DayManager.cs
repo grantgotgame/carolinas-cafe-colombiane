@@ -81,6 +81,10 @@ public class DayManager : MonoBehaviour
 
         OnNodeGraphStarted();
     }
+
+    public int GetDay() {
+        return day;
+    }
 }
 
 [System.Serializable]
