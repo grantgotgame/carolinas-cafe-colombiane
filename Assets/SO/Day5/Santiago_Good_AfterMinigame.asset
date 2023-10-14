@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 350
-    y: 142
+    x: 516
+    y: 172
     width: 200
     height: 100
   isDragging: 0
@@ -51,8 +51,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 692
-    y: 313
+    x: 858
+    y: 343
     width: 200
     height: 100
   isDragging: 0
@@ -67,8 +67,8 @@ MonoBehaviour:
     otherSpeaker: 4
   sentence:
     sentence: Hermano, I knew you had it in you! You've always had it, your fighting
-      spirit was just laying dormant, waiting to be reawakened. I can't wait to watch
-      your programa!
+      spirit was just laying dormant, waiting to be reawakened. You totally stole
+      the show!
   parentNode: {fileID: -2568423433842255324}
   childNode: {fileID: -650399066505300165}
   letter: 
@@ -88,8 +88,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 45
-    y: 309
+    x: 211
+    y: 339
     width: 200
     height: 100
   isDragging: 0
@@ -123,8 +123,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 364
-    y: 472
+    x: 530
+    y: 502
     width: 200
     height: 100
   isDragging: 0
@@ -158,8 +158,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 361
-    y: 308
+    x: 527
+    y: 338
     width: 200
     height: 100
   isDragging: 0
@@ -193,12 +193,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 948
-    y: 314
+    x: 1114
+    y: 344
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 4
   count: 3
   storedData:
@@ -208,9 +208,10 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: "Tune in to channel 7 m\xE1s tarde, I'll make you all proud. ~"
+    sentence: I hope I have made mi familia and my hometown proud, couldn't have
+      done it without your encouragement!
   parentNode: {fileID: -5687241929757420204}
-  childNode: {fileID: 0}
+  childNode: {fileID: 8527214222973211915}
   letter: 
 --- !u!114 &11400000
 MonoBehaviour:
@@ -233,6 +234,7 @@ MonoBehaviour:
   - {fileID: -2568423433842255324}
   - {fileID: -5687241929757420204}
   - {fileID: -650399066505300165}
+  - {fileID: 8527214222973211915}
   nextDialog: {fileID: 0}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -252,8 +254,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 41
-    y: 473
+    x: 207
+    y: 503
     width: 200
     height: 100
   isDragging: 0
@@ -287,8 +289,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 45
-    y: 145
+    x: 211
+    y: 175
     width: 200
     height: 100
   isDragging: 0
@@ -307,3 +309,39 @@ MonoBehaviour:
   parentNode: {fileID: 0}
   childNode: {fileID: -6661695705243581782}
   letter: a
+--- !u!114 &8527214222973211915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 4 Santiago
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1376
+    y: 343.2
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 4
+  count: 4
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: "I'll be holding onto this t\xEDtulo, and the belt, for at least un
+      tiempo. ~"
+  parentNode: {fileID: -650399066505300165}
+  childNode: {fileID: 0}
+  letter: 
