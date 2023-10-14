@@ -32,8 +32,14 @@ public class DayManager : MonoBehaviour
         dayCollection.Add(dayThree);
         dayCollection.Add(dayFour);
         dayCollection.Add(dayFive);
-        day = 0;
-        currentDay = dayCollection[day++];
+        if (TestScriptDebug.isTesting) {
+            day = TestScriptDebug.chooseDay - 1;
+            currentDay = dayCollection[day++];
+            currentDay.currentDialogue = TestScriptDebug.chooseCharacter;
+        } else {
+            day = 0;
+            currentDay = dayCollection[day++];
+        }
     }
 
     private void Start() {
