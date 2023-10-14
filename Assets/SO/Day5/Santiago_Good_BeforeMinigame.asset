@@ -29,7 +29,7 @@ MonoBehaviour:
     dialogueChoice: 
     miniGameValue: 
     isOnLeftSide: 1
-    otherSpeaker: 0
+    otherSpeaker: 4
   sentence:
     sentence: "Santiago's coming. I saw his match yesterday. It was a spectacle,
       as to be expected! I guess I should make him algo bueno \xA1para celebrar su

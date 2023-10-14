@@ -8,7 +8,7 @@ public static class TestScriptDebug
     public static bool isTesting = false;
 
     //Set which day you want
-    public static int chooseDay = 3;
+    public static int chooseDay = 5;
 
     //Set which character you want
     // 0 - Carolina Introduction
@@ -17,5 +17,5 @@ public static class TestScriptDebug
     // 3 - Alejandro / Alex
     // 4 - Santiago
     // 5 - Acacia
-    public static int chooseCharacter = 4;
+    public static int chooseCharacter = 3;
 }
