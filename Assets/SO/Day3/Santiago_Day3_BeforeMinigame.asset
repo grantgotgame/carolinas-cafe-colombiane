@@ -65,7 +65,7 @@ MonoBehaviour:
   count: 4
   storedData:
     nodeName: 
-    dialogueChoice: 
+    dialogueChoice: Before Minigame
     miniGameValue: 
     isOnLeftSide: 0
     otherSpeaker: 0

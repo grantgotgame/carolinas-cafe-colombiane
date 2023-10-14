@@ -151,12 +151,12 @@ MonoBehaviour:
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 1
   count: 4
   storedData:
     nodeName: 
-    dialogueChoice: 
+    dialogueChoice: Before Minigame
     miniGameValue: 
     isOnLeftSide: 0
     otherSpeaker: 0

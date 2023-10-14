@@ -16,12 +16,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 241
-    y: 262
+    x: 82
+    y: 207
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 2
   storedData:
@@ -51,8 +51,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 713
-    y: 256
+    x: 554
+    y: 201
     width: 200
     height: 100
   isDragging: 0
@@ -87,8 +87,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 254
-    y: 540
+    x: 95
+    y: 485
     width: 200
     height: 100
   isDragging: 0
@@ -123,8 +123,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 597
-    y: 538
+    x: 438
+    y: 483
     width: 200
     height: 100
   isDragging: 0
@@ -159,8 +159,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -316
-    y: 352
+    x: -475
+    y: 297
     width: 200
     height: 100
   isDragging: 0
@@ -195,8 +195,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 485
-    y: 256
+    x: 326
+    y: 201
     width: 200
     height: 100
   isDragging: 0
@@ -231,8 +231,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -25
-    y: 326
+    x: -184
+    y: 271
     width: 200
     height: 145
   isDragging: 0
@@ -270,8 +270,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 249
-    y: 400
+    x: 90
+    y: 345
     width: 200
     height: 100
   isDragging: 0
@@ -305,17 +305,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 950
-    y: 390
+    x: 791
+    y: 335
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 1
   count: 5
   storedData:
     nodeName: 
-    dialogueChoice: 
+    dialogueChoice: Before Minigame
     miniGameValue: 
     isOnLeftSide: 0
     otherSpeaker: 0
@@ -367,8 +367,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 590
-    y: 394
+    x: 431
+    y: 339
     width: 200
     height: 100
   isDragging: 0

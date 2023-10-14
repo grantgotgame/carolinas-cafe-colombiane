@@ -504,10 +504,10 @@ RectTransform:
   - {fileID: 653707399}
   m_Father: {fileID: 693725883}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 203.77296, y: -98.64606}
-  m_SizeDelta: {x: 407.54593, y: 197.29211}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264828341
 MonoBehaviour:
@@ -861,6 +861,7 @@ GameObject:
   - component: {fileID: 572098992}
   - component: {fileID: 572098997}
   - component: {fileID: 572098996}
+  - component: {fileID: 572098998}
   m_Layer: 5
   m_Name: Canvas - Foreground - Dialog Behaviour
   m_TagString: Untagged
@@ -981,9 +982,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogCharDelay: 0.001
   nextSentenceKeyCode: 200000004301000044010000
-  onDialogStart:
-    m_PersistentCalls:
-      m_Calls: []
   onDialogFinished:
     m_PersistentCalls:
       m_Calls:
@@ -1000,6 +998,27 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   characterDictionarySO: {fileID: 11400000, guid: a3dbab7da59ef5341bd9afd30ad0e9ca, type: 2}
+--- !u!95 &572098998
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572098991}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8408467dd242ab84ba6dfd4cd7e47821, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &628650194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1483,14 +1502,14 @@ MonoBehaviour:
   lDialogText: {fileID: 1828603675}
   lDialogObject: {fileID: 1606242128}
   lDialogNameBadgeImage: {fileID: 430207633}
-  lDialogCharacterImage: {fileID: 793618498}
+  lSpeakerImage: {fileID: 793618498}
   rSpeakerObject: {fileID: 1496630422}
   rNonSpeakerImage: {fileID: 1546092747}
   rDialogNameText: {fileID: 1926433330}
   rDialogText: {fileID: 19207767}
   rDialogObject: {fileID: 1646526698}
   rDialogNameBadgeImage: {fileID: 640610549}
-  rDialogCharacterImage: {fileID: 147588118}
+  rSpeakerImage: {fileID: 147588118}
 --- !u!1 &740486931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,10 +2014,10 @@ RectTransform:
   - {fileID: 1580635122}
   m_Father: {fileID: 693725883}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 659.6389, y: -98.64606}
-  m_SizeDelta: {x: 407.54593, y: 197.29211}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &950961671
 MonoBehaviour:
@@ -2653,7 +2672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1496630423
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2901,7 +2920,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1606242129
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3074,10 +3093,10 @@ RectTransform:
   - {fileID: 1055904867}
   m_Father: {fileID: 693725883}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1115.5049, y: -98.64606}
-  m_SizeDelta: {x: 407.54593, y: 197.29211}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1703626402
 MonoBehaviour:

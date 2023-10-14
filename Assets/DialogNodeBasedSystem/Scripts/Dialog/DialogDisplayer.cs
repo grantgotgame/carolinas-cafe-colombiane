@@ -11,7 +11,11 @@ namespace cherrydev
 
         private void OnEnable()
         {
-            dialogBehaviour.AddListenerToOnDialogFinished(DisableDialogPanel);
+            //dialogBehaviour.AddListenerToOnDialogFinished(DisableDialogPanel);
+
+            DialogBehaviour.OnProcessEndOfDialog += DisableDialogPanel;
+
+            DialogBehaviour.OnDialogStart += dialogSentencePanel.EnterNewCharacter;
 
             DialogBehaviour.OnAnswerButtonSetUp += SetUpAnswerButtonsClickEvent;
 
@@ -32,9 +36,11 @@ namespace cherrydev
             DialogBehaviour.OnAnswerNodeSetUp += SetUpAnswerDialogPanel;
         }
 
-        private void OnDisable()
-        {
+        private void OnDisable() {
+            DialogBehaviour.OnProcessEndOfDialog -= DisableDialogPanel;
             DialogBehaviour.OnAnswerButtonSetUp -= SetUpAnswerButtonsClickEvent;
+
+            DialogBehaviour.OnDialogStart -= dialogSentencePanel.EnterNewCharacter;
 
             DialogBehaviour.OnDialogSentenceEnd -= dialogSentencePanel.ResetDialogText;
 
@@ -59,7 +65,7 @@ namespace cherrydev
         /// </summary>
         private void DisableDialogPanel() {
             //StartCoroutine(TransitionToMinigame());
-            dialogSentencePanel.TransitionToMinigame();
+            dialogSentencePanel.SetupCharactersWithoutDialogue();
         }
         /*
         IEnumerator TransitionToMinigame()

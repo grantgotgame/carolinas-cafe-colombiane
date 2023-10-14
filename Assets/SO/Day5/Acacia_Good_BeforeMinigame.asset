@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 516
-    y: 331
+    x: 158
+    y: 320
     width: 200
     height: 100
   isDragging: 0
@@ -51,8 +51,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -47
-    y: 337
+    x: -405
+    y: 326
     width: 200
     height: 100
   isDragging: 0
@@ -86,17 +86,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1017
-    y: 315
+    x: 659
+    y: 304
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 5
   count: 4
   storedData:
     nodeName: 
-    dialogueChoice: 
+    dialogueChoice: Before Minigame
     miniGameValue: 
     isOnLeftSide: 0
     otherSpeaker: 0
@@ -122,8 +122,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 232
-    y: 338
+    x: -126
+    y: 327
     width: 200
     height: 100
   isDragging: 0
@@ -179,8 +179,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 766
-    y: 323
+    x: 408
+    y: 312
     width: 200
     height: 100
   isDragging: 0

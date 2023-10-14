@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 17
-    y: 308
+    x: -449
+    y: 339
     width: 200
     height: 100
   isDragging: 0
@@ -52,8 +52,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 558
-    y: 478
+    x: 92
+    y: 509
     width: 200
     height: 100
   isDragging: 0
@@ -87,8 +87,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 830
-    y: 361
+    x: 364
+    y: 392
     width: 200
     height: 100
   isDragging: 0
@@ -122,8 +122,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 279
-    y: 294
+    x: -187
+    y: 325
     width: 200
     height: 145
   isDragging: 0
@@ -161,8 +161,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 832
-    y: 245
+    x: 366
+    y: 276
     width: 200
     height: 100
   isDragging: 0
@@ -196,8 +196,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1123
-    y: 352
+    x: 657
+    y: 383
     width: 200
     height: 100
   isDragging: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   count: 4
   storedData:
     nodeName: 
-    dialogueChoice: 
+    dialogueChoice: Before Minigame
     miniGameValue: 
     isOnLeftSide: 0
     otherSpeaker: 0
@@ -232,8 +232,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 557
-    y: 364
+    x: 91
+    y: 395
     width: 200
     height: 100
   isDragging: 0
@@ -292,8 +292,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 845
-    y: 479
+    x: 379
+    y: 510
     width: 200
     height: 100
   isDragging: 0
@@ -327,8 +327,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 554
-    y: 244
+    x: 88
+    y: 275
     width: 200
     height: 100
   isDragging: 0

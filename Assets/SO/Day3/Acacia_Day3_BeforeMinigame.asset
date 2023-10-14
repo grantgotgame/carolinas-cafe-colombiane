@@ -16,17 +16,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 955
-    y: 329
+    x: 933
+    y: 259
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 5
   count: 5
   storedData:
     nodeName: 
-    dialogueChoice: 
+    dialogueChoice: Before Minigame
     miniGameValue: 
     isOnLeftSide: 0
     otherSpeaker: 0
@@ -52,8 +52,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 400
-    y: 504
+    x: 378
+    y: 434
     width: 200
     height: 100
   isDragging: 0
@@ -87,8 +87,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -213
-    y: 317
+    x: -235
+    y: 247
     width: 200
     height: 145
   isDragging: 0
@@ -126,8 +126,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 106
-    y: 172
+    x: 84
+    y: 102
     width: 200
     height: 100
   isDragging: 0
@@ -187,8 +187,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -464
-    y: 349
+    x: -486
+    y: 278
     width: 200
     height: 100
   isDragging: 0
@@ -222,8 +222,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 390
-    y: 169
+    x: 368
+    y: 99
     width: 200
     height: 100
   isDragging: 0
@@ -257,8 +257,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 388
-    y: 335
+    x: 366
+    y: 265
     width: 200
     height: 100
   isDragging: 0
@@ -293,8 +293,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 110
-    y: 506
+    x: 88
+    y: 436
     width: 200
     height: 100
   isDragging: 0
@@ -328,8 +328,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 719
-    y: 331
+    x: 697
+    y: 261
     width: 200
     height: 100
   isDragging: 0
@@ -364,8 +364,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 109
-    y: 337
+    x: 87
+    y: 267
     width: 200
     height: 100
   isDragging: 0
