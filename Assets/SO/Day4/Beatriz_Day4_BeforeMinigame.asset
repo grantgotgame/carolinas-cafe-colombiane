@@ -31,7 +31,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: "I'm going to be having an interview for the Ministra de la Eucarist\xEDa
+    sentence: "I'm going to be having an interview for the ministra de la eucarist\xEDa
       position later today!"
   parentNode: {fileID: -264459589946375367}
   childNode: {fileID: 8888482864007244935}
@@ -234,8 +234,8 @@ MonoBehaviour:
     isOnLeftSide: 1
     otherSpeaker: 1
   sentence:
-    sentence: "Entonces, did you get accepted to be the church's new Ministra de
-      la Eucarist\xEDa?"
+    sentence: "Entonces, did you get accepted to be the church's new ministra de
+      la eucarist\xEDa?"
   parentNode: {fileID: 7362997598725235377}
   childNode: {fileID: 4640136371830421017}
   letter: c
@@ -306,8 +306,8 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: "Even mejor! I'm finally getting interviewed for my Ministra de la
-      Eucarist\xEDa position!"
+    sentence: "Even mejor! I'm finally getting interviewed for my ministra de la
+      eucarist\xEDa position!"
   parentNode: {fileID: -3239770407222819944}
   childNode: {fileID: 8888482864007244935}
   letter: b

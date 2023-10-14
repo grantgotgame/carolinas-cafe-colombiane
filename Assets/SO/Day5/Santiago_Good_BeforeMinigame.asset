@@ -22,17 +22,18 @@ MonoBehaviour:
     height: 100
   isDragging: 0
   isSelected: 0
-  character: 4
+  character: 0
   count: 0
   storedData:
     nodeName: 
     dialogueChoice: 
     miniGameValue: 
-    isOnLeftSide: 0
+    isOnLeftSide: 1
     otherSpeaker: 0
   sentence:
-    sentence: "Caro, \xA1ya es hora! My training is now complete, I contacted my
-      old promoter, and I've been booked for a big wrestling match. "
+    sentence: "Santiago's coming. I saw his match yesterday. It was a spectacle,
+      as to be expected! I guess I should make him algo bueno \xA1para celebrar su
+      victoria!"
   parentNode: {fileID: 0}
   childNode: {fileID: -3879532465919421037}
   letter: 
@@ -67,8 +68,8 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: It is time for the Sunbear to shine again! ~ The match is to take place
-      later today, hacia la tarde.
+    sentence: "Caro, the match went \xA1muy bien! You saw it, \xBFverdad? I made
+      it all the way to la final y \xA1\xA1BAWWW!! They were no match for me, \xA1jaja!"
   parentNode: {fileID: -6750978478998442859}
   childNode: {fileID: 3304032290858745039}
   letter: 
@@ -122,8 +123,8 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: "Fortal\xE9ceme mucho before my big match, I'll need all of my strength
-      with me! Arepa with your spiciest, sauciest aj\xED! And chicharr\xF3n too!"
+    sentence: "Time to celebrate, with a feast! Arepa with your spiciest, sauciest
+      aj\xED! \xA1Y chicharr\xF3n tambi\xE9n!"
   parentNode: {fileID: -3879532465919421037}
   childNode: {fileID: 0}
   letter: 

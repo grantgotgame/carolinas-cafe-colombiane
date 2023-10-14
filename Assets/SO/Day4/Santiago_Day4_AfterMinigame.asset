@@ -271,8 +271,8 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: You will charm the audiences, como siempre you have! They're expecting
-      the Sunbear's return!
+    sentence: I've kept them waiting for too long, I can hear all the cheers already
+      en mi mente.
   parentNode: {fileID: -8569877663868449977}
   childNode: {fileID: 957143843926041123}
   letter: 

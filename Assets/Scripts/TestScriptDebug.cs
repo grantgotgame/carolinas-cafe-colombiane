@@ -8,7 +8,7 @@ public static class TestScriptDebug
     public static bool isTesting = false;
 
     //Set which day you want
-    public static int chooseDay = 1;
+    public static int chooseDay = 5;
 
     //Set which character you want
     // 0 - Beatriz
