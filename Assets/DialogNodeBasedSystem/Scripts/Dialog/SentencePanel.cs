@@ -43,14 +43,15 @@ namespace cherrydev
         /// Assigning dialog name text and character iamge sprite
         /// </summary>
         /// <param name="name"></param>
-        public void AssignDialogNameTextAndSprite(Character character, Character otherCharacter, bool isOnLeftSide)
-        {
+        public void AssignDialogNameTextAndSprite(Character character, Character otherCharacter, bool isOnLeftSide) {
             isLeftSpeaker = isOnLeftSide;
             if (isLeftSpeaker) {
                 lDialogNameText.text = character.name;
                 lDialogNameBadgeImage.sprite = character.nameBadgeSprite;
                 lSpeakerImage.sprite = character.characterSprite;
+                rNonSpeakerImage.sprite = character.characterSprite;
                 lNonSpeakerImage.sprite = otherCharacter.characterSprite;
+                rSpeakerImage.sprite = otherCharacter.characterSprite;
             } else {
                 rDialogNameText.text = character.name;
                 rDialogNameBadgeImage.sprite = character.nameBadgeSprite;
@@ -98,6 +99,7 @@ namespace cherrydev
         }
 
         public void ActivateSentence() {
+            ResetDialogText();
             lDialogText.gameObject.SetActive(isLeftSpeaker);
             rDialogText.gameObject.SetActive(!isLeftSpeaker);
         }

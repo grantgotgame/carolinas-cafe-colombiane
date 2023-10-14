@@ -35,5 +35,5 @@ MonoBehaviour:
     characterSprite: {fileID: 21300000, guid: d3397416d70398748b7a9703799d84e4, type: 3}
     nameBadgeSprite: {fileID: 21300000, guid: eb8f89fb9f173694f9d893902a6082a7, type: 3}
   - name: None
-    characterSprite: {fileID: 0}
-    nameBadgeSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: 3c71d02dd6601604ea31b2f9086c480a, type: 3}
+    nameBadgeSprite: {fileID: 21300000, guid: 3c71d02dd6601604ea31b2f9086c480a, type: 3}

@@ -504,10 +504,10 @@ RectTransform:
   - {fileID: 653707399}
   m_Father: {fileID: 693725883}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 203.77296, y: -98.64606}
+  m_SizeDelta: {x: 407.54593, y: 197.29211}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264828341
 MonoBehaviour:
@@ -985,9 +985,9 @@ MonoBehaviour:
   onDialogFinished:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1830102278}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DayManager, Assembly-CSharp
-        m_MethodName: OnNodeGraphFinished
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2014,10 +2014,10 @@ RectTransform:
   - {fileID: 1580635122}
   m_Father: {fileID: 693725883}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 659.6389, y: -98.64606}
+  m_SizeDelta: {x: 407.54593, y: 197.29211}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &950961671
 MonoBehaviour:
@@ -2672,7 +2672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1496630423
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2920,7 +2920,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1606242129
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3093,10 +3093,10 @@ RectTransform:
   - {fileID: 1055904867}
   m_Father: {fileID: 693725883}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1115.5049, y: -98.64606}
+  m_SizeDelta: {x: 407.54593, y: 197.29211}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1703626402
 MonoBehaviour:
@@ -3312,8 +3312,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'While I''m sad to see you go, I''m happy you''ve found your calling en
-    la vida. '
+  m_text: This day feels . . . ominous, somehow. I hope I can whip up something good
+    to brighten up my customers' day! The question is, though, who's going to be
+    the first one for the day?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8ecd17aeceaba4c10b42ac497ccbfcff, type: 2}
   m_sharedMaterial: {fileID: 2830636965969884548, guid: 8ecd17aeceaba4c10b42ac497ccbfcff, type: 2}
@@ -3422,6 +3423,7 @@ MonoBehaviour:
   transitionDelay: 1.1
   dayOne:
     dialogGraphs:
+    - {fileID: 11400000, guid: 9e44d078b3b569d4988f48f0c4d62df4, type: 2}
     - {fileID: 11400000, guid: f1ecfcf08bb0f7740b8bee3146971107, type: 2}
     - {fileID: 11400000, guid: 886149a4199ec27408a2ea8ce5efb43d, type: 2}
     - {fileID: 11400000, guid: 4addc8231e371064a87411a1741acc4e, type: 2}
@@ -3430,6 +3432,7 @@ MonoBehaviour:
     currentDialogue: 0
   dayTwo:
     dialogGraphs:
+    - {fileID: 11400000, guid: 74e752272800de449a62d94b4705e48e, type: 2}
     - {fileID: 11400000, guid: c3239065664612f44990784df3534b2e, type: 2}
     - {fileID: 11400000, guid: 81ed4db35240d554f8e2ac03806fcfce, type: 2}
     - {fileID: 11400000, guid: b0996c1762f4c7141b1239c3dcff85c3, type: 2}
@@ -3438,6 +3441,7 @@ MonoBehaviour:
     currentDialogue: 0
   dayThree:
     dialogGraphs:
+    - {fileID: 11400000, guid: fee3c24ffff5610419a1c928e65bef2c, type: 2}
     - {fileID: 11400000, guid: 78193cc1f362e3d40b3c725167d69abd, type: 2}
     - {fileID: 11400000, guid: cda59b928ec06644ca0350a9360111f3, type: 2}
     - {fileID: 11400000, guid: 931758ade1319fb44804cf29f57b0e4b, type: 2}
@@ -3446,6 +3450,7 @@ MonoBehaviour:
     currentDialogue: 0
   dayFour:
     dialogGraphs:
+    - {fileID: 11400000, guid: 8ebab09ea14331c4ab4f319d718879a7, type: 2}
     - {fileID: 11400000, guid: e8529acd3c1b71b429fd0edbda6e8f8c, type: 2}
     - {fileID: 11400000, guid: e1bf9315331efc948ba1dadb23c7d162, type: 2}
     - {fileID: 11400000, guid: 8c35a67c0ce771240a5ff886ccffd836, type: 2}
@@ -3454,6 +3459,7 @@ MonoBehaviour:
     currentDialogue: 0
   dayFive:
     dialogGraphs:
+    - {fileID: 11400000, guid: 3cb7fcbd184a1184e84b62fa94c446d6, type: 2}
     - {fileID: 11400000, guid: 4c4d5239bdbc9004da35de8f066c36cd, type: 2}
     - {fileID: 11400000, guid: 929ca2cb47625784595b58ab9daa1ae6, type: 2}
     - {fileID: 11400000, guid: 5af29bc61c4c3df439066ce5a75bb69f, type: 2}

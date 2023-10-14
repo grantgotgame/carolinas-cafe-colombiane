@@ -11,10 +11,11 @@ public static class TestScriptDebug
     public static int chooseDay = 3;
 
     //Set which character you want
-    // 0 - Beatriz
-    // 1 - Jairo
-    // 2 - Alejandro / Alex
-    // 3 - Santiago
-    // 4 - Acacia
+    // 0 - Carolina Introduction
+    // 1 - Beatriz
+    // 2 - Jairo
+    // 3 - Alejandro / Alex
+    // 4 - Santiago
+    // 5 - Acacia
     public static int chooseCharacter = 4;
 }

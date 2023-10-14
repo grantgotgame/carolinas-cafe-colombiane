@@ -66,7 +66,7 @@ public class DayManager : MonoBehaviour
 
     public void OnNodeGraphFinished() {
         DialogNodeGraph currentNodeGraph = DialogBehaviour.Instance.GetCurrentDialogNodeGraph();
-        if (currentDay.dialogGraphs.Contains(currentNodeGraph)) {
+        if (currentDay.currentDialogue > 0 && currentDay.dialogGraphs.Contains(currentNodeGraph)) {
             StartCoroutine(TransitionToMinigame());
         } else {
             StartCoroutine(TransitionToNextCustomer());

@@ -248,7 +248,6 @@ namespace cherrydev
         }
 
         IEnumerator ProcessEndOfCharacterDialogue() {
-            Debug.Log("In the Coroutine");
             OnProcessEndOfDialog?.Invoke();
 
             yield return new WaitForSeconds(0.5f);
@@ -257,7 +256,6 @@ namespace cherrydev
             customerAnimator.SetTrigger("Slide");
 
             yield return new WaitForSeconds(1f);
-
             onDialogFinished?.Invoke();
         }
 
