@@ -32,7 +32,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: "Mi Carolina, I am truly blessed! The interview went well, and I have
-      been accepted and appointed as the new Ministra de la Eucarist\xEDa for our
+      been accepted and appointed as the new ministra de la eucarist\xEDa for our
       local church!"
   parentNode: {fileID: 0}
   childNode: {fileID: 3554682868106162073}
@@ -159,9 +159,8 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: "We should celebrate with a hearty meal! Una arepa con frijoles y queso,
-      porfa. And to drink, your special caf\xE9 chocolate con queso. As sweet and
-      as cheesy as you, querida!"
+    sentence: We should celebrate with a hearty meal! Una arepa con frijoles y queso,
+      porfa.
   parentNode: {fileID: 3554682868106162073}
   childNode: {fileID: 5831493278464942151}
   letter: 

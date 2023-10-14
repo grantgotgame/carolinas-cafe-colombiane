@@ -16,5 +16,5 @@ public static class TestScriptDebug
     // 2 - Alejandro / Alex
     // 3 - Santiago
     // 4 - Acacia
-    public static int chooseCharacter = 4;
+    public static int chooseCharacter = 0;
 }
