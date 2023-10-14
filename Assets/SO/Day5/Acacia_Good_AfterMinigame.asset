@@ -137,8 +137,7 @@ MonoBehaviour:
     otherSpeaker: 5
   sentence:
     sentence: While I'm sad to see you go, I'm happy you've found your calling en
-      la vida. Make those Europeans happy out there with your presence, just like
-      you've done con mi restaurante!
+      la vida.
   parentNode: {fileID: 7645836453696391550}
   childNode: {fileID: 8209011733763624398}
   letter: 
