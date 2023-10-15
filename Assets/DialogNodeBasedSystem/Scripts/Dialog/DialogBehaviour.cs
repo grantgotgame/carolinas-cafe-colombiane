@@ -33,7 +33,7 @@ namespace cherrydev
 
         public static event Action<DialogData> OnAnswerNodeActive;
 
-        public static event Action<int, AnswerNode> OnAnswerButtonSetUp;
+        public static event Action<int, int, AnswerNode> OnAnswerButtonSetUp;
 
         public static event Action<int> OnAnswerNodeButtonActivate;
 
@@ -150,12 +150,16 @@ namespace cherrydev
 
                 OnAnswerNodeActive?.Invoke(answerNode.storedData);
 
+                int[] randAnswer = CreateRandomIndexList();
+
                 for (int i = 0; i < answerNode.childSentenceNodes.Length; i++)
                 {
-                    if (answerNode.childSentenceNodes[i] != null)
+                    if (answerNode.childSentenceNodes[randAnswer[i]] != null)
                     {
-                        OnAnswerNodeSetUp?.Invoke(i, answerNode.answers[i].answer);
-                        OnAnswerButtonSetUp?.Invoke(i, answerNode);
+                        //Fills the texts in the buttons
+                        OnAnswerNodeSetUp?.Invoke(i, answerNode.answers[randAnswer[i]].answer);
+                        // Adds Listener to the button
+                        OnAnswerButtonSetUp?.Invoke(i, randAnswer[i], answerNode);
 
                         amountOfActiveButtons++;
                     }
@@ -175,6 +179,19 @@ namespace cherrydev
                 OnAnswerNodeButtonActivate?.Invoke(amountOfActiveButtons);
                 OnAnswerNodeStart?.Invoke(character, otherCharacter, currentNode.storedData.isOnLeftSide);
             }
+        }
+
+        private int[] CreateRandomIndexList() {
+            int[] ret = { 0, 1, 2 };
+
+            for (int n = 0; n < ret.Length; n++) {
+                int swap = UnityEngine.Random.Range(n, ret.Length);
+                int temp = ret[swap];
+                ret[swap] = ret[n];
+                ret[n] = temp;
+            }
+
+            return ret;
         }
 
         /// <summary>
