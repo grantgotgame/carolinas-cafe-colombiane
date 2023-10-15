@@ -3173,6 +3173,8 @@ MonoBehaviour:
   startTheme: {fileID: 8300000, guid: 38cdc4f33242e844481cd7fb8934cf65, type: 3}
   startGameEffect: {fileID: 0}
   gameLoopBackground: {fileID: 8300000, guid: 38cdc4f33242e844481cd7fb8934cf65, type: 3}
+  miniGameBackground: {fileID: 8300000, guid: c6cecd72a9c7b8549ae9e0609690359e, type: 3}
+  talkEffect: {fileID: 0}
   _musicSource: {fileID: 2129499626}
 --- !u!82 &2129499626
 AudioSource:
@@ -3184,7 +3186,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 958f94611822c1c48b1b901036d69234, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 38cdc4f33242e844481cd7fb8934cf65, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
