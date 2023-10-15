@@ -23,7 +23,7 @@ public class AudioManager : MonoBehaviour
 
         if (PlayerPrefs.HasKey("GameVolume"))
         {
-            float volumeSaved = PlayerPrefs.GetFloat("GameVolume");
+            GetComponent<AudioSource>().volume =   PlayerPrefs.GetFloat("GameVolume");
             //GetComponent<AudioSource>().volume = volumeSaved;
         }
         else
@@ -62,9 +62,9 @@ public class AudioManager : MonoBehaviour
         if (PlayerPrefs.HasKey("GameVolume"))
         {
             float volumeSaved = PlayerPrefs.GetFloat("GameVolume");
-             GetComponent<AudioSource>().volume = volumeSaved;
+            GetComponent<AudioSource>().volume = volumeSaved;
         }
-     
+
     }
 
 }
