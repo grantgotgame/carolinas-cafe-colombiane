@@ -50,11 +50,11 @@ MonoBehaviour:
   m_Name: Beatriz_Good_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: 3214703985157941259}
   - {fileID: -7566044426319502918}
   - {fileID: 3554682868106162073}
   - {fileID: 6485923903507280258}
   - {fileID: 5831493278464942151}
-  - {fileID: 3214703985157941259}
   nextDialog: {fileID: 11400000, guid: 41c834febbdbbae4386644901a809c2d, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}

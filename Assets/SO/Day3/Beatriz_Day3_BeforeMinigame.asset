@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: Beatriz_Day3_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: -5744042242616860782}
   - {fileID: 4069477939735974895}
   - {fileID: 8631074689600284841}
   - {fileID: 6670755220136972981}
@@ -128,7 +129,6 @@ MonoBehaviour:
   - {fileID: -2736385365341643225}
   - {fileID: -4431167015899635525}
   - {fileID: 1713210515985716012}
-  - {fileID: -5744042242616860782}
   nextDialog: {fileID: 11400000, guid: b888529d0074d964289056dbeac3ac44, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}

@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Name: Acacia_Day4_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: -1529096507452968752}
   - {fileID: 6290948905851882909}
   - {fileID: 9024624885132875514}
   - {fileID: 1458770739287402903}
@@ -164,7 +165,6 @@ MonoBehaviour:
   - {fileID: -4928541570636633245}
   - {fileID: -6063779315712607811}
   - {fileID: 70197201323085000}
-  - {fileID: -1529096507452968752}
   nextDialog: {fileID: 11400000, guid: b6c24f709e805c941af0127a17d7d1cd, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}

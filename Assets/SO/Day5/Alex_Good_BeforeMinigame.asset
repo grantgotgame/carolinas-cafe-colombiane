@@ -121,10 +121,10 @@ MonoBehaviour:
   m_Name: Alex_Good_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: -5898505102397449581}
   - {fileID: 2744240419553778777}
   - {fileID: -7192806920571558054}
   - {fileID: -512411459772095270}
-  - {fileID: -5898505102397449581}
   nextDialog: {fileID: 11400000, guid: 7356a35faafdd484f88ddc2bb484f7e7, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}

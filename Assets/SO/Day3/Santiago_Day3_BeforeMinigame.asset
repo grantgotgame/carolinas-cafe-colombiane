@@ -194,6 +194,7 @@ MonoBehaviour:
   m_Name: Santiago_Day3_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: 3891259588905126361}
   - {fileID: 2010936041674652245}
   - {fileID: -9042523466569686287}
   - {fileID: -1086882083942866384}
@@ -203,7 +204,6 @@ MonoBehaviour:
   - {fileID: 1650562199278596873}
   - {fileID: -3418329573522587857}
   - {fileID: -5130480236353042066}
-  - {fileID: 3891259588905126361}
   nextDialog: {fileID: 11400000, guid: e7dff748f42607e4181ff654a02fcd1e, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}

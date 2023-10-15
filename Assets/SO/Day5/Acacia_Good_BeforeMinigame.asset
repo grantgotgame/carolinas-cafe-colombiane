@@ -191,12 +191,12 @@ MonoBehaviour:
   m_Name: Acacia_Good_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: -6162836863763989990}
   - {fileID: -7510733985766660303}
   - {fileID: -456395018192069137}
   - {fileID: -7949093227830037057}
   - {fileID: 8266512503589940803}
   - {fileID: -6034099479047547070}
-  - {fileID: -6162836863763989990}
   nextDialog: {fileID: 11400000, guid: 41a5468ff8bd4034e8eb3b3651a62d63, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}

@@ -226,6 +226,7 @@ MonoBehaviour:
   m_Name: Alex_Day4_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: -7888850546158206535}
   - {fileID: 5708652230775663563}
   - {fileID: 2807722960194506861}
   - {fileID: -2767504827986035821}
@@ -236,7 +237,6 @@ MonoBehaviour:
   - {fileID: 2137913157524180923}
   - {fileID: 2747204593642645407}
   - {fileID: -4549962347539764597}
-  - {fileID: -7888850546158206535}
   nextDialog: {fileID: 11400000, guid: b6193d695ca97674ab5b7b97b1eb70dd, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}

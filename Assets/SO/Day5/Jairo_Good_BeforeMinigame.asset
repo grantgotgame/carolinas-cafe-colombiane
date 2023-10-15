@@ -48,10 +48,10 @@ MonoBehaviour:
   m_Name: Jairo_Good_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: -914771714743481529}
   - {fileID: 1529429945526907771}
   - {fileID: 3198316699370503139}
   - {fileID: 5966889526161849589}
-  - {fileID: -914771714743481529}
   nextDialog: {fileID: 11400000, guid: 095842ae05bf5964986ecf3911fd63da, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}

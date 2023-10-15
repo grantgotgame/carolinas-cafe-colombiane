@@ -127,7 +127,7 @@ MonoBehaviour:
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 0
   storedData:
@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Name: Santiago_Day2_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: -5129279334890256668}
   - {fileID: -7917716492398346459}
   - {fileID: 2902127690111533796}
   - {fileID: -5991920689170370419}
@@ -233,7 +234,6 @@ MonoBehaviour:
   - {fileID: 554277498100811394}
   - {fileID: -5068825324817472449}
   - {fileID: 1329490928279342093}
-  - {fileID: -5129279334890256668}
   nextDialog: {fileID: 11400000, guid: ed1a28457706d9e47bf819a84455f944, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}

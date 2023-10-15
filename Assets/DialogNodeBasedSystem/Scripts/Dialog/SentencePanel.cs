@@ -83,9 +83,11 @@ namespace cherrydev
         }
 
         public void EnterNewCharacter(Character character, Character otherCharacter) {
-            //New Character is always on right side
             SetupCharactersWithoutDialogue();
-            SetupCharacterSpeakerImages(character, otherCharacter, false);
+            if (character.name == "Carolina")
+                SetupCharacterSpeakerImages(otherCharacter, character, false);
+            else 
+                SetupCharacterSpeakerImages(character, otherCharacter, false);
         }
 
         public void ActivatePanels(DialogData data) {

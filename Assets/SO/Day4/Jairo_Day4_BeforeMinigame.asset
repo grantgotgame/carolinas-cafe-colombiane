@@ -191,6 +191,7 @@ MonoBehaviour:
   m_Name: Jairo_Day4_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: -1330578510924897633}
   - {fileID: -7586325865624929307}
   - {fileID: 2142431631146534784}
   - {fileID: 324414665505047418}
@@ -200,7 +201,6 @@ MonoBehaviour:
   - {fileID: -2305836741225244631}
   - {fileID: -5034386301601925316}
   - {fileID: 5954393433540621235}
-  - {fileID: -1330578510924897633}
   nextDialog: {fileID: 11400000, guid: 09362f616e057ff4eb8ef44f36431fdb, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}

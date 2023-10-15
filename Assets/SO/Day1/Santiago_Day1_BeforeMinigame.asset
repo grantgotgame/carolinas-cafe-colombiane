@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 632
-    y: 486
+    x: 1237
+    y: 514
     width: 200
     height: 100
   isDragging: 0
@@ -45,20 +45,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Santiago
+  m_Name: 1 Santiago
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -130
-    y: 315
+    x: 475
+    y: 343
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 4
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -67,7 +67,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: "\xBFQu\xE9 pasa, Caro?"
-  parentNode: {fileID: 0}
+  parentNode: {fileID: 6098274183026288697}
   childNode: {fileID: 2769873815451963454}
   letter: 
 --- !u!114 &-4617234818866833024
@@ -86,8 +86,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 369
-    y: 485
+    x: 974
+    y: 513
     width: 200
     height: 100
   isDragging: 0
@@ -122,8 +122,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 371
-    y: 248
+    x: 976
+    y: 276
     width: 200
     height: 100
   isDragging: 0
@@ -157,8 +157,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 370
-    y: 358
+    x: 975
+    y: 386
     width: 200
     height: 100
   isDragging: 0
@@ -192,8 +192,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 633
-    y: 368
+    x: 1238
+    y: 396
     width: 200
     height: 100
   isDragging: 0
@@ -224,6 +224,7 @@ MonoBehaviour:
   m_Name: Santiago_Day1_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: 6098274183026288697}
   - {fileID: -4628382681878638453}
   - {fileID: 2769873815451963454}
   - {fileID: -3325729528876273918}
@@ -252,8 +253,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 117
-    y: 291
+    x: 722
+    y: 319
     width: 200
     height: 145
   isDragging: 0
@@ -291,12 +292,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 934
-    y: 371
+    x: 1539
+    y: 399
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 4
   storedData:
@@ -311,6 +312,42 @@ MonoBehaviour:
   parentNode: {fileID: -6658509208884220142}
   childNode: {fileID: 0}
   letter: c
+--- !u!114 &6098274183026288697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 178
+    y: 358
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: "\xA1Ya viene Santiago! Looking cool, as per usual. Won't he overheat
+      in that massive leather jacket of his, though?"
+  parentNode: {fileID: 0}
+  childNode: {fileID: -4628382681878638453}
+  letter: 
 --- !u!114 &9094010943749061217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,8 +364,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 625
-    y: 241
+    x: 1230
+    y: 269
     width: 200
     height: 100
   isDragging: 0

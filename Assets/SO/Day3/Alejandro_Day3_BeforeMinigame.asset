@@ -189,6 +189,7 @@ MonoBehaviour:
   m_Name: Alejandro_Day3_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: 1765835185550823916}
   - {fileID: -3747290632628025045}
   - {fileID: 3221925491281015745}
   - {fileID: -7941613198473692810}
@@ -198,7 +199,6 @@ MonoBehaviour:
   - {fileID: -7167514514980053723}
   - {fileID: 1806011787274818131}
   - {fileID: -8208429263800595177}
-  - {fileID: 1765835185550823916}
   nextDialog: {fileID: 11400000, guid: 3843f346a6e0792419acb3c44183491f, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}

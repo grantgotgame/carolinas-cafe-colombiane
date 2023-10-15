@@ -16,7 +16,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1595
+    x: 1596
     y: 349
     width: 200
     height: 100
@@ -51,7 +51,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1287
+    x: 1288
     y: 342
     width: 200
     height: 100
@@ -86,7 +86,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 492
+    x: 493
     y: 325
     width: 200
     height: 100
@@ -121,7 +121,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1025
+    x: 1026
     y: 226
     width: 200
     height: 100
@@ -156,7 +156,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1291
+    x: 1292
     y: 478
     width: 200
     height: 100
@@ -191,7 +191,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1041
+    x: 1042
     y: 463
     width: 200
     height: 100
@@ -223,6 +223,7 @@ MonoBehaviour:
   m_Name: Acacia_Day2_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: 6633393432444484530}
   - {fileID: -3282896134220021026}
   - {fileID: 2217529066851183093}
   - {fileID: -2835912051377402505}
@@ -232,7 +233,6 @@ MonoBehaviour:
   - {fileID: -5442988927791235061}
   - {fileID: -2381482850553641599}
   - {fileID: -9114132253326112426}
-  - {fileID: 6633393432444484530}
   nextDialog: {fileID: 11400000, guid: 276609873426ebb46b3e26804f52621d, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -252,7 +252,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 721
+    x: 722
     y: 303
     width: 200
     height: 145
@@ -291,7 +291,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1028
+    x: 1029
     y: 340
     width: 200
     height: 100
@@ -326,7 +326,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 218
+    x: 219
     y: 316
     width: 200
     height: 100
@@ -362,7 +362,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1272
+    x: 1273
     y: 218
     width: 200
     height: 100
