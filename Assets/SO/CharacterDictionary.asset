@@ -16,24 +16,32 @@ MonoBehaviour:
   - name: Carolina
     characterSprite: {fileID: 21300000, guid: 923ef858d3190ca42a4d024d4d619232, type: 3}
     nameBadgeSprite: {fileID: 21300000, guid: 34f17fe4939bae441883db61b434d141, type: 3}
+    pitch: 2
   - name: Beatriz
     characterSprite: {fileID: 21300000, guid: c07c8bcaad607a540ae811c1505cd95b, type: 3}
     nameBadgeSprite: {fileID: 21300000, guid: 73a37bb2d5215564d9afecce454badc8, type: 3}
+    pitch: 1
   - name: Jairo
     characterSprite: {fileID: 21300000, guid: 45b978f26017d284897e4b9021253d0b, type: 3}
     nameBadgeSprite: {fileID: 21300000, guid: f57355888762c754399e04a76fff6020, type: 3}
+    pitch: 0
   - name: Alejandro
     characterSprite: {fileID: 21300000, guid: d3397416d70398748b7a9703799d84e4, type: 3}
     nameBadgeSprite: {fileID: 21300000, guid: eb8f89fb9f173694f9d893902a6082a7, type: 3}
+    pitch: 1
   - name: Santiago
     characterSprite: {fileID: 21300000, guid: 263ae3b2d942e8c4aa9f5ec3e386f8a5, type: 3}
     nameBadgeSprite: {fileID: 21300000, guid: f57355888762c754399e04a76fff6020, type: 3}
+    pitch: 0
   - name: Acacia
     characterSprite: {fileID: 21300000, guid: bf40416d370dfa14d87b25f3ec09af47, type: 3}
     nameBadgeSprite: {fileID: 21300000, guid: bfa1f6e552bf4fa4e8183ab980ec3e9b, type: 3}
+    pitch: 2
   - name: Alex
     characterSprite: {fileID: 21300000, guid: d3397416d70398748b7a9703799d84e4, type: 3}
     nameBadgeSprite: {fileID: 21300000, guid: eb8f89fb9f173694f9d893902a6082a7, type: 3}
+    pitch: 1
   - name: None
     characterSprite: {fileID: 21300000, guid: 3c71d02dd6601604ea31b2f9086c480a, type: 3}
     nameBadgeSprite: {fileID: 21300000, guid: 3c71d02dd6601604ea31b2f9086c480a, type: 3}
+    pitch: 0

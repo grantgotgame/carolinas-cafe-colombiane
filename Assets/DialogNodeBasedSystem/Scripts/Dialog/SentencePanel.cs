@@ -25,9 +25,16 @@ namespace cherrydev
         [SerializeField] private Image rSpeakerImage;
 
         private bool isLeftSpeaker;
+        private float soundTimer;
+        private float soundDelay = 0.1f;
         private void Start()
         {
             rDialogText.text = string.Empty;
+            soundTimer = soundDelay;
+        }
+
+        private void Update() {
+            soundTimer -= Time.deltaTime;
         }
 
         /// <summary>
@@ -76,10 +83,15 @@ namespace cherrydev
         /// Adding char to dialog text
         /// </summary>
         /// <param name="textChar"></param>
-        public void AddCharToDialogText(char textChar)
+        public void AddCharToDialogText(char textChar, Character character)
         {
             if (isLeftSpeaker) lDialogText.text += textChar;
             else rDialogText.text += textChar;
+
+            if (soundTimer < 0) {
+                AudioManager.Instance.PlayTalkEffect(character.pitch);
+                soundTimer = soundDelay;
+            }
         }
 
         public void SkipDialogText(string text) {

@@ -10,6 +10,7 @@ public class CharacterDictionarySO : ScriptableObject
         public string name;
         public Sprite characterSprite;
         public Sprite nameBadgeSprite;
+        public int pitch;
     }
 
     public enum CharacterID {

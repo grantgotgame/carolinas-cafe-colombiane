@@ -45,7 +45,7 @@ namespace cherrydev
 
         public static event Action<string> OnDialogSkipText;
 
-        public static event Action<char> OnDialogTextCharWrote;
+        public static event Action<char, Character> OnDialogTextCharWrote;
 
         public static event Action<Character, Character, bool> OnLastNode;
 
@@ -153,7 +153,7 @@ namespace cherrydev
                     OnLastNode?.Invoke(character, otherCharacter, currentNode.storedData.isOnLeftSide);
                 }
 
-                WriteDialogText(sentenceNode.GetSentenceText());
+                WriteDialogText(sentenceNode.GetSentenceText(), character);
             }
             else if (currentNode.GetType() == typeof(AnswerNode))
             {
@@ -220,9 +220,9 @@ namespace cherrydev
         /// Writing dialog text
         /// </summary>
         /// <param name="text"></param>
-        private void WriteDialogText(string text)
+        private void WriteDialogText(string text, Character character)
         {
-            StartCoroutine(WriteDialogTextRoutine(text));
+            StartCoroutine(WriteDialogTextRoutine(text, character));
         }
 
         /// <summary>
@@ -230,7 +230,7 @@ namespace cherrydev
         /// </summary>
         /// <param name="text"></param>
         /// <returns></returns>
-        private IEnumerator WriteDialogTextRoutine(string text)
+        private IEnumerator WriteDialogTextRoutine(string text, Character character)
         {
             skipTextAvailable = true;
             foreach (char textChar in text)
@@ -240,7 +240,7 @@ namespace cherrydev
                     OnDialogSkipText?.Invoke(text);
                     break;
                 }
-                OnDialogTextCharWrote?.Invoke(textChar);
+                OnDialogTextCharWrote?.Invoke(textChar, character);
             }
             skipText = false;
             skipTextAvailable = false;

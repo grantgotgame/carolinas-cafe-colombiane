@@ -5,10 +5,10 @@ using UnityEngine;
 public static class TestScriptDebug
 {
     //Change to true if needing to skip
-    public static bool isTesting = false;
+    public static bool isTesting = true;
 
     //Set which day you want
-    public static int chooseDay = 5;
+    public static int chooseDay = 1;
 
     //Set which character you want
     // 0 - Carolina Introduction
@@ -17,5 +17,5 @@ public static class TestScriptDebug
     // 3 - Alejandro / Alex
     // 4 - Santiago
     // 5 - Acacia
-    public static int chooseCharacter = 3;
+    public static int chooseCharacter = 5;
 }

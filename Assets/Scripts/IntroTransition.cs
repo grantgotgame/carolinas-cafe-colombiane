@@ -34,12 +34,18 @@ public class IntroTransition : MonoBehaviour
             }
             else
             {
+                AudioManager.Instance.PlaySadBackground();
                 OptionPage.SetActive(false);
                 CreditPage.SetActive(true);
             }
         
         }
         
+    }
+
+    public void CloseCreditPage() {
+        CreditPage.SetActive(false);
+        AudioManager.Instance.PlayGameLoopBackground();
     }
 
     private void OptionPageActive()

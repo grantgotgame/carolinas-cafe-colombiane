@@ -9,9 +9,12 @@ public class Loader : MonoBehaviour {
     [SerializeField] private Animator transition;
     [SerializeField, Range(0f, 5f)] private float transitionSeconds;
 
+    public bool IsInTransition { get; private set; }
+
     private void Awake() {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+        IsInTransition = false;
     }
 
     public void PlayMinigame() {
@@ -30,11 +33,29 @@ public class Loader : MonoBehaviour {
         // play animation
         transition.SetTrigger("Start");
 
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+            SelectMusicBasedOnDay(sceneIndex);
+
         yield return new WaitForSeconds(transitionSeconds);
 
-        if (sceneIndex == 2) AudioManager.Instance.PlayGameLoopBackground();
+        if (SceneManager.GetActiveScene().buildIndex != 1)
+            SelectMusicBasedOnDay(sceneIndex);
+
         if (sceneIndex == 3) AudioManager.Instance.PlayMiniGameBackground();
         SceneManager.LoadScene(sceneIndex);
+    }
+
+    private void SelectMusicBasedOnDay(int sceneIndex) {
+        if (sceneIndex == 2) {
+            if (DayManager.Instance == null || DayManager.Instance.GetDay() == 1 || DayManager.Instance.GetDay() == 5) {
+                AudioManager.Instance.PlayGameLoopBackground();
+            } else if (
+                DayManager.Instance.GetDay() == 2) {
+                AudioManager.Instance.PlaySadBackground();
+            } else {
+                AudioManager.Instance.PlayMiniGameBackground();
+            }
+        }
     }
 
     private void Update() {
@@ -45,5 +66,7 @@ public class Loader : MonoBehaviour {
             GoBackToMainScene();
         }
         */
+        if (transition.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f) IsInTransition = true;
+        else IsInTransition = false;
     }
 }

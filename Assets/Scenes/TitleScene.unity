@@ -3246,11 +3246,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a73593c93b42f0346b35024aeb02cb05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTheme: {fileID: 8300000, guid: 38cdc4f33242e844481cd7fb8934cf65, type: 3}
+  sadBackground: {fileID: 8300000, guid: f802d6cbb9f4cea4093014c39c44c1c7, type: 3}
   startGameEffect: {fileID: 0}
   gameLoopBackground: {fileID: 8300000, guid: 38cdc4f33242e844481cd7fb8934cf65, type: 3}
-  miniGameBackground: {fileID: 8300000, guid: c6cecd72a9c7b8549ae9e0609690359e, type: 3}
-  talkEffect: {fileID: 0}
+  miniGameBackground: {fileID: 8300000, guid: f4fbbdf04dcadd243a2737a7ef722ff2, type: 3}
+  talkEffects:
+  - clips:
+    - {fileID: 8300000, guid: 27c1de4f3a5aca84dadfb913b7224a3d, type: 3}
+    - {fileID: 8300000, guid: 7e34affc0d9d7c74d84ed7bd738bd2d5, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: a4108a3626a006746bdd658ac5f396c0, type: 3}
+    - {fileID: 8300000, guid: 96b02e15defe4b14dab7c21df23554e8, type: 3}
+  - clips:
+    - {fileID: 8300000, guid: cb9742690a7926a40863d7ddd84fb3bf, type: 3}
+  fadeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   _musicSource: {fileID: 2129499626}
 --- !u!82 &2129499626
 AudioSource:

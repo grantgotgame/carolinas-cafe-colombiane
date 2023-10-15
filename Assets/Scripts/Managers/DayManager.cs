@@ -76,6 +76,7 @@ public class DayManager : MonoBehaviour
     IEnumerator TransitionToMinigame() {
         yield return new WaitForSeconds(transitionDelay);
 
+        AudioManager.Instance.PlayMiniGameBackground();
         Loader.Instance.PlayMinigame();
     }
     IEnumerator TransitionToNextCustomer() {

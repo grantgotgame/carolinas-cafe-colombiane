@@ -10,6 +10,7 @@ public class TransitionManager : MonoBehaviour {
     [SerializeField, Range(0f, 5f)] private float transitionDelay;
 
     private DayManager dayManager;
+    private AudioSource transitionSound;
 
     private void Start() {
         if (DayManager.Instance != null) {
@@ -18,11 +19,17 @@ public class TransitionManager : MonoBehaviour {
             dayAfter.text = (day).ToString();
         }
 
+        GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("GameVolume");
+
+        AudioManager.Instance.LowerGameplayMusicVolume();
+
         StartCoroutine(TransitionToNewDay());
     }
 
     IEnumerator TransitionToNewDay() {
         yield return new WaitForSeconds(transitionDelay);
+
+        AudioManager.Instance.ResumeGameplayMusicVolume();
 
         Loader.Instance.GoBackToMainScene();
     }
