@@ -12,7 +12,7 @@ public class IntroTransition : MonoBehaviour
     [SerializeField] Button OptionButton;
     [SerializeField] Button CreditsButton;
     [SerializeField] GameObject OptionPage;
-    [SerializeField] GameObject MainPage;
+    [SerializeField] GameObject CreditPage;
     [SerializeField] TransitionSettings transitionSettings;
 
 
@@ -20,25 +20,45 @@ public class IntroTransition : MonoBehaviour
     {
         StartGameButton.onClick.AddListener(StartGame);
         OptionButton.onClick.AddListener(OptionPageActive);
-        CreditsButton.onClick.AddListener(MainPageActive);
+        CreditsButton.onClick.AddListener(CreditPageActive);
     }
 
-    private void MainPageActive()
+    private void CreditPageActive()
     {
-        if (OptionPage != null && MainPage != null)
+        if (OptionPage != null && CreditPage != null)
         {
-            OptionPage.SetActive(false);
-            MainPage.SetActive(true);
+            if (CreditPage.activeInHierarchy)
+            {
+                OptionPage.SetActive(false);
+                CreditPage.SetActive(false);
+            }
+            else
+            {
+                OptionPage.SetActive(false);
+                CreditPage.SetActive(true);
+            }
+        
         }
         
     }
 
     private void OptionPageActive()
     {
-        if(OptionPage!=null && MainPage != null)
+        if(OptionPage!=null && CreditPage != null)
         {
-            OptionPage.SetActive(true);
-            MainPage.SetActive(false);
+
+            if (OptionPage.activeInHierarchy)
+            {
+                OptionPage.SetActive(false);
+                CreditPage.SetActive(false);
+            }
+            else
+            {
+                OptionPage.SetActive(true);
+                CreditPage.SetActive(false);
+            }
+
+         
         }
     }
 
