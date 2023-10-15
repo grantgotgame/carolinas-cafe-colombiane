@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 540
-    y: 350
+    x: 747
+    y: 386
     width: 200
     height: 100
   isDragging: 0
@@ -36,6 +36,42 @@ MonoBehaviour:
   parentNode: {fileID: 2744240419553778777}
   childNode: {fileID: -512411459772095270}
   letter: 
+--- !u!114 &-5898505102397449581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 198
+    y: 386
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 6
+  sentence:
+    sentence: I really hope Alex's treatment has started well and has had no side
+      effects and such!
+  parentNode: {fileID: 0}
+  childNode: {fileID: 2744240419553778777}
+  letter: 
 --- !u!114 &-512411459772095270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52,12 +88,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 837
-    y: 344
+    x: 1044
+    y: 380
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 6
   count: 2
   storedData:
@@ -88,6 +124,7 @@ MonoBehaviour:
   - {fileID: 2744240419553778777}
   - {fileID: -7192806920571558054}
   - {fileID: -512411459772095270}
+  - {fileID: -5898505102397449581}
   nextDialog: {fileID: 11400000, guid: 7356a35faafdd484f88ddc2bb484f7e7, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -101,20 +138,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Alex
+  m_Name: 1 Alex
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 250
-    y: 346
+    x: 457
+    y: 382
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 6
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -124,6 +161,6 @@ MonoBehaviour:
   sentence:
     sentence: Sis! The hormone therapy went well, talked with our folks, and also
       I'm moving out to live con mi nuevo novio.
-  parentNode: {fileID: 0}
+  parentNode: {fileID: -5898505102397449581}
   childNode: {fileID: -7192806920571558054}
   letter: 

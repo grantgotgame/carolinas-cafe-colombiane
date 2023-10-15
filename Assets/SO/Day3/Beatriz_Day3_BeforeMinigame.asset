@@ -1,5 +1,41 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5744042242616860782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 353
+    y: 235
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 1
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 1
+  sentence:
+    sentence: "Abuelita\u2019s coming by in a hurry. I hope she\u2019ll have time
+      for a meal!"
+  parentNode: {fileID: 0}
+  childNode: {fileID: 4069477939735974895}
+  letter: 
 --- !u!114 &-4431167015899635525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,12 +52,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 590
-    y: 521
+    x: 1496
+    y: 427
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 1
   count: 3
   storedData:
@@ -51,12 +87,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 591
-    y: 348
+    x: 1497
+    y: 254
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 1
   count: 3
   storedData:
@@ -92,6 +128,7 @@ MonoBehaviour:
   - {fileID: -2736385365341643225}
   - {fileID: -4431167015899635525}
   - {fileID: 1713210515985716012}
+  - {fileID: -5744042242616860782}
   nextDialog: {fileID: 11400000, guid: b888529d0074d964289056dbeac3ac44, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -111,12 +148,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 583
-    y: 196
+    x: 1489
+    y: 102
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 1
   count: 3
   storedData:
@@ -146,8 +183,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 918
-    y: 326
+    x: 1824
+    y: 232
     width: 200
     height: 100
   isDragging: 0
@@ -182,8 +219,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 276
-    y: 523
+    x: 1182
+    y: 429
     width: 200
     height: 100
   isDragging: 0
@@ -211,20 +248,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Beatriz
+  m_Name: 1 Beatriz
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -278
-    y: 329
+    x: 628
+    y: 235
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -234,7 +271,7 @@ MonoBehaviour:
   sentence:
     sentence: "Hola ni\xF1a Carolina, I have come here to ask for your advice on
       una cosa. Would you be willing to escuchar a la anciana?"
-  parentNode: {fileID: 0}
+  parentNode: {fileID: -5744042242616860782}
   childNode: {fileID: 8631074689600284841}
   letter: 
 --- !u!114 &6670755220136972981
@@ -253,8 +290,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 283
-    y: 193
+    x: 1189
+    y: 99
     width: 200
     height: 100
   isDragging: 0
@@ -288,8 +325,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 278
-    y: 343
+    x: 1184
+    y: 249
     width: 200
     height: 100
   isDragging: 0
@@ -323,8 +360,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -24
-    y: 309
+    x: 882
+    y: 215
     width: 200
     height: 145
   isDragging: 0

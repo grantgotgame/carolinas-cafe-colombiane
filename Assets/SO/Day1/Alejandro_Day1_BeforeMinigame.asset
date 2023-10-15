@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 182
-    y: 433
+    x: 1209
+    y: 486
     width: 200
     height: 100
   isDragging: 0
@@ -45,20 +45,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Alejandro
+  m_Name: 1 Alejandro
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -339
-    y: 248
+    x: 688
+    y: 301
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 3
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -67,7 +67,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Oye sis, it sure is hot out there today right?
-  parentNode: {fileID: 0}
+  parentNode: {fileID: 3536058096581331167}
   childNode: {fileID: 1996565386661345612}
   letter: 
 --- !u!114 &-3876914024690768950
@@ -86,8 +86,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 449
-    y: 428
+    x: 1476
+    y: 481
     width: 200
     height: 100
   isDragging: 0
@@ -128,6 +128,7 @@ MonoBehaviour:
   - {fileID: 8950634911715654117}
   - {fileID: -3876914024690768950}
   - {fileID: 2545855819606997908}
+  - {fileID: 3536058096581331167}
   nextDialog: {fileID: 11400000, guid: 8345b0a3f43598d47b8a8d4eadf03534, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -147,8 +148,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -107
-    y: 220
+    x: 920
+    y: 273
     width: 200
     height: 145
   isDragging: 0
@@ -186,12 +187,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 770
-    y: 267
+    x: 1797
+    y: 320
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 3
   count: 4
   storedData:
@@ -222,8 +223,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 431
-    y: 146
+    x: 1458
+    y: 199
     width: 200
     height: 100
   isDragging: 0
@@ -243,6 +244,42 @@ MonoBehaviour:
   parentNode: {fileID: 5540437700294945203}
   childNode: {fileID: 2545855819606997908}
   letter: a
+--- !u!114 &3536058096581331167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 398
+    y: 302
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 3
+  sentence:
+    sentence: Here comes Alejandro, glad to know he found at least some time to be
+      away from his computadora. *Giggles*
+  parentNode: {fileID: 0}
+  childNode: {fileID: -7647406424659155541}
+  letter: 
 --- !u!114 &5540437700294945203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,8 +296,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 175
-    y: 155
+    x: 1202
+    y: 208
     width: 200
     height: 100
   isDragging: 0
@@ -294,8 +331,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 184
-    y: 292
+    x: 1211
+    y: 345
     width: 200
     height: 100
   isDragging: 0
@@ -329,8 +366,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 439
-    y: 297
+    x: 1466
+    y: 350
     width: 200
     height: 100
   isDragging: 0

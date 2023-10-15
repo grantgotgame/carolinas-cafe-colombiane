@@ -16,12 +16,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1043
-    y: 353
+    x: 1595
+    y: 349
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 5
   count: 4
   storedData:
@@ -51,8 +51,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 735
-    y: 346
+    x: 1287
+    y: 342
     width: 200
     height: 100
   isDragging: 0
@@ -80,20 +80,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Acacia
+  m_Name: 1 Acacia
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -60
-    y: 329
+    x: 492
+    y: 325
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 5
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -102,7 +102,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Haaaaaaai Linaaaaaa . . .
-  parentNode: {fileID: 0}
+  parentNode: {fileID: 6633393432444484530}
   childNode: {fileID: 2217529066851183093}
   letter: 
 --- !u!114 &-2835912051377402505
@@ -121,12 +121,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 473
-    y: 230
+    x: 1025
+    y: 226
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 2
   storedData:
@@ -156,8 +156,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 739
-    y: 482
+    x: 1291
+    y: 478
     width: 200
     height: 100
   isDragging: 0
@@ -191,12 +191,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 489
-    y: 467
+    x: 1041
+    y: 463
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 2
   storedData:
@@ -232,6 +232,7 @@ MonoBehaviour:
   - {fileID: -5442988927791235061}
   - {fileID: -2381482850553641599}
   - {fileID: -9114132253326112426}
+  - {fileID: 6633393432444484530}
   nextDialog: {fileID: 11400000, guid: 276609873426ebb46b3e26804f52621d, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -251,8 +252,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 169
-    y: 307
+    x: 721
+    y: 303
     width: 200
     height: 145
   isDragging: 0
@@ -290,12 +291,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 476
-    y: 344
+    x: 1028
+    y: 340
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 2
   storedData:
@@ -309,6 +310,42 @@ MonoBehaviour:
   parentNode: {fileID: 2217529066851183093}
   childNode: {fileID: -5442988927791235061}
   letter: b
+--- !u!114 &6633393432444484530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 218
+    y: 316
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 5
+  sentence:
+    sentence: Acacia seems to be arriving, but . . . she doesn't seem to have brought
+      her usual groove along with her.
+  parentNode: {fileID: 0}
+  childNode: {fileID: -3282896134220021026}
+  letter: 
 --- !u!114 &8656880246113057924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,8 +362,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 720
-    y: 222
+    x: 1272
+    y: 218
     width: 200
     height: 100
   isDragging: 0

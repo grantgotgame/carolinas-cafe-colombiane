@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 401
-    y: 309
+    x: 1520
+    y: 263
     width: 200
     height: 100
   isDragging: 0
@@ -35,6 +35,42 @@ MonoBehaviour:
   parentNode: {fileID: -4344424727618352098}
   childNode: {fileID: 2130710302650523564}
   letter: b
+--- !u!114 &-5636367249973685803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 326
+    y: 271
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 4
+  sentence:
+    sentence: Wow wow wow, 'tis almost like Santiago's leaping into a ring by the
+      way he's coming here today. He sure is fired up today! I must know why.
+  parentNode: {fileID: 0}
+  childNode: {fileID: -24267913413165660}
+  letter: 
 --- !u!114 &-4344424727618352098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,8 +87,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 81
-    y: 308
+    x: 1200
+    y: 262
     width: 200
     height: 100
   isDragging: 0
@@ -86,8 +122,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 81
-    y: 156
+    x: 1200
+    y: 110
     width: 200
     height: 100
   isDragging: 0
@@ -121,8 +157,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 404
-    y: 461
+    x: 1523
+    y: 415
     width: 200
     height: 100
   isDragging: 0
@@ -156,8 +192,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 400
-    y: 155
+    x: 1519
+    y: 109
     width: 200
     height: 100
   isDragging: 0
@@ -185,20 +221,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Santiago
+  m_Name: 1 Santiago
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -506
-    y: 314
+    x: 613
+    y: 268
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 4
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -207,7 +243,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Carolina, I'm ready! *Punching the air* Estoy listo!
-  parentNode: {fileID: 0}
+  parentNode: {fileID: -5636367249973685803}
   childNode: {fileID: 1400957662046900324}
   letter: 
 --- !u!114 &11400000
@@ -233,6 +269,7 @@ MonoBehaviour:
   - {fileID: -2809933853664822013}
   - {fileID: 2130710302650523564}
   - {fileID: 2658474268869929386}
+  - {fileID: -5636367249973685803}
   nextDialog: {fileID: 11400000, guid: 505b21341732cda46a2d316035548716, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -252,8 +289,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -235
-    y: 286
+    x: 884
+    y: 240
     width: 200
     height: 145
   isDragging: 0
@@ -291,8 +328,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 693
-    y: 309
+    x: 1812
+    y: 263
     width: 200
     height: 100
   isDragging: 0
@@ -327,12 +364,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 955
-    y: 307
+    x: 2074
+    y: 261
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 4
   count: 5
   storedData:
@@ -362,8 +399,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 83
-    y: 459
+    x: 1202
+    y: 413
     width: 200
     height: 100
   isDragging: 0

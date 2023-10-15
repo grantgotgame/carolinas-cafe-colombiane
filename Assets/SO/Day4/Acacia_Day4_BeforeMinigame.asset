@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 405
-    y: 485
+    x: 1506
+    y: 525
     width: 200
     height: 100
   isDragging: 0
@@ -51,8 +51,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 400
-    y: 319
+    x: 1501
+    y: 359
     width: 200
     height: 100
   isDragging: 0
@@ -87,8 +87,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 80
-    y: 322
+    x: 1181
+    y: 362
     width: 200
     height: 100
   isDragging: 0
@@ -106,6 +106,42 @@ MonoBehaviour:
   parentNode: {fileID: 9024624885132875514}
   childNode: {fileID: -4928541570636633245}
   letter: b
+--- !u!114 &-1529096507452968752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 303
+    y: 363
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 5
+  sentence:
+    sentence: I really hope my yesterday's advice was able to help Acacia out at
+      least somewhat . . . I really wish I could do more for her!
+  parentNode: {fileID: 0}
+  childNode: {fileID: 6290948905851882909}
+  letter: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +164,7 @@ MonoBehaviour:
   - {fileID: -4928541570636633245}
   - {fileID: -6063779315712607811}
   - {fileID: 70197201323085000}
+  - {fileID: -1529096507452968752}
   nextDialog: {fileID: 11400000, guid: b6c24f709e805c941af0127a17d7d1cd, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -147,8 +184,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 748
-    y: 312
+    x: 1849
+    y: 352
     width: 200
     height: 100
   isDragging: 0
@@ -184,8 +221,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 76
-    y: 170
+    x: 1177
+    y: 210
     width: 200
     height: 100
   isDragging: 0
@@ -219,8 +256,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 402
-    y: 160
+    x: 1503
+    y: 200
     width: 200
     height: 100
   isDragging: 0
@@ -249,20 +286,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Acacia
+  m_Name: 1 Acacia
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -519
-    y: 326
+    x: 582
+    y: 366
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 5
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -271,7 +308,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Oh helloooo Linaaaaaaa. ~ <3
-  parentNode: {fileID: 0}
+  parentNode: {fileID: -1529096507452968752}
   childNode: {fileID: 9024624885132875514}
   letter: 
 --- !u!114 &8689012880236701435
@@ -290,8 +327,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 79
-    y: 486
+    x: 1180
+    y: 526
     width: 200
     height: 100
   isDragging: 0
@@ -325,8 +362,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -232
-    y: 302
+    x: 869
+    y: 342
     width: 200
     height: 145
   isDragging: 0

@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Jairo
+  m_Name: 1 Jairo
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -449
-    y: 339
+    x: 345
+    y: 263
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 2
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -33,7 +33,7 @@ MonoBehaviour:
   sentence:
     sentence: Oy oy oy Carolina, do you serve aguardiente over here? I sure could
       use something fuerte right about now . . .
-  parentNode: {fileID: 0}
+  parentNode: {fileID: 9017736151945744390}
   childNode: {fileID: -4159170259221079498}
   letter: 
 --- !u!114 &-6958869623029679648
@@ -52,8 +52,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 92
-    y: 509
+    x: 886
+    y: 433
     width: 200
     height: 100
   isDragging: 0
@@ -87,8 +87,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 364
-    y: 392
+    x: 1158
+    y: 316
     width: 200
     height: 100
   isDragging: 0
@@ -122,8 +122,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -187
-    y: 325
+    x: 607
+    y: 249
     width: 200
     height: 145
   isDragging: 0
@@ -161,8 +161,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 366
-    y: 276
+    x: 1160
+    y: 200
     width: 200
     height: 100
   isDragging: 0
@@ -196,8 +196,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 657
-    y: 383
+    x: 1451
+    y: 307
     width: 200
     height: 100
   isDragging: 0
@@ -232,8 +232,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 91
-    y: 395
+    x: 885
+    y: 319
     width: 200
     height: 100
   isDragging: 0
@@ -273,6 +273,7 @@ MonoBehaviour:
   - {fileID: -4221597356073311563}
   - {fileID: 6794095987356920089}
   - {fileID: -1721416731897428691}
+  - {fileID: 9017736151945744390}
   nextDialog: {fileID: 11400000, guid: c8efb8b41df27ea4d9d49e85abbf2ce1, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -292,8 +293,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 379
-    y: 510
+    x: 1173
+    y: 434
     width: 200
     height: 100
   isDragging: 0
@@ -327,8 +328,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 88
-    y: 275
+    x: 882
+    y: 199
     width: 200
     height: 100
   isDragging: 0
@@ -346,3 +347,39 @@ MonoBehaviour:
   parentNode: {fileID: -4159170259221079498}
   childNode: {fileID: -2303693122253102591}
   letter: a
+--- !u!114 &9017736151945744390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 69
+    y: 266
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 1
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 2
+  sentence:
+    sentence: "Pap\xE1 is looking . . . sad. That's not like dad at all, something
+      terrible must have happened!"
+  parentNode: {fileID: 0}
+  childNode: {fileID: -8590788461470626301}
+  letter: 

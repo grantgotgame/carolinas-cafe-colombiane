@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1238
-    y: 303
+    x: 1799
+    y: 327
     width: 200
     height: 100
   isDragging: 0
@@ -53,8 +53,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 685
-    y: 313
+    x: 1246
+    y: 337
     width: 200
     height: 100
   isDragging: 0
@@ -88,8 +88,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 682
-    y: 184
+    x: 1243
+    y: 208
     width: 200
     height: 100
   isDragging: 0
@@ -123,8 +123,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 687
-    y: 461
+    x: 1248
+    y: 485
     width: 200
     height: 100
   isDragging: 0
@@ -152,20 +152,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Jairo
+  m_Name: 1 Jairo
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 108
-    y: 266
+    x: 669
+    y: 290
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 2
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -174,7 +174,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Ayyyyyy, is it hot outside today! I can feel the burn!
-  parentNode: {fileID: 0}
+  parentNode: {fileID: 4157263352037527567}
   childNode: {fileID: 3193044837912632406}
   letter: 
 --- !u!114 &11400000
@@ -199,6 +199,7 @@ MonoBehaviour:
   - {fileID: 2537000986206478534}
   - {fileID: 2162170517126070015}
   - {fileID: -8265850730425884174}
+  - {fileID: 4157263352037527567}
   nextDialog: {fileID: 11400000, guid: 74ebfc512f637904bb2c1c06bcddf2e0, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -218,8 +219,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 954
-    y: 456
+    x: 1515
+    y: 480
     width: 200
     height: 100
   isDragging: 0
@@ -253,8 +254,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 951
-    y: 314
+    x: 1512
+    y: 338
     width: 200
     height: 100
   isDragging: 0
@@ -288,8 +289,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 388
-    y: 248
+    x: 949
+    y: 272
     width: 200
     height: 145
   isDragging: 0
@@ -311,6 +312,43 @@ MonoBehaviour:
   - {fileID: -1490011571839730682}
   - {fileID: -7302894440834232962}
   - {fileID: -442883758277770498}
+--- !u!114 &4157263352037527567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 382
+    y: 287
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 1
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: "Pap\xE1 is coming! I can smell his strong cologne all the way here.
+      He's running, but not wearing a track suit, just his traditional fancy coat
+      instead?"
+  parentNode: {fileID: 0}
+  childNode: {fileID: -197607288538249446}
+  letter: 
 --- !u!114 &6114180410931376612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,8 +365,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 951
-    y: 185
+    x: 1512
+    y: 209
     width: 200
     height: 100
   isDragging: 0

@@ -505,6 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 006feceff865a7a4895e2581464d865f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgm: {fileID: 0}
 --- !u!1 &147588116
 GameObject:
   m_ObjectHideFlags: 0
@@ -3422,9 +3423,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This day feels . . . ominous, somehow. I hope I can whip up something good
-    to brighten up my customers' day! The question is, though, who's going to be
-    the first one for the day?
+  m_text: Wow wow wow, 'tis almost like Santiago's leaping into a ring by the way
+    he's coming here today. He sure is fired up today! I must know why.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8ecd17aeceaba4c10b42ac497ccbfcff, type: 2}
   m_sharedMaterial: {fileID: 2830636965969884548, guid: 8ecd17aeceaba4c10b42ac497ccbfcff, type: 2}

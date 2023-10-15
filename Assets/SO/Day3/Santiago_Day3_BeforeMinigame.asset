@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -254
-    y: 348
+    x: 784
+    y: 314
     width: 200
     height: 145
   isDragging: 0
@@ -55,12 +55,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 744
-    y: 357
+    x: 1782
+    y: 323
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 4
   count: 4
   storedData:
@@ -92,8 +92,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 396
-    y: 506
+    x: 1434
+    y: 472
     width: 200
     height: 100
   isDragging: 0
@@ -127,8 +127,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 70
-    y: 214
+    x: 1108
+    y: 180
     width: 200
     height: 100
   isDragging: 0
@@ -162,8 +162,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 71
-    y: 365
+    x: 1109
+    y: 331
     width: 200
     height: 100
   isDragging: 0
@@ -203,6 +203,7 @@ MonoBehaviour:
   - {fileID: 1650562199278596873}
   - {fileID: -3418329573522587857}
   - {fileID: -5130480236353042066}
+  - {fileID: 3891259588905126361}
   nextDialog: {fileID: 11400000, guid: e7dff748f42607e4181ff654a02fcd1e, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -222,8 +223,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 395
-    y: 365
+    x: 1433
+    y: 331
     width: 200
     height: 100
   isDragging: 0
@@ -251,20 +252,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Santiago
+  m_Name: 1 Santiago
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -529
-    y: 380
+    x: 509
+    y: 346
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 4
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -273,8 +274,44 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Carolina, hey!
-  parentNode: {fileID: 0}
+  parentNode: {fileID: 3891259588905126361}
   childNode: {fileID: -9042523466569686287}
+  letter: 
+--- !u!114 &3891259588905126361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 227
+    y: 343
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 4
+  sentence:
+    sentence: Here comes the champ, right on time for dinner! And he seems veeery
+      determined, too!
+  parentNode: {fileID: 0}
+  childNode: {fileID: 2010936041674652245}
   letter: 
 --- !u!114 &5124659479602332625
 MonoBehaviour:
@@ -292,8 +329,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 69
-    y: 507
+    x: 1107
+    y: 473
     width: 200
     height: 100
   isDragging: 0
@@ -327,8 +364,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 392
-    y: 214
+    x: 1430
+    y: 180
     width: 200
     height: 100
   isDragging: 0

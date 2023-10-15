@@ -1,5 +1,40 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8335954664614710550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 231
+    y: 211
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 1
+  sentence:
+    sentence: "Beatriz looks . . . worried. I hope everything\u2019s alright!"
+  parentNode: {fileID: 0}
+  childNode: {fileID: -3595768328904062241}
+  letter: 
 --- !u!114 &-3595768328904062241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10,20 +45,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Beatriz
+  m_Name: 1 Beatriz
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -121
-    y: 255
+    x: 504
+    y: 227
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -32,7 +67,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Hola Carolina. Somehow it feels so . . . gloomy today.
-  parentNode: {fileID: 0}
+  parentNode: {fileID: -8335954664614710550}
   childNode: {fileID: 3924634122061330406}
   letter: 
 --- !u!114 &-1865076720373619432
@@ -51,12 +86,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 418
-    y: 194
+    x: 1043
+    y: 166
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 2
   storedData:
@@ -86,8 +121,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 677
-    y: 443
+    x: 1302
+    y: 415
     width: 200
     height: 100
   isDragging: 0
@@ -121,12 +156,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1011
-    y: 328
+    x: 1636
+    y: 300
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 1
   count: 4
   storedData:
@@ -163,6 +198,7 @@ MonoBehaviour:
   - {fileID: 4461108587365215855}
   - {fileID: -1233098429298022851}
   - {fileID: -655888089642569973}
+  - {fileID: -8335954664614710550}
   nextDialog: {fileID: 11400000, guid: 737455f9f20f1df4fbb3ae12dcfb6faa, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -182,8 +218,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 126
-    y: 243
+    x: 751
+    y: 215
     width: 200
     height: 145
   isDragging: 0
@@ -221,8 +257,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 696
-    y: 318
+    x: 1321
+    y: 290
     width: 200
     height: 100
   isDragging: 0
@@ -256,8 +292,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 683
-    y: 194
+    x: 1308
+    y: 166
     width: 200
     height: 100
   isDragging: 0
@@ -291,12 +327,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 430
-    y: 314
+    x: 1055
+    y: 286
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 2
   storedData:
@@ -326,12 +362,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 423
-    y: 442
+    x: 1048
+    y: 414
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 2
   storedData:

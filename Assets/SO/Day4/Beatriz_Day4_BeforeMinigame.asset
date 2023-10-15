@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 319
-    y: 191
+    x: 1499
+    y: 225
     width: 200
     height: 100
   isDragging: 0
@@ -52,12 +52,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 983
-    y: 345
+    x: 2163
+    y: 379
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 1
   count: 5
   storedData:
@@ -88,8 +88,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 59
-    y: 375
+    x: 1239
+    y: 409
     width: 200
     height: 100
   isDragging: 0
@@ -123,8 +123,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 52
-    y: 189
+    x: 1232
+    y: 223
     width: 200
     height: 100
   isDragging: 0
@@ -165,6 +165,7 @@ MonoBehaviour:
   - {fileID: 4640136371830421017}
   - {fileID: 8888482864007244935}
   - {fileID: -8493148796214598054}
+  - {fileID: 2417205475782915616}
   nextDialog: {fileID: 11400000, guid: 66583fc7b2a12f74c8a47ebf355908da, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -178,20 +179,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Beatriz
+  m_Name: 1 Beatriz
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -526
-    y: 395
+    x: 654
+    y: 429
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -200,8 +201,44 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Carolina querida. It has finally happened!
-  parentNode: {fileID: 0}
+  parentNode: {fileID: 2417205475782915616}
   childNode: {fileID: 7362997598725235377}
+  letter: 
+--- !u!114 &2417205475782915616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 366
+    y: 434
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 1
+  sentence:
+    sentence: "My abuelita seems . . . radiant today. It\u2019s as if the sunrays
+      would be targeting her."
+  parentNode: {fileID: 0}
+  childNode: {fileID: 2263010115481070857}
   letter: 
 --- !u!114 &4105895767531478866
 MonoBehaviour:
@@ -219,8 +256,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 58
-    y: 541
+    x: 1238
+    y: 575
     width: 200
     height: 100
   isDragging: 0
@@ -255,8 +292,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 356
-    y: 533
+    x: 1536
+    y: 567
     width: 200
     height: 100
   isDragging: 0
@@ -291,8 +328,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 356
-    y: 368
+    x: 1536
+    y: 402
     width: 200
     height: 100
   isDragging: 0
@@ -327,8 +364,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -249
-    y: 352
+    x: 931
+    y: 386
     width: 200
     height: 145
   isDragging: 0
@@ -366,8 +403,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 697
-    y: 346
+    x: 1877
+    y: 380
     width: 200
     height: 100
   isDragging: 0

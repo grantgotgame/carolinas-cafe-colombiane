@@ -16,12 +16,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 933
-    y: 259
+    x: 2254
+    y: 136
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 5
   count: 5
   storedData:
@@ -35,6 +35,41 @@ MonoBehaviour:
       best caf\xE9 negro, too!"
   parentNode: {fileID: 5334654173603591753}
   childNode: {fileID: 0}
+  letter: 
+--- !u!114 &-4597883859698454947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 524
+    y: 155
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 5
+  sentence:
+    sentence: I hope everything's fine with Acacia. Speaking of which!
+  parentNode: {fileID: 0}
+  childNode: {fileID: 567365580965287640}
   letter: 
 --- !u!114 &-2397641690113221020
 MonoBehaviour:
@@ -52,8 +87,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 378
-    y: 434
+    x: 1699
+    y: 311
     width: 200
     height: 100
   isDragging: 0
@@ -87,8 +122,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -235
-    y: 247
+    x: 1086
+    y: 124
     width: 200
     height: 145
   isDragging: 0
@@ -126,8 +161,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 84
-    y: 102
+    x: 1405
+    y: -21
     width: 200
     height: 100
   isDragging: 0
@@ -168,6 +203,7 @@ MonoBehaviour:
   - {fileID: -2397641690113221020}
   - {fileID: 5334654173603591753}
   - {fileID: -5624916654455127935}
+  - {fileID: -4597883859698454947}
   nextDialog: {fileID: 11400000, guid: fd0cf35fafb48114fbda70028a8e66c0, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -181,20 +217,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Acacia
+  m_Name: 1 Acacia
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -486
-    y: 278
+    x: 835
+    y: 155
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 5
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -203,7 +239,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Hola Lina. I've come to ask you something.
-  parentNode: {fileID: 0}
+  parentNode: {fileID: -4597883859698454947}
   childNode: {fileID: -1750259584536673150}
   letter: 
 --- !u!114 &2597620935254453830
@@ -222,8 +258,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 368
-    y: 99
+    x: 1689
+    y: -24
     width: 200
     height: 100
   isDragging: 0
@@ -257,8 +293,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 366
-    y: 265
+    x: 1687
+    y: 142
     width: 200
     height: 100
   isDragging: 0
@@ -293,8 +329,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 88
-    y: 436
+    x: 1409
+    y: 313
     width: 200
     height: 100
   isDragging: 0
@@ -328,8 +364,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 697
-    y: 261
+    x: 2018
+    y: 138
     width: 200
     height: 100
   isDragging: 0
@@ -364,8 +400,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 87
-    y: 267
+    x: 1408
+    y: 144
     width: 200
     height: 100
   isDragging: 0

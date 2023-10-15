@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 375
-    y: 483
+    x: 1214
+    y: 439
     width: 200
     height: 100
   isDragging: 0
@@ -45,20 +45,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Jairo
+  m_Name: 1 Jairo
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -227
-    y: 297
+    x: 612
+    y: 253
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 2
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -68,7 +68,7 @@ MonoBehaviour:
   sentence:
     sentence: Carolina, my dear hija. I will finally do it today, I'll make everything
       right. A todos.
-  parentNode: {fileID: 0}
+  parentNode: {fileID: -1330578510924897633}
   childNode: {fileID: 2142431631146534784}
   letter: 
 --- !u!114 &-5034386301601925316
@@ -87,8 +87,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 688
-    y: 484
+    x: 1527
+    y: 440
     width: 200
     height: 100
   isDragging: 0
@@ -122,8 +122,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 680
-    y: 290
+    x: 1519
+    y: 246
     width: 200
     height: 100
   isDragging: 0
@@ -142,6 +142,42 @@ MonoBehaviour:
   parentNode: {fileID: 2770967273524768624}
   childNode: {fileID: 5954393433540621235}
   letter: b
+--- !u!114 &-1330578510924897633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 352
+    y: 250
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 2
+  sentence:
+    sentence: "Pap\xE1 is coming again. I sure hope he's given some thought for setting
+      things straight with everyone."
+  parentNode: {fileID: 0}
+  childNode: {fileID: -7586325865624929307}
+  letter: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +200,7 @@ MonoBehaviour:
   - {fileID: -2305836741225244631}
   - {fileID: -5034386301601925316}
   - {fileID: 5954393433540621235}
+  - {fileID: -1330578510924897633}
   nextDialog: {fileID: 11400000, guid: 09362f616e057ff4eb8ef44f36431fdb, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -183,8 +220,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 373
-    y: 91
+    x: 1212
+    y: 47
     width: 200
     height: 100
   isDragging: 0
@@ -218,8 +255,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 49
-    y: 272
+    x: 888
+    y: 228
     width: 200
     height: 145
   isDragging: 0
@@ -257,8 +294,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 373
-    y: 291
+    x: 1212
+    y: 247
     width: 200
     height: 100
   isDragging: 0
@@ -292,12 +329,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1075
-    y: 284
+    x: 1914
+    y: 240
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 2
   count: 4
   storedData:
@@ -329,8 +366,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 672
-    y: 93
+    x: 1511
+    y: 49
     width: 200
     height: 100
   isDragging: 0

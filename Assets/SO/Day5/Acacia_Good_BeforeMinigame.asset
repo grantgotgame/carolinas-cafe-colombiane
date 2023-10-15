@@ -16,12 +16,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 556
-    y: 339
+    x: 965
+    y: 360
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 5
   count: 2
   storedData:
@@ -45,20 +45,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Acacia
+  m_Name: 1 Acacia
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -7
-    y: 345
+    x: 402
+    y: 366
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 5
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -67,8 +67,44 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: "Carolina Carolina!!! La audici\xF3n was a success, I got accepted! "
-  parentNode: {fileID: 0}
+  parentNode: {fileID: -6162836863763989990}
   childNode: {fileID: -456395018192069137}
+  letter: 
+--- !u!114 &-6162836863763989990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 141
+    y: 362
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 5
+  sentence:
+    sentence: It is miss groovy herself! I hope she got accepted for the play, can't
+      wait to hear all about it!
+  parentNode: {fileID: 0}
+  childNode: {fileID: -7510733985766660303}
   letter: 
 --- !u!114 &-6034099479047547070
 MonoBehaviour:
@@ -86,12 +122,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1057
-    y: 323
+    x: 1466
+    y: 344
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 5
   count: 4
   storedData:
@@ -122,12 +158,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 272
-    y: 346
+    x: 681
+    y: 367
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 5
   count: 1
   storedData:
@@ -160,6 +196,7 @@ MonoBehaviour:
   - {fileID: -7949093227830037057}
   - {fileID: 8266512503589940803}
   - {fileID: -6034099479047547070}
+  - {fileID: -6162836863763989990}
   nextDialog: {fileID: 11400000, guid: 41a5468ff8bd4034e8eb3b3651a62d63, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -179,12 +216,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 806
-    y: 331
+    x: 1215
+    y: 352
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 5
   count: 3
   storedData:

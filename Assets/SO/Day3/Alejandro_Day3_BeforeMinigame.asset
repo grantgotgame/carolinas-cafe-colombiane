@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 184
-    y: 319
+    x: 1174
+    y: 298
     width: 200
     height: 100
   isDragging: 0
@@ -51,12 +51,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 803
-    y: 314
+    x: 1793
+    y: 293
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 3
   count: 4
   storedData:
@@ -87,8 +87,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 177
-    y: 189
+    x: 1167
+    y: 168
     width: 200
     height: 100
   isDragging: 0
@@ -122,8 +122,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 493
-    y: 316
+    x: 1483
+    y: 295
     width: 200
     height: 100
   isDragging: 0
@@ -151,20 +151,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Alejandro
+  m_Name: 1 Alejandro
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -408
-    y: 322
+    x: 582
+    y: 301
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 3
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -173,7 +173,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Hermana, I got some news for ya!
-  parentNode: {fileID: 0}
+  parentNode: {fileID: 1765835185550823916}
   childNode: {fileID: 3221925491281015745}
   letter: 
 --- !u!114 &11400000
@@ -198,9 +198,46 @@ MonoBehaviour:
   - {fileID: -7167514514980053723}
   - {fileID: 1806011787274818131}
   - {fileID: -8208429263800595177}
+  - {fileID: 1765835185550823916}
   nextDialog: {fileID: 11400000, guid: 3843f346a6e0792419acb3c44183491f, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
+--- !u!114 &1765835185550823916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 322
+    y: 296
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 3
+  sentence:
+    sentence: Alejandro doesn't seem sad anymore, that's great! He looks like he
+      has something to say though.
+  parentNode: {fileID: 0}
+  childNode: {fileID: -3747290632628025045}
+  letter: 
 --- !u!114 &1806011787274818131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,8 +254,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 493
-    y: 468
+    x: 1483
+    y: 447
     width: 200
     height: 100
   isDragging: 0
@@ -252,8 +289,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -142
-    y: 300
+    x: 848
+    y: 279
     width: 200
     height: 145
   isDragging: 0
@@ -291,8 +328,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 492
-    y: 186
+    x: 1482
+    y: 165
     width: 200
     height: 100
   isDragging: 0
@@ -326,8 +363,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 182
-    y: 468
+    x: 1172
+    y: 447
     width: 200
     height: 100
   isDragging: 0

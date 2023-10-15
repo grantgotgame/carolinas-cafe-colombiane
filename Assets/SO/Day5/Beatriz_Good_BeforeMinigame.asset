@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Beatriz
+  m_Name: 1 Beatriz
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 66
-    y: 299
+    x: 534
+    y: 298
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 1
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -34,7 +34,7 @@ MonoBehaviour:
     sentence: "Mi Carolina, I am truly blessed! The interview went well, and I have
       been accepted and appointed as the new ministra de la eucarist\xEDa for our
       local church!"
-  parentNode: {fileID: 0}
+  parentNode: {fileID: 3214703985157941259}
   childNode: {fileID: 3554682868106162073}
   letter: 
 --- !u!114 &11400000
@@ -54,9 +54,45 @@ MonoBehaviour:
   - {fileID: 3554682868106162073}
   - {fileID: 6485923903507280258}
   - {fileID: 5831493278464942151}
+  - {fileID: 3214703985157941259}
   nextDialog: {fileID: 11400000, guid: 41c834febbdbbae4386644901a809c2d, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
+--- !u!114 &3214703985157941259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 262
+    y: 297
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 1
+  sentence:
+    sentence: Beatriz is here! Has she been accepted by the church?
+  parentNode: {fileID: 0}
+  childNode: {fileID: -7566044426319502918}
+  letter: 
 --- !u!114 &3554682868106162073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,8 +109,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 352
-    y: 300
+    x: 820
+    y: 299
     width: 200
     height: 100
   isDragging: 0
@@ -108,12 +144,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 905
-    y: 298
+    x: 1373
+    y: 297
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 1
   count: 3
   storedData:
@@ -144,8 +180,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 646
-    y: 303
+    x: 1114
+    y: 302
     width: 200
     height: 100
   isDragging: 0

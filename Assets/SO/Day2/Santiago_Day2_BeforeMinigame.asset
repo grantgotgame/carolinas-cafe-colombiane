@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -38
-    y: 459
+    x: 1198
+    y: 514
     width: 200
     height: 100
   isDragging: 0
@@ -46,20 +46,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Santiago
+  m_Name: 1 Santiago
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -593
-    y: 263
+    x: 643
+    y: 318
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 4
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -68,7 +68,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Caro . . .
-  parentNode: {fileID: 0}
+  parentNode: {fileID: -5129279334890256668}
   childNode: {fileID: 2902127690111533796}
   letter: 
 --- !u!114 &-5991920689170370419
@@ -87,8 +87,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -36
-    y: 222
+    x: 1200
+    y: 277
     width: 200
     height: 100
   isDragging: 0
@@ -106,6 +106,42 @@ MonoBehaviour:
   parentNode: {fileID: 2902127690111533796}
   childNode: {fileID: 554277498100811394}
   letter: a
+--- !u!114 &-5129279334890256668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 383
+    y: 315
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 1
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 4
+  sentence:
+    sentence: Well, Santiago seems grumpy. It should take a lot to keep a strong
+      fella like himself down. I wonder what's up? I better ask!
+  parentNode: {fileID: 0}
+  childNode: {fileID: -7917716492398346459}
+  letter: 
 --- !u!114 &-5068825324817472449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,8 +158,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 338
-    y: 450
+    x: 1574
+    y: 505
     width: 200
     height: 100
   isDragging: 0
@@ -157,8 +193,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -46
-    y: 335
+    x: 1190
+    y: 390
     width: 200
     height: 100
   isDragging: 0
@@ -197,6 +233,7 @@ MonoBehaviour:
   - {fileID: 554277498100811394}
   - {fileID: -5068825324817472449}
   - {fileID: 1329490928279342093}
+  - {fileID: -5129279334890256668}
   nextDialog: {fileID: 11400000, guid: ed1a28457706d9e47bf819a84455f944, type: 2}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
@@ -216,8 +253,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 333
-    y: 274
+    x: 1569
+    y: 329
     width: 200
     height: 100
   isDragging: 0
@@ -251,12 +288,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 674
-    y: 346
+    x: 1910
+    y: 401
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 4
   count: 4
   storedData:
@@ -287,8 +324,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -331
-    y: 250
+    x: 905
+    y: 305
     width: 200
     height: 145
   isDragging: 0
