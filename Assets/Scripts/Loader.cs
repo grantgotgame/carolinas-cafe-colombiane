@@ -15,11 +15,11 @@ public class Loader : MonoBehaviour {
     }
 
     public void PlayMinigame() {
-        StartCoroutine(LoadLevel(1));
+        StartCoroutine(LoadLevel(2));
     }
 
     public void GoBackToMainScene() {
-        StartCoroutine(LoadLevel(0));
+        StartCoroutine(LoadLevel(1));
     }
 
     IEnumerator LoadLevel(int sceneIndex) {
