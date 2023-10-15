@@ -139,7 +139,7 @@ namespace cherrydev
         {
             dialogAnswerPanel.GetButtonByIndex(btnIndex).onClick.AddListener(() =>
             {
-                dialogBehaviour.SetCurrentNodeAndHandleDialogGraph(answerNode.childSentenceNodes[btnIndex]);
+                dialogBehaviour.SetCurrentNodeAndHandleDialogGraph(answerNode.childSentenceNodes[answerIndex]);
             });
         }
 
