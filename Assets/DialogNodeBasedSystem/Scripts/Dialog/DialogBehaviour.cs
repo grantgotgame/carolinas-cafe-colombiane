@@ -116,9 +116,6 @@ namespace cherrydev
             //Wait for the slide to finish
             yield return new WaitForSeconds(1f);
 
-            SentenceNode curNode = (SentenceNode) currentNode;
-            Debug.Log(curNode.GetSentenceText());
-
             HandleDialogGraphCurrentNode(currentNode);
 
         }

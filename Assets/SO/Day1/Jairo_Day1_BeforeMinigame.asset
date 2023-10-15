@@ -333,15 +333,15 @@ MonoBehaviour:
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 0
   storedData:
     nodeName: 
     dialogueChoice: 
     miniGameValue: 
-    isOnLeftSide: 0
-    otherSpeaker: 0
+    isOnLeftSide: 1
+    otherSpeaker: 2
   sentence:
     sentence: "Pap\xE1 is coming! I can smell his strong cologne all the way here.
       He's running, but not wearing a track suit, just his traditional fancy coat

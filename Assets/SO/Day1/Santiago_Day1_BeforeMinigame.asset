@@ -333,15 +333,15 @@ MonoBehaviour:
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 0
   count: 0
   storedData:
     nodeName: 
     dialogueChoice: 
     miniGameValue: 
-    isOnLeftSide: 0
-    otherSpeaker: 0
+    isOnLeftSide: 1
+    otherSpeaker: 4
   sentence:
     sentence: "\xA1Ya viene Santiago! Looking cool, as per usual. Won't he overheat
       in that massive leather jacket of his, though?"

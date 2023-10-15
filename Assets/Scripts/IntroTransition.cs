@@ -66,7 +66,7 @@ public class IntroTransition : MonoBehaviour
     {
         //   string _sceneName = NameFromIndex((SceneManager.GetActiveScene().buildIndex) + 1);
         string _sceneName = NameFromIndex(1);
-        TransitionManager.Instance().Transition(_sceneName, transitionSettings, 0);
+        EasyTransition.TransitionManager.Instance().Transition(_sceneName, transitionSettings, 0);
     }
 
     public void StartHardcore()
@@ -76,7 +76,7 @@ public class IntroTransition : MonoBehaviour
         //PlayerPrefs.SetInt("TemporaryScore", 0);
         //PlayerPrefs.SetInt("CurrentScore", 0);
         string _sceneName = NameFromIndex(3);
-        TransitionManager.Instance().Transition(_sceneName, transitionSettings, 0.5f);
+        EasyTransition.TransitionManager.Instance().Transition(_sceneName, transitionSettings, 0.5f);
     }
 
     public void StartAdventure()
@@ -86,7 +86,7 @@ public class IntroTransition : MonoBehaviour
         PlayerPrefs.SetInt("HardcoreCheck", 0);
         //PlayerPrefs.SetInt("TemporaryScore", 0);
         //PlayerPrefs.SetInt("CurrentScore", 0);
-        TransitionManager.Instance().Transition(_sceneName, transitionSettings, 0.5f);
+        EasyTransition.TransitionManager.Instance().Transition(_sceneName, transitionSettings, 0.5f);
     }
 
     public void MainMenu()
@@ -95,7 +95,7 @@ public class IntroTransition : MonoBehaviour
         string _sceneName = NameFromIndex(0);
         //PlayerPrefs.SetInt("TemporaryScore", 0);
         //PlayerPrefs.SetInt("CurrentScore", 0);
-        TransitionManager.Instance().Transition(_sceneName, transitionSettings, 0);
+        EasyTransition.TransitionManager.Instance().Transition(_sceneName, transitionSettings, 0);
     }
 
 

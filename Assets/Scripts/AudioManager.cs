@@ -4,22 +4,29 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    public static AudioManager Instance { get; private set; }
     public AudioClip startTheme; // Sound effect to play
     public AudioClip startGameEffect; // Sound effect to play
     public AudioClip gameLoopBackground; // Sound effect to play
+    public AudioClip miniGameBackground;
+    public AudioClip talkEffect;
 
     [SerializeField]
     private AudioSource _musicSource;
 
     private void Awake()
     {
-
-        DontDestroyOnLoad(gameObject);
-        var audioManagers = FindObjectsOfType<AudioManager>();
+        if (Instance == null) {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        } else {
+            Destroy(gameObject);
+        }
+        /*var audioManagers = FindObjectsOfType<AudioManager>();
         if (audioManagers.Length > 1)
         {
             Destroy(gameObject);
-        }
+        }*/
 
         if (PlayerPrefs.HasKey("GameVolume"))
         {
@@ -33,23 +40,38 @@ public class AudioManager : MonoBehaviour
         // Set initial slider value to match audio source volume
     }
 
+    public void PlayMiniGameBackground() {
+        // Play the sound effect
+        if (_musicSource.clip == miniGameBackground) return;
+        _musicSource.Stop();
+        _musicSource.clip = miniGameBackground;
+        _musicSource.Play();
+    }
+
     public void PlayGameLoopBackground()
     {
         // Play the sound effect
-        gameObject.GetComponent<AudioSource>().Stop();
-        gameObject.GetComponent<AudioSource>().PlayOneShot(gameLoopBackground);
+        Debug.Log($"{_musicSource.clip} and {_musicSource.clip == gameLoopBackground}");
+        if (_musicSource.clip == gameLoopBackground) return;
+        _musicSource.Stop();
+        _musicSource.clip = gameLoopBackground;
+        _musicSource.Play();
     }
 
     public void PlayStartGameEffect()
     {
         // Play the sound effect
-        gameObject.GetComponent<AudioSource>().PlayOneShot(startGameEffect);
+        _musicSource.PlayOneShot(startGameEffect);
+    }
+
+    public void PlayTalkEffect() {// Play the sound effect
+        _musicSource.PlayOneShot(talkEffect);
     }
 
     public void StopMusic()
     {
         // Play the sound effect
-        gameObject.GetComponent<AudioSource>().Stop();
+        _musicSource.Stop();
     }
 
     public void LowerGameplayMusicVolume()
@@ -62,7 +84,7 @@ public class AudioManager : MonoBehaviour
         if (PlayerPrefs.HasKey("GameVolume"))
         {
             float volumeSaved = PlayerPrefs.GetFloat("GameVolume");
-            GetComponent<AudioSource>().volume = volumeSaved;
+            _musicSource.volume = volumeSaved;
         }
 
     }

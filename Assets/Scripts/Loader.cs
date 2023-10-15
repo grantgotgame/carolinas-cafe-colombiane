@@ -15,15 +15,15 @@ public class Loader : MonoBehaviour {
     }
 
     public void PlayMinigame() {
-        StartCoroutine(LoadLevel(2));
+        StartCoroutine(LoadLevel(3));
     }
 
     public void GoBackToMainScene() {
-        StartCoroutine(LoadLevel(1));
+        StartCoroutine(LoadLevel(2));
     }
 
     public void LoadNewDay() {
-        StartCoroutine(LoadLevel(0));
+        StartCoroutine(LoadLevel(1));
     }
 
     IEnumerator LoadLevel(int sceneIndex) {
@@ -32,6 +32,8 @@ public class Loader : MonoBehaviour {
 
         yield return new WaitForSeconds(transitionSeconds);
 
+        if (sceneIndex == 2) AudioManager.Instance.PlayGameLoopBackground();
+        if (sceneIndex == 3) AudioManager.Instance.PlayMiniGameBackground();
         SceneManager.LoadScene(sceneIndex);
     }
 
