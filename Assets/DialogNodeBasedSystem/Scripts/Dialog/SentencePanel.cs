@@ -82,6 +82,11 @@ namespace cherrydev
             else rDialogText.text += textChar;
         }
 
+        public void SkipDialogText(string text) {
+            if (isLeftSpeaker) lDialogText.text = text;
+            else rDialogText.text = text;
+        }
+
         public void EnterNewCharacter(Character character, Character otherCharacter) {
             SetupCharactersWithoutDialogue();
             if (character.name == "Carolina")

@@ -23,6 +23,8 @@ namespace cherrydev
 
             DialogBehaviour.OnDialogTextCharWrote += dialogSentencePanel.AddCharToDialogText;
 
+            DialogBehaviour.OnDialogSkipText += dialogSentencePanel.SkipDialogText;
+
             DialogBehaviour.OnSentenceNodeActive += EnableDialogSentencePanel;
             //DialogBehaviour.OnSentenceNodeActive += DisableDialogAnswerPanel;
             DialogBehaviour.OnSentenceNodeStart += dialogSentencePanel.AssignDialogNameTextAndSprite;
@@ -45,6 +47,8 @@ namespace cherrydev
             DialogBehaviour.OnDialogSentenceEnd -= dialogSentencePanel.ResetDialogText;
 
             DialogBehaviour.OnDialogTextCharWrote -= dialogSentencePanel.AddCharToDialogText;
+            
+            DialogBehaviour.OnDialogSkipText -= dialogSentencePanel.SkipDialogText;
 
             DialogBehaviour.OnSentenceNodeActive -= EnableDialogSentencePanel;
             //DialogBehaviour.OnSentenceNodeActive -= DisableDialogAnswerPanel;

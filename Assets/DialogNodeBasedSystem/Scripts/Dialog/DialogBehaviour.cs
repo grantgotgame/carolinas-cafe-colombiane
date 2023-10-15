@@ -22,6 +22,8 @@ namespace cherrydev
         private DialogNodeGraph currentNodeGraph;
         private Node currentNode;
         private Animator customerAnimator;
+        private bool skipTextAvailable;
+        private bool skipText;
 
         public static event Action<Character, Character> OnDialogStart;
 
@@ -41,6 +43,8 @@ namespace cherrydev
 
         public static event Action<int, string> OnAnswerNodeSetUp;
 
+        public static event Action<string> OnDialogSkipText;
+
         public static event Action<char> OnDialogTextCharWrote;
 
         public static event Action<Character, Character, bool> OnLastNode;
@@ -57,6 +61,14 @@ namespace cherrydev
 
         private void Start() {
             SetAnimator();
+            skipTextAvailable = false;
+            skipText = false;
+        }
+
+        private void Update() {
+            if (skipTextAvailable && IsSkipPressed()) {
+                skipText = true;
+            }
         }
 
         public void SetAnimator() {
@@ -220,18 +232,24 @@ namespace cherrydev
         /// <returns></returns>
         private IEnumerator WriteDialogTextRoutine(string text)
         {
+            skipTextAvailable = true;
             foreach (char textChar in text)
             {
                 yield return new WaitForSeconds(dialogCharDelay);
+                if (skipText) {
+                    OnDialogSkipText?.Invoke(text);
+                    break;
+                }
                 OnDialogTextCharWrote?.Invoke(textChar);
             }
-
-            yield return new WaitUntil(() => IsEndCurrentNode());
+            skipText = false;
+            skipTextAvailable = false;
+            yield return new WaitUntil(() => IsSkipPressed());
             
             CheckForDialogNextNode();
         }
 
-        private bool IsEndCurrentNode() {
+        private bool IsSkipPressed() {
             foreach (KeyCode keyCode in nextSentenceKeyCode) {
                 if (Input.GetKeyDown(keyCode)) return true;
             }
