@@ -22,6 +22,10 @@ public class Loader : MonoBehaviour {
         StartCoroutine(LoadLevel(1));
     }
 
+    public void LoadNewDay() {
+        StartCoroutine(LoadLevel(0));
+    }
+
     IEnumerator LoadLevel(int sceneIndex) {
         // play animation
         transition.SetTrigger("Start");

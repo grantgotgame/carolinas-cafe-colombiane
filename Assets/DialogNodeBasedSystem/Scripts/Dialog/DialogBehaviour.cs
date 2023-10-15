@@ -14,13 +14,16 @@ namespace cherrydev
         [SerializeField] private float dialogCharDelay;
         [SerializeField] private List<KeyCode> nextSentenceKeyCode;
 
-        [SerializeField] private UnityEvent onDialogStart;
+        //[SerializeField] private UnityEvent onDialogStart;
         [SerializeField] private UnityEvent onDialogFinished;
 
         [SerializeField] private CharacterDictionarySO characterDictionarySO;
 
         private DialogNodeGraph currentNodeGraph;
         private Node currentNode;
+        private Animator customerAnimator;
+
+        public static event Action<Character, Character> OnDialogStart;
 
         public static event Action<DialogData> OnSentenceNodeActive;
 
@@ -42,9 +45,22 @@ namespace cherrydev
 
         public static event Action<Character, Character, bool> OnLastNode;
 
+        public static event Action OnProcessEndOfDialog;
+
         private void Awake() {
             if (Instance == null) Instance = this;
-            else Destroy(gameObject);
+            else {
+                Instance.SetAnimator();
+                Destroy(gameObject);
+            }
+        }
+
+        private void Start() {
+            SetAnimator();
+        }
+
+        public void SetAnimator() {
+            customerAnimator = GetComponent<Animator>();
         }
 
         /// <summary>
@@ -59,7 +75,7 @@ namespace cherrydev
                 return;
             }
 
-            onDialogStart?.Invoke();
+            //onDialogStart?.Invoke();
 
             currentNodeGraph = dialogNodeGraph;
             if (data == "") {
@@ -77,7 +93,34 @@ namespace cherrydev
                 }
             }
 
+            if (currentNode.storedData.miniGameValue.Length == 0)
+                StartCoroutine(ProcessStartOfDialogue());
+            else {
+                if (customerAnimator == null) SetAnimator();
+                customerAnimator.SetTrigger("Idle");
+                HandleDialogGraphCurrentNode(currentNode);
+            }
+        }
+
+        IEnumerator ProcessStartOfDialogue() {
+            Character character = characterDictionarySO.GetCharacterByID(currentNode.character);
+            Character otherCharacter = characterDictionarySO.GetCharacterByID(currentNode.storedData.otherSpeaker);
+            OnDialogStart?.Invoke(character, otherCharacter);
+
+            //Wait before character slides
+            yield return new WaitForSeconds(0.5f);
+
+            if (customerAnimator == null) SetAnimator();
+            customerAnimator.SetTrigger("Slide");
+            
+            //Wait for the slide to finish
+            yield return new WaitForSeconds(1f);
+
+            SentenceNode curNode = (SentenceNode) currentNode;
+            Debug.Log(curNode.GetSentenceText());
+
             HandleDialogGraphCurrentNode(currentNode);
+
         }
 
         /// <summary>
@@ -93,7 +136,6 @@ namespace cherrydev
             if (currentNode.GetType() == typeof(SentenceNode))
             {
                 SentenceNode sentenceNode = (SentenceNode)currentNode;
-
 
                 OnSentenceNodeActive?.Invoke(currentNode.storedData);
                 OnSentenceNodeStart?.Invoke(character, otherCharacter, currentNode.storedData.isOnLeftSide);
@@ -128,6 +170,7 @@ namespace cherrydev
 
                 if (amountOfActiveButtons == 0)
                 {
+                    Debug.Log("This never shows up");
                     onDialogFinished?.Invoke();
                     return;
                 }
@@ -136,7 +179,6 @@ namespace cherrydev
                 OnAnswerNodeStart?.Invoke(character, otherCharacter, currentNode.storedData.isOnLeftSide);
             }
         }
-
 
         /// <summary>
         /// Setting currentNode field to Node and call HandleDialogGraphCurrentNode method
@@ -198,9 +240,26 @@ namespace cherrydev
                 }
                 else
                 {
-                    onDialogFinished?.Invoke();
+                    if (currentNode.storedData.dialogueChoice == "Before Minigame") {
+                        OnProcessEndOfDialog?.Invoke();
+                        onDialogFinished?.Invoke();
+                    } else {
+                        StartCoroutine(ProcessEndOfCharacterDialogue());
+                    }
                 }
             }
+        }
+
+        IEnumerator ProcessEndOfCharacterDialogue() {
+            OnProcessEndOfDialog?.Invoke();
+
+            yield return new WaitForSeconds(0.5f);
+
+            if (customerAnimator == null) SetAnimator();
+            customerAnimator.SetTrigger("Slide");
+
+            yield return new WaitForSeconds(1f);
+            onDialogFinished?.Invoke();
         }
 
         /// <summary>

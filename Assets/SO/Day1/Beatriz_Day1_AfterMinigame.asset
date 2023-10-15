@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 431
-    y: 239
+    x: 46
+    y: 208
     width: 200
     height: 100
   isDragging: 0
@@ -76,8 +76,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 982
-    y: 382
+    x: 597
+    y: 351
     width: 200
     height: 100
   isDragging: 0
@@ -112,8 +112,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 434
-    y: 376
+    x: 49
+    y: 345
     width: 200
     height: 100
   isDragging: 0
@@ -148,8 +148,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 432
-    y: 512
+    x: 47
+    y: 481
     width: 200
     height: 100
   isDragging: 0
@@ -183,8 +183,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1231
-    y: 381
+    x: 846
+    y: 350
     width: 200
     height: 100
   isDragging: 0
@@ -218,8 +218,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 743
-    y: 383
+    x: 358
+    y: 352
     width: 200
     height: 100
   isDragging: 0
@@ -254,12 +254,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 169
-    y: 371
+    x: -216
+    y: 340
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 1
   count: 0
   storedData:
@@ -269,7 +269,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: That sure tasted bien, posiblemente I was too hasty to judge you on
+    sentence: That sure tasted rico, posiblemente I was too hasty to judge you on
       your time spent ahora. It seems you're putting it to good use after all.
   parentNode: {fileID: 0}
   childNode: {fileID: 1709156060217591742}
@@ -290,12 +290,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 169
-    y: 513
+    x: -216
+    y: 482
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 1
   count: 0
   storedData:
@@ -325,12 +325,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 166
-    y: 242
+    x: -219
+    y: 211
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 1
   count: 0
   storedData:

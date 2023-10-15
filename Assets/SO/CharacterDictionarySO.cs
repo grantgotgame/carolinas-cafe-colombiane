@@ -18,7 +18,9 @@ public class CharacterDictionarySO : ScriptableObject
         Jairo,
         Alejandro,
         Santiago,
-        Acacia
+        Acacia,
+        Alex,
+        None
     }
 
     [SerializeField]

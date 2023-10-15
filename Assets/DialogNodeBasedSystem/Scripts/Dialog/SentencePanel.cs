@@ -14,7 +14,7 @@ namespace cherrydev
         [SerializeField] private TextMeshProUGUI lDialogText;
         [SerializeField] private GameObject lDialogObject;
         [SerializeField] private Image lDialogNameBadgeImage;
-        [SerializeField] private Image lDialogCharacterImage;
+        [SerializeField] private Image lSpeakerImage;
         [Header("Right Speaker"), Space()]
         [SerializeField] private GameObject rSpeakerObject;
         [SerializeField] private Image rNonSpeakerImage;
@@ -22,7 +22,7 @@ namespace cherrydev
         [SerializeField] private TextMeshProUGUI rDialogText;
         [SerializeField] private GameObject rDialogObject;
         [SerializeField] private Image rDialogNameBadgeImage;
-        [SerializeField] private Image rDialogCharacterImage;
+        [SerializeField] private Image rSpeakerImage;
 
         private bool isLeftSpeaker;
         private void Start()
@@ -43,18 +43,19 @@ namespace cherrydev
         /// Assigning dialog name text and character iamge sprite
         /// </summary>
         /// <param name="name"></param>
-        public void AssignDialogNameTextAndSprite(Character character, Character otherCharacter, bool isOnLeftSide)
-        {
+        public void AssignDialogNameTextAndSprite(Character character, Character otherCharacter, bool isOnLeftSide) {
             isLeftSpeaker = isOnLeftSide;
             if (isLeftSpeaker) {
                 lDialogNameText.text = character.name;
                 lDialogNameBadgeImage.sprite = character.nameBadgeSprite;
-                lDialogCharacterImage.sprite = character.characterSprite;
+                lSpeakerImage.sprite = character.characterSprite;
+                rNonSpeakerImage.sprite = character.characterSprite;
                 lNonSpeakerImage.sprite = otherCharacter.characterSprite;
+                rSpeakerImage.sprite = otherCharacter.characterSprite;
             } else {
                 rDialogNameText.text = character.name;
                 rDialogNameBadgeImage.sprite = character.nameBadgeSprite;
-                rDialogCharacterImage.sprite = character.characterSprite;
+                rSpeakerImage.sprite = character.characterSprite;
                 rNonSpeakerImage.sprite = otherCharacter.characterSprite;
             }
             /*rDialogNameText.text = name;
@@ -81,6 +82,14 @@ namespace cherrydev
             else rDialogText.text += textChar;
         }
 
+        public void EnterNewCharacter(Character character, Character otherCharacter) {
+            SetupCharactersWithoutDialogue();
+            if (character.name == "Carolina")
+                SetupCharacterSpeakerImages(otherCharacter, character, false);
+            else 
+                SetupCharacterSpeakerImages(character, otherCharacter, false);
+        }
+
         public void ActivatePanels(DialogData data) {
             isLeftSpeaker = data.isOnLeftSide;
             rDialogObject.SetActive(true);
@@ -92,6 +101,7 @@ namespace cherrydev
         }
 
         public void ActivateSentence() {
+            ResetDialogText();
             lDialogText.gameObject.SetActive(isLeftSpeaker);
             rDialogText.gameObject.SetActive(!isLeftSpeaker);
         }
@@ -103,7 +113,7 @@ namespace cherrydev
             rNonSpeakerImage.gameObject.SetActive(false);
         }
 
-        public void TransitionToMinigame() {
+        public void SetupCharactersWithoutDialogue() {
             lSpeakerObject.SetActive(true);
             rSpeakerObject.SetActive(true);
             lNonSpeakerImage.gameObject.SetActive(false);
@@ -112,9 +122,9 @@ namespace cherrydev
             lDialogObject.SetActive(false);
         }
 
-        public void SetupMinigameSprites(Character speak, Character speak_other, bool isLeft) {
-            lDialogCharacterImage.sprite = (isLeft) ? speak.characterSprite : speak_other.characterSprite;
-            rDialogCharacterImage.sprite = (isLeft) ? speak_other.characterSprite : speak.characterSprite;
+        public void SetupCharacterSpeakerImages(Character speak, Character speak_other, bool isLeft) {
+            lSpeakerImage.sprite = (isLeft) ? speak.characterSprite : speak_other.characterSprite;
+            rSpeakerImage.sprite = (isLeft) ? speak_other.characterSprite : speak.characterSprite;
         }
     }
 }

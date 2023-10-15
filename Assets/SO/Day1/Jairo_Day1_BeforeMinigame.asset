@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1061
-    y: 279
+    x: 1799
+    y: 327
     width: 200
     height: 100
   isDragging: 0
@@ -26,13 +26,14 @@ MonoBehaviour:
   count: 4
   storedData:
     nodeName: 
-    dialogueChoice: 
+    dialogueChoice: Before Minigame
     miniGameValue: 
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
     sentence: "The jog was amazing, but \xA1uf! have I burnt some calories while
-      at it! A good hearty meal after a jog that size just makes it more rewarding!"
+      at it! A good hearty meal after a jog that size just makes it more rewarding!
+      Dos arepas should do the trick!"
   parentNode: {fileID: 2162170517126070015}
   childNode: {fileID: 0}
   letter: 
@@ -52,8 +53,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 508
-    y: 289
+    x: 1246
+    y: 337
     width: 200
     height: 100
   isDragging: 0
@@ -87,8 +88,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 505
-    y: 160
+    x: 1243
+    y: 208
     width: 200
     height: 100
   isDragging: 0
@@ -122,8 +123,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 510
-    y: 437
+    x: 1248
+    y: 485
     width: 200
     height: 100
   isDragging: 0
@@ -137,7 +138,7 @@ MonoBehaviour:
     isOnLeftSide: 1
     otherSpeaker: 2
   sentence:
-    sentence: "Buenos d\xEDas, pap\xE1, were you running track again?"
+    sentence: "Buenos d\xEDas, pap\xE1, were you out running again?"
   parentNode: {fileID: 3193044837912632406}
   childNode: {fileID: 2162170517126070015}
   letter: c
@@ -151,20 +152,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Jairo
+  m_Name: 1 Jairo
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -69
-    y: 242
+    x: 669
+    y: 290
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 2
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -173,7 +174,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Ayyyyyy, is it hot outside today! I can feel the burn!
-  parentNode: {fileID: 0}
+  parentNode: {fileID: 4157263352037527567}
   childNode: {fileID: 3193044837912632406}
   letter: 
 --- !u!114 &11400000
@@ -189,6 +190,7 @@ MonoBehaviour:
   m_Name: Jairo_Day1_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: 4157263352037527567}
   - {fileID: -197607288538249446}
   - {fileID: 3193044837912632406}
   - {fileID: -1490011571839730682}
@@ -217,8 +219,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 777
-    y: 432
+    x: 1515
+    y: 480
     width: 200
     height: 100
   isDragging: 0
@@ -252,8 +254,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 774
-    y: 290
+    x: 1512
+    y: 338
     width: 200
     height: 100
   isDragging: 0
@@ -267,7 +269,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: "Pues who wouldn't be happy on such a bright sunny d\xEDa!"
+    sentence: "Pues, who wouldn't be happy on such a bright sunny d\xEDa!"
   parentNode: {fileID: -7302894440834232962}
   childNode: {fileID: -8265850730425884174}
   letter: b
@@ -287,8 +289,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 211
-    y: 224
+    x: 949
+    y: 272
     width: 200
     height: 145
   isDragging: 0
@@ -304,12 +306,49 @@ MonoBehaviour:
   answers:
   - answer: You'll ruin your nice clothes
   - answer: You seem cheery
-  - answer: Running track again?
+  - answer: Out running again?
   parentSentenceNode: {fileID: -197607288538249446}
   childSentenceNodes:
   - {fileID: -1490011571839730682}
   - {fileID: -7302894440834232962}
   - {fileID: -442883758277770498}
+--- !u!114 &4157263352037527567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 382
+    y: 287
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 1
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 0
+    otherSpeaker: 0
+  sentence:
+    sentence: "Pap\xE1 is coming! I can smell his strong cologne all the way here.
+      He's running, but not wearing a track suit, just his traditional fancy coat
+      instead?"
+  parentNode: {fileID: 0}
+  childNode: {fileID: -197607288538249446}
+  letter: 
 --- !u!114 &6114180410931376612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,8 +365,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 774
-    y: 161
+    x: 1512
+    y: 209
     width: 200
     height: 100
   isDragging: 0

@@ -269,6 +269,9 @@ GameObject:
   - component: {fileID: 30943531}
   - component: {fileID: 30943530}
   - component: {fileID: 30943529}
+  - component: {fileID: 30943532}
+  - component: {fileID: 30943534}
+  - component: {fileID: 30943533}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -350,6 +353,159 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &30943532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30943528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
+--- !u!82 &30943533
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30943528}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a827bccdac9c564408b53c22b52912a2, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &30943534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30943528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 006feceff865a7a4895e2581464d865f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgm: {fileID: 0}
 --- !u!1 &147588116
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &365401901
 RectTransform:
   m_ObjectHideFlags: 0
@@ -816,6 +972,7 @@ GameObject:
   - component: {fileID: 572098992}
   - component: {fileID: 572098997}
   - component: {fileID: 572098996}
+  - component: {fileID: 572098998}
   m_Layer: 5
   m_Name: Canvas - Foreground - Dialog Behaviour
   m_TagString: Untagged
@@ -857,7 +1014,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -936,15 +1093,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogCharDelay: 0.001
   nextSentenceKeyCode: 200000004301000044010000
-  onDialogStart:
-    m_PersistentCalls:
-      m_Calls: []
   onDialogFinished:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1830102278}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DayManager, Assembly-CSharp
-        m_MethodName: OnNodeGraphFinished
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -955,6 +1109,27 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   characterDictionarySO: {fileID: 11400000, guid: a3dbab7da59ef5341bd9afd30ad0e9ca, type: 2}
+--- !u!95 &572098998
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572098991}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8408467dd242ab84ba6dfd4cd7e47821, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &628650194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1438,14 +1613,14 @@ MonoBehaviour:
   lDialogText: {fileID: 1828603675}
   lDialogObject: {fileID: 1606242128}
   lDialogNameBadgeImage: {fileID: 430207633}
-  lDialogCharacterImage: {fileID: 793618498}
+  lSpeakerImage: {fileID: 793618498}
   rSpeakerObject: {fileID: 1496630422}
   rNonSpeakerImage: {fileID: 1546092747}
   rDialogNameText: {fileID: 1926433330}
   rDialogText: {fileID: 19207767}
   rDialogObject: {fileID: 1646526698}
   rDialogNameBadgeImage: {fileID: 640610549}
-  rDialogCharacterImage: {fileID: 147588118}
+  rSpeakerImage: {fileID: 147588118}
 --- !u!1 &740486931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,7 +2001,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &814320730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2053,7 +2228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &972764656
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2286,7 +2461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1882353, g: 0.1882353, b: 0.1882353, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2544,7 +2719,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2892,7 +3067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1882353, g: 0.1882353, b: 0.1882353, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2970,7 +3145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1882353, g: 0.1882353, b: 0.1882353, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3166,7 +3341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1882353, g: 0.1882353, b: 0.1882353, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3208,7 +3383,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1828603674
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3248,7 +3423,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ay, hola! I'm just researching some new recipes to liven up my menu.
+  m_text: Wow wow wow, 'tis almost like Santiago's leaping into a ring by the way
+    he's coming here today. He sure is fired up today! I must know why.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8ecd17aeceaba4c10b42ac497ccbfcff, type: 2}
   m_sharedMaterial: {fileID: 2830636965969884548, guid: 8ecd17aeceaba4c10b42ac497ccbfcff, type: 2}
@@ -3336,7 +3512,7 @@ GameObject:
   - component: {fileID: 1830102279}
   - component: {fileID: 1830102278}
   m_Layer: 0
-  m_Name: Day One Manager
+  m_Name: Day Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3355,12 +3531,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionDelay: 1.1
-  dialogGraph:
-  - {fileID: 11400000, guid: f1ecfcf08bb0f7740b8bee3146971107, type: 2}
-  - {fileID: 11400000, guid: 886149a4199ec27408a2ea8ce5efb43d, type: 2}
-  - {fileID: 11400000, guid: 4addc8231e371064a87411a1741acc4e, type: 2}
-  - {fileID: 11400000, guid: bed4e0abcd2eb474da59c397267a8122, type: 2}
-  - {fileID: 11400000, guid: 21595d036252ca74084688e080d064fb, type: 2}
+  dayOne:
+    dialogGraphs:
+    - {fileID: 11400000, guid: 9e44d078b3b569d4988f48f0c4d62df4, type: 2}
+    - {fileID: 11400000, guid: f1ecfcf08bb0f7740b8bee3146971107, type: 2}
+    - {fileID: 11400000, guid: 886149a4199ec27408a2ea8ce5efb43d, type: 2}
+    - {fileID: 11400000, guid: 4addc8231e371064a87411a1741acc4e, type: 2}
+    - {fileID: 11400000, guid: bed4e0abcd2eb474da59c397267a8122, type: 2}
+    - {fileID: 11400000, guid: 21595d036252ca74084688e080d064fb, type: 2}
+    currentDialogue: 0
+  dayTwo:
+    dialogGraphs:
+    - {fileID: 11400000, guid: 74e752272800de449a62d94b4705e48e, type: 2}
+    - {fileID: 11400000, guid: c3239065664612f44990784df3534b2e, type: 2}
+    - {fileID: 11400000, guid: 81ed4db35240d554f8e2ac03806fcfce, type: 2}
+    - {fileID: 11400000, guid: b0996c1762f4c7141b1239c3dcff85c3, type: 2}
+    - {fileID: 11400000, guid: ee7d1e66667224146b0ff3fecfcd53ad, type: 2}
+    - {fileID: 11400000, guid: 75db3832b6a914c4a842d4b92bb4ac97, type: 2}
+    currentDialogue: 0
+  dayThree:
+    dialogGraphs:
+    - {fileID: 11400000, guid: fee3c24ffff5610419a1c928e65bef2c, type: 2}
+    - {fileID: 11400000, guid: 78193cc1f362e3d40b3c725167d69abd, type: 2}
+    - {fileID: 11400000, guid: cda59b928ec06644ca0350a9360111f3, type: 2}
+    - {fileID: 11400000, guid: 931758ade1319fb44804cf29f57b0e4b, type: 2}
+    - {fileID: 11400000, guid: 5e9cbb91d5cc34b468ad62b1558c5af7, type: 2}
+    - {fileID: 11400000, guid: 220cd95787114bc49bbc44ca96e374af, type: 2}
+    currentDialogue: 0
+  dayFour:
+    dialogGraphs:
+    - {fileID: 11400000, guid: 8ebab09ea14331c4ab4f319d718879a7, type: 2}
+    - {fileID: 11400000, guid: e8529acd3c1b71b429fd0edbda6e8f8c, type: 2}
+    - {fileID: 11400000, guid: e1bf9315331efc948ba1dadb23c7d162, type: 2}
+    - {fileID: 11400000, guid: 8c35a67c0ce771240a5ff886ccffd836, type: 2}
+    - {fileID: 11400000, guid: ae8728f4f47ecce4194034ff227ad16a, type: 2}
+    - {fileID: 11400000, guid: d87e636317b52aa4ba410f266211a319, type: 2}
+    currentDialogue: 0
+  dayFive:
+    dialogGraphs:
+    - {fileID: 11400000, guid: 3cb7fcbd184a1184e84b62fa94c446d6, type: 2}
+    - {fileID: 11400000, guid: 4c4d5239bdbc9004da35de8f066c36cd, type: 2}
+    - {fileID: 11400000, guid: 929ca2cb47625784595b58ab9daa1ae6, type: 2}
+    - {fileID: 11400000, guid: 5af29bc61c4c3df439066ce5a75bb69f, type: 2}
+    - {fileID: 11400000, guid: 05f163981e353074d960370b65bdde69, type: 2}
+    - {fileID: 11400000, guid: 0a65808f70c0ca941bf313709b04a8d9, type: 2}
+    currentDialogue: 0
 --- !u!4 &1830102279
 Transform:
   m_ObjectHideFlags: 0
@@ -3931,6 +4146,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3686070505587151961, guid: 6ffa54976cee690429da2e3562f376ac, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6607507497862352291, guid: 6ffa54976cee690429da2e3562f376ac, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

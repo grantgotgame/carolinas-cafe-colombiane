@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 469
-    y: 454
+    x: 1209
+    y: 486
     width: 200
     height: 100
   isDragging: 0
@@ -45,20 +45,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Alejandro
+  m_Name: 1 Alejandro
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -52
-    y: 269
+    x: 688
+    y: 301
     width: 200
     height: 100
   isDragging: 0
   isSelected: 0
   character: 3
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -67,7 +67,7 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Oye sis, it sure is hot out there today right?
-  parentNode: {fileID: 0}
+  parentNode: {fileID: 3536058096581331167}
   childNode: {fileID: 1996565386661345612}
   letter: 
 --- !u!114 &-3876914024690768950
@@ -86,8 +86,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 736
-    y: 449
+    x: 1476
+    y: 481
     width: 200
     height: 100
   isDragging: 0
@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: Alejandro_Day1_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: 3536058096581331167}
   - {fileID: -7647406424659155541}
   - {fileID: 1996565386661345612}
   - {fileID: 5540437700294945203}
@@ -147,8 +148,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 180
-    y: 241
+    x: 920
+    y: 273
     width: 200
     height: 145
   isDragging: 0
@@ -186,8 +187,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1057
-    y: 288
+    x: 1797
+    y: 320
     width: 200
     height: 100
   isDragging: 0
@@ -196,13 +197,13 @@ MonoBehaviour:
   count: 4
   storedData:
     nodeName: 
-    dialogueChoice: 
+    dialogueChoice: Before Minigame
     miniGameValue: 
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
     sentence: Well, looks like it's la hora de comer. I know you'll make me something
-      good!
+      good . . . Arepa con chorizo, mi favorito!
   parentNode: {fileID: -3876914024690768950}
   childNode: {fileID: 0}
   letter: c
@@ -222,8 +223,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 718
-    y: 167
+    x: 1458
+    y: 199
     width: 200
     height: 100
   isDragging: 0
@@ -243,6 +244,42 @@ MonoBehaviour:
   parentNode: {fileID: 5540437700294945203}
   childNode: {fileID: 2545855819606997908}
   letter: a
+--- !u!114 &3536058096581331167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 398
+    y: 302
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 0
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 3
+  sentence:
+    sentence: Here comes Alejandro, glad to know he found at least some time to be
+      away from his computadora. *Giggles*
+  parentNode: {fileID: 0}
+  childNode: {fileID: -7647406424659155541}
+  letter: 
 --- !u!114 &5540437700294945203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,8 +296,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 462
-    y: 176
+    x: 1202
+    y: 208
     width: 200
     height: 100
   isDragging: 0
@@ -294,8 +331,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 471
-    y: 313
+    x: 1211
+    y: 345
     width: 200
     height: 100
   isDragging: 0
@@ -329,8 +366,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 726
-    y: 318
+    x: 1466
+    y: 350
     width: 200
     height: 100
   isDragging: 0

@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 2336
-    y: 265
+    x: 2349
+    y: 394
     width: 200
     height: 100
   isDragging: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: I could burn as bright as el sol again ~ *Smirks*
+    sentence: I could burn as bright as el sol again. ~ *Smirks*
   parentNode: {fileID: 5387802496492926242}
   childNode: {fileID: 617597753873724810}
   letter: 
@@ -51,8 +51,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1005
-    y: 276
+    x: 1018
+    y: 405
     width: 200
     height: 100
   isDragging: 0
@@ -87,8 +87,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1906
-    y: 269
+    x: 1919
+    y: 398
     width: 200
     height: 100
   isDragging: 0
@@ -122,12 +122,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 383
-    y: 263
+    x: 396
+    y: 392
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 4
   count: 0
   storedData:
@@ -187,8 +187,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 670
-    y: 395
+    x: 683
+    y: 524
     width: 200
     height: 100
   isDragging: 0
@@ -222,8 +222,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 2561
-    y: 259
+    x: 2574
+    y: 388
     width: 200
     height: 100
   isDragging: 0
@@ -234,8 +234,8 @@ MonoBehaviour:
     nodeName: 
     dialogueChoice: 
     miniGameValue: 
-    isOnLeftSide: 0
-    otherSpeaker: 0
+    isOnLeftSide: 1
+    otherSpeaker: 4
   sentence:
     sentence: You will burn as bright as the sun de nuevo! *Smiles*
   parentNode: {fileID: -8500424106964637408}
@@ -257,8 +257,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 674
-    y: 255
+    x: 687
+    y: 384
     width: 200
     height: 100
   isDragging: 0
@@ -292,8 +292,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 669
-    y: 126
+    x: 682
+    y: 255
     width: 200
     height: 100
   isDragging: 0
@@ -327,8 +327,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1670
-    y: 272
+    x: 1683
+    y: 401
     width: 200
     height: 100
   isDragging: 0
@@ -362,12 +362,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 380
-    y: 393
+    x: 393
+    y: 522
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 4
   count: 0
   storedData:
@@ -397,8 +397,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1227
-    y: 275
+    x: 1240
+    y: 404
     width: 200
     height: 100
   isDragging: 0
@@ -432,12 +432,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 385
-    y: 122
+    x: 398
+    y: 251
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 4
   count: 0
   storedData:
@@ -467,8 +467,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 2125
-    y: 267
+    x: 2138
+    y: 396
     width: 200
     height: 100
   isDragging: 0
@@ -502,8 +502,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1449
-    y: 273
+    x: 1462
+    y: 402
     width: 200
     height: 100
   isDragging: 0
@@ -517,7 +517,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: "S\xE9 que s\xE9 ~ I'd still want to try it out again after all of
+    sentence: "S\xE9 que s\xE9. ~ I'd still want to try it out again after all of
       these years. Wrestling, I mean."
   parentNode: {fileID: 3976949057631816306}
   childNode: {fileID: 2812465040441724575}

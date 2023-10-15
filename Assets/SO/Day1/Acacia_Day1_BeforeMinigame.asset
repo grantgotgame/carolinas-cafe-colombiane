@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1144
-    y: 487
+    x: 1337
+    y: 504
     width: 200
     height: 100
   isDragging: 0
@@ -52,12 +52,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 611
-    y: 306
+    x: 804
+    y: 323
     width: 200
     height: 145
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 1
   storedData:
@@ -85,20 +85,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
-  m_Name: 0 Acacia
+  m_Name: 1 Acacia
   m_EditorClassIdentifier: 
   connectedNodesList: []
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 352
-    y: 334
+    x: 545
+    y: 351
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 5
-  count: 0
+  count: 1
   storedData:
     nodeName: 
     dialogueChoice: 
@@ -108,7 +108,7 @@ MonoBehaviour:
   sentence:
     sentence: Well hello to you, amiga! *Doing little dance moves in place while
       talking*
-  parentNode: {fileID: 0}
+  parentNode: {fileID: 8856660297321241905}
   childNode: {fileID: -5702131196755757090}
   letter: 
 --- !u!114 &11400000
@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Name: Acacia_Day1_BeforeMinigame
   m_EditorClassIdentifier: 
   nodesList:
+  - {fileID: 8856660297321241905}
   - {fileID: -4234109078709898813}
   - {fileID: -5702131196755757090}
   - {fileID: 631445545799981008}
@@ -152,8 +153,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 867
-    y: 231
+    x: 1060
+    y: 248
     width: 200
     height: 100
   isDragging: 0
@@ -187,8 +188,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 873
-    y: 463
+    x: 1066
+    y: 480
     width: 200
     height: 100
   isDragging: 0
@@ -222,8 +223,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1431
-    y: 351
+    x: 1624
+    y: 368
     width: 200
     height: 100
   isDragging: 0
@@ -232,13 +233,14 @@ MonoBehaviour:
   count: 4
   storedData:
     nodeName: 
-    dialogueChoice: 
+    dialogueChoice: Before Minigame
     miniGameValue: 
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: "Since this is un restaurante, I would like to try something out. \xA1Sorpr\xE9ndeme!
-      ~"
+    sentence: "Since this is un restaurante, I would like to try something out. ~
+      Una arepa con queso. And . . . oh! Something to wash it down with, \xA1un caf\xE9
+      peque\xF1o, por favor!"
   parentNode: {fileID: -6253023537050527299}
   childNode: {fileID: 0}
   letter: 
@@ -258,8 +260,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 870
-    y: 347
+    x: 1063
+    y: 364
     width: 200
     height: 100
   isDragging: 0
@@ -293,8 +295,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1138
-    y: 362
+    x: 1331
+    y: 379
     width: 200
     height: 100
   isDragging: 0
@@ -308,7 +310,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: Soy bailarina after all! Hehe ~ The name's Acacia by the way.
+    sentence: "Soy bailarina after all, \xA1jiji! The name's Acacia by the way."
   parentNode: {fileID: 7064589338173365701}
   childNode: {fileID: 6491501076535921083}
   letter: b
@@ -328,8 +330,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1127
-    y: 229
+    x: 1320
+    y: 246
     width: 200
     height: 100
   isDragging: 0
@@ -344,7 +346,42 @@ MonoBehaviour:
     otherSpeaker: 0
   sentence:
     sentence: Oh, I'm just practicing my new movimientos de baile. Hope it's not
-      too distracting ~ I'm Acacia.
+      too distracting. ~ I'm Acacia.
   parentNode: {fileID: 631445545799981008}
   childNode: {fileID: 6491501076535921083}
   letter: a
+--- !u!114 &8856660297321241905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 0 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 275
+    y: 349
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 1
+  character: 0
+  count: 0
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 5
+  sentence:
+    sentence: Huh, who's that on the horizon? Maybe a new customer?
+  parentNode: {fileID: -4234109078709898813}
+  childNode: {fileID: -4234109078709898813}
+  letter: 
