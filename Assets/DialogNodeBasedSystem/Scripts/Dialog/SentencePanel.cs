@@ -89,7 +89,7 @@ namespace cherrydev
             else rDialogText.text += textChar;
 
             if (soundTimer < 0) {
-                AudioManager.Instance.PlayTalkEffect(character.pitch);
+                // AudioManager.Instance.PlayTalkEffect(character.pitch);
                 soundTimer = soundDelay;
             }
         }
