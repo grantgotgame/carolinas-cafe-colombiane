@@ -23,6 +23,14 @@ public class IntroTransition : MonoBehaviour
         CreditsButton.onClick.AddListener(CreditPageActive);
     }
 
+    private void Start() {
+        DayManager dayManagerInstance = DayManager.Instance;
+        if (dayManagerInstance != null) {
+            CreditPageActive();
+            dayManagerInstance.EndGame();
+        }
+    }
+
     private void CreditPageActive()
     {
         if (OptionPage != null && CreditPage != null)

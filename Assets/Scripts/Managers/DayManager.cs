@@ -54,6 +54,11 @@ public class DayManager : MonoBehaviour
         }
         if (result == string.Empty) {
             if (currentDay.IsOutOfDialogue()) {
+                if (day == dayCollection.Count) {
+                    //Signal End of Game
+                    StartCoroutine(TransitionToEndCredits());
+                    return;
+                }
                 currentDay = dayCollection[day++];
                 StartCoroutine(TransitionToNewDay());
                 return;
@@ -93,8 +98,18 @@ public class DayManager : MonoBehaviour
         Loader.Instance.LoadNewDay();
     }
 
+    IEnumerator TransitionToEndCredits() {
+        yield return new WaitForSeconds(transitionDelay);
+        Loader.Instance.LoadEndGame();
+    }
+
     public int GetDay() {
         return day;
+    }
+
+    public void EndGame() {
+        Instance = null;
+        Destroy(gameObject);
     }
 }
 
