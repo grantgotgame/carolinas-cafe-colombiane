@@ -154,8 +154,7 @@ namespace cherrydev
                 SentenceNode sentenceNode = (SentenceNode)currentNode;
                 Debug.Log($"Checking choice \"{sentenceNode.storedData.dialogueChoice}\"");
                 if (int.TryParse(sentenceNode.storedData.dialogueChoice, out int dialogueChoiceValue)) {
-                    Debug.Log("In choice");
-                    PointSystem.AddPoints(sentenceNode.character, dialogueChoiceValue);
+                    PointSystem.AddPoints(sentenceNode.storedData.otherSpeaker, dialogueChoiceValue);
                 }
 
                 OnSentenceNodeActive?.Invoke(currentNode.storedData);
@@ -312,6 +311,7 @@ namespace cherrydev
         /// <param name="action"></param>
         public void AddListenerToOnDialogFinished(UnityAction action)
         {
+            onDialogFinished.RemoveListener(action);
             onDialogFinished.AddListener(action);
         }
 
