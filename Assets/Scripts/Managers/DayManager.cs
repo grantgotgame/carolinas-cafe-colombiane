@@ -83,7 +83,9 @@ public class DayManager : MonoBehaviour
 
     public void OnNodeGraphFinished() {
         DialogNodeGraph currentNodeGraph = DialogBehaviour.Instance.GetCurrentDialogNodeGraph();
-        if (currentDay.currentDialogue > 0 && currentDay.dialogGraphs.Contains(currentNodeGraph)) {
+
+        //if (currentDay.currentDialogue > 0 && currentDay.dialogGraphs.Contains(currentNodeGraph)) {
+        if (currentDay.HasNextNodeGraph(currentNodeGraph)) { 
             StartCoroutine(TransitionToMinigame());
         } else {
             StartCoroutine(TransitionToNextCustomer());
@@ -137,6 +139,11 @@ public class DayDialogue {
     public DialogNodeGraph GetNextConversation() {
         return dialogGraphs[currentDialogue].nextDialog;
     }
+
+    public bool HasNextNodeGraph(DialogNodeGraph dialogNodeGraph) {
+        return dialogNodeGraph.nextDialog != null;
+    }
+
     public bool IsOutOfDialogue() {
         return currentDialogue >= dialogGraphs.Count;
     }

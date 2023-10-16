@@ -21,12 +21,12 @@ MonoBehaviour:
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 0
   count: 2
   storedData:
     nodeName: 
-    dialogueChoice: a
+    dialogueChoice: 0
     miniGameValue: 
     isOnLeftSide: 1
     otherSpeaker: 1
@@ -127,12 +127,12 @@ MonoBehaviour:
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 0
   count: 2
   storedData:
     nodeName: 
-    dialogueChoice: c
+    dialogueChoice: 2
     miniGameValue: 
     isOnLeftSide: 1
     otherSpeaker: 1
@@ -310,12 +310,12 @@ MonoBehaviour:
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 0
   count: 2
   storedData:
     nodeName: 
-    dialogueChoice: b
+    dialogueChoice: 1
     miniGameValue: 
     isOnLeftSide: 1
     otherSpeaker: 1

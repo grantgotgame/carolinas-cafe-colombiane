@@ -87,7 +87,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 974
-    y: 513
+    y: 512
     width: 200
     height: 100
   isDragging: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   count: 2
   storedData:
     nodeName: 
-    dialogueChoice: c
+    dialogueChoice: 2
     miniGameValue: 
     isOnLeftSide: 1
     otherSpeaker: 4
@@ -127,12 +127,12 @@ MonoBehaviour:
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 0
   count: 2
   storedData:
     nodeName: 
-    dialogueChoice: a
+    dialogueChoice: 0
     miniGameValue: 
     isOnLeftSide: 1
     otherSpeaker: 4
@@ -167,7 +167,7 @@ MonoBehaviour:
   count: 2
   storedData:
     nodeName: 
-    dialogueChoice: b
+    dialogueChoice: 1
     miniGameValue: 
     isOnLeftSide: 1
     otherSpeaker: 4
@@ -333,7 +333,7 @@ MonoBehaviour:
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   character: 0
   count: 0
   storedData:

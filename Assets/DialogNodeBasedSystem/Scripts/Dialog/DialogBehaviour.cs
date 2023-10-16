@@ -152,8 +152,9 @@ namespace cherrydev
             if (currentNode.GetType() == typeof(SentenceNode))
             {
                 SentenceNode sentenceNode = (SentenceNode)currentNode;
-
+                Debug.Log($"Checking choice \"{sentenceNode.storedData.dialogueChoice}\"");
                 if (int.TryParse(sentenceNode.storedData.dialogueChoice, out int dialogueChoiceValue)) {
+                    Debug.Log("In choice");
                     PointSystem.AddPoints(sentenceNode.character, dialogueChoiceValue);
                 }
 

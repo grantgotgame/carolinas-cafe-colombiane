@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 2254
-    y: 136
+    x: 1731
+    y: 290
     width: 200
     height: 100
   isDragging: 0
@@ -52,8 +52,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 524
-    y: 155
+    x: 1
+    y: 309
     width: 200
     height: 100
   isDragging: 0
@@ -87,8 +87,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1699
-    y: 311
+    x: 1176
+    y: 465
     width: 200
     height: 100
   isDragging: 0
@@ -122,8 +122,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1086
-    y: 124
+    x: 563
+    y: 278
     width: 200
     height: 145
   isDragging: 0
@@ -161,8 +161,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1405
-    y: -21
+    x: 882
+    y: 133
     width: 200
     height: 100
   isDragging: 0
@@ -223,8 +223,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 835
-    y: 155
+    x: 312
+    y: 309
     width: 200
     height: 100
   isDragging: 0
@@ -258,8 +258,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1689
-    y: -24
+    x: 1166
+    y: 130
     width: 200
     height: 100
   isDragging: 0
@@ -293,8 +293,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1687
-    y: 142
+    x: 1164
+    y: 296
     width: 200
     height: 100
   isDragging: 0
@@ -329,8 +329,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1409
-    y: 313
+    x: 886
+    y: 467
     width: 200
     height: 100
   isDragging: 0
@@ -364,8 +364,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 2018
-    y: 138
+    x: 1495
+    y: 292
     width: 200
     height: 100
   isDragging: 0
@@ -400,8 +400,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1408
-    y: 144
+    x: 885
+    y: 298
     width: 200
     height: 100
   isDragging: 0

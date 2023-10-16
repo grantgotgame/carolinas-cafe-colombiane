@@ -17,6 +17,7 @@ public static class PointSystem
     public static void AddPoints(CharacterID character, int value) {
         int addValue = PlayerPrefs.GetInt(character.ToString(), 0) + value;
         PlayerPrefs.SetInt(character.ToString(), addValue);
+        Debug.Log($"Adding {value} to {character.ToString()}");
     }
 
     public static int GetPoints(CharacterID character) {
