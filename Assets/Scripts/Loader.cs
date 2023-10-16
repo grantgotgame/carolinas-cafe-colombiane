@@ -29,6 +29,10 @@ public class Loader : MonoBehaviour {
         StartCoroutine(LoadLevel(1));
     }
 
+    public void LoadEndGame() {
+        StartCoroutine(LoadLevel(0));
+    }
+
     IEnumerator LoadLevel(int sceneIndex) {
         // play animation
         transition.SetTrigger("Start");
@@ -55,6 +59,10 @@ public class Loader : MonoBehaviour {
             } else {
                 AudioManager.Instance.PlayMiniGameBackground();
             }
+        }
+
+        if (sceneIndex == 1) {
+            AudioManager.Instance.PlayGameLoopBackground();
         }
     }
 
