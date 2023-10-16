@@ -95,7 +95,14 @@ namespace cherrydev
             } else {
                 foreach (Node node in currentNodeGraph.nodesList) {
                     if (node.storedData.miniGameValue == data) {
+                        // Minigame result return
                         currentNode = node;
+                        if (int.TryParse(currentNode.storedData.miniGameValue, out int addValue))
+                            PointSystem.AddPoints(node.character, addValue);
+                        else {
+                            Debug.LogError("Incorrect Minigame Result. See DialogNode for current mistake");
+                            return;
+                        }
                         break;
                     }
                 }

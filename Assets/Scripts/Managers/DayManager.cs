@@ -22,6 +22,7 @@ public class DayManager : MonoBehaviour
     private void Awake() {
         if (Instance == null) {
             Instance = this;
+            PointSystem.ResetPoints();
             DontDestroyOnLoad(gameObject);
         } else {
             Instance.OnNodeGraphStarted();
