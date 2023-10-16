@@ -1,5 +1,42 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5133036307277151942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 2 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 651
+    y: 400
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 1
+  character: 0
+  count: 2
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 5
+  sentence:
+    sentence: '"Of course I''m pretty bummed up about this, I really wanted to see
+      Europe on the side and delight them con mis bailes, but I can always try again
+      later!"'
+  parentNode: {fileID: 5556532058347294329}
+  childNode: {fileID: -1282098823427645938}
+  letter: 
 --- !u!114 &-1931306462770424417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,23 +53,58 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 402
-    y: 414
+    x: 134
+    y: 403
     width: 200
     height: 100
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   character: 0
   count: 0
   storedData:
     nodeName: 
     dialogueChoice: 
     miniGameValue: 
-    isOnLeftSide: 0
-    otherSpeaker: 0
+    isOnLeftSide: 1
+    otherSpeaker: 7
   sentence:
-    sentence: 
+    sentence: A letter from Acacia! What could it be?
   parentNode: {fileID: 0}
+  childNode: {fileID: 5556532058347294329}
+  letter: 
+--- !u!114 &-1282098823427645938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 3 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 909
+    y: 399
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 1
+  character: 0
+  count: 3
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 5
+  sentence:
+    sentence: '"I just have to get better. And I hope I will!"'
+  parentNode: {fileID: -5133036307277151942}
   childNode: {fileID: 0}
   letter: 
 --- !u!114 &11400000
@@ -49,6 +121,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodesList:
   - {fileID: -1931306462770424417}
+  - {fileID: 5556532058347294329}
+  - {fileID: -5133036307277151942}
+  - {fileID: -1282098823427645938}
   nextDialog: {fileID: 0}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
+--- !u!114 &5556532058347294329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: 1 Carolina
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 391
+    y: 400
+    width: 200
+    height: 100
+  isDragging: 0
+  isSelected: 1
+  character: 0
+  count: 1
+  storedData:
+    nodeName: 
+    dialogueChoice: 
+    miniGameValue: 
+    isOnLeftSide: 1
+    otherSpeaker: 5
+  sentence:
+    sentence: '"Hola Carolina. Entonces, the audition went well. At least I think
+      so. But at the end of the day they found someone more suited to play that role." '
+  parentNode: {fileID: -1931306462770424417}
+  childNode: {fileID: -5133036307277151942}
+  letter: 
