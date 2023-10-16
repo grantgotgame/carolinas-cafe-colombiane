@@ -3577,7 +3577,12 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 05f163981e353074d960370b65bdde69, type: 2}
     - {fileID: 11400000, guid: 0a65808f70c0ca941bf313709b04a8d9, type: 2}
     currentDialogue: 0
-  badEndings: []
+  badEndings:
+  - {fileID: 11400000, guid: bccdac1d87309534f9a2415d890bd228, type: 2}
+  - {fileID: 11400000, guid: 8b7ae913afcd238469bd7184f69b793d, type: 2}
+  - {fileID: 11400000, guid: 272e6b4b9ac44c34d8b16f4b28abf271, type: 2}
+  - {fileID: 11400000, guid: fa118c6acdeb27d4193f8d5da5e2f4fe, type: 2}
+  - {fileID: 11400000, guid: 96fc36d2d6faf0d4dae90ef9f2b3b80c, type: 2}
 --- !u!4 &1830102279
 Transform:
   m_ObjectHideFlags: 0
