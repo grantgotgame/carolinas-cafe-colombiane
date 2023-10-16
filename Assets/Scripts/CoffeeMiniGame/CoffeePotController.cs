@@ -18,6 +18,9 @@ namespace CoffeeMinigame {
         public int triesRemaining { get; private set; }
         public int streak { get; private set; }
 
+        [SerializeField] private List<Transform> spills;
+        private int spillIndex;
+
         private bool pour;
         private void Awake() {
             triesRemaining = 3;
@@ -64,9 +67,15 @@ namespace CoffeeMinigame {
             Loader.Instance.GoBackToMainScene();
         }
 
-        public void PourResult(bool success) {
+        public void PourResult(bool success, float xPos) {
             if (success) streak++;
+            else {
+                Vector3 pos = spills[spillIndex].position;
+                pos.x = xPos;
+                spills[spillIndex++].position = pos;
+            }
             OnPourComplete?.Invoke(this, new CoffeeEventArgs { result = success });
+            
         }
     }
 }

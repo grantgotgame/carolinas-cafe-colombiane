@@ -44,7 +44,7 @@ namespace CoffeeMinigame {
         }
 
         public void CheckInsideMug() {
-            potController.PourResult(mug.IsInsideMug(pourLocation.position.x));
+            potController.PourResult(mug.IsInsideMug(pourLocation.position.x), pourLocation.position.x);
         }
     }
 }
