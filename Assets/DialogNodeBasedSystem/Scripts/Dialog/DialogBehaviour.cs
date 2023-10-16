@@ -153,6 +153,10 @@ namespace cherrydev
             {
                 SentenceNode sentenceNode = (SentenceNode)currentNode;
 
+                if (int.TryParse(sentenceNode.storedData.dialogueChoice, out int dialogueChoiceValue)) {
+                    PointSystem.AddPoints(sentenceNode.character, dialogueChoiceValue);
+                }
+
                 OnSentenceNodeActive?.Invoke(currentNode.storedData);
                 OnSentenceNodeStart?.Invoke(character, otherCharacter, currentNode.storedData.isOnLeftSide);
 
