@@ -4,7 +4,8 @@ using UnityEngine;
 
 namespace CoffeeMinigame {
     public class Mug : MonoBehaviour {
-        [SerializeField] private ParticleSystem particles;
+        [SerializeField] private Transform particleSpawnLocation;
+        [SerializeField] private GameObject starParticlePrefab;
         [SerializeField] private CoffeeText coffeeTextAnimator;
         [SerializeField] private CoffeePotController potController;
         private Bounds mugBounds;
@@ -15,9 +16,9 @@ namespace CoffeeMinigame {
         }
 
         private void Update() {
-            if (particles.gameObject.activeSelf && particles.isStopped) {
+            /*if (particles.gameObject.activeSelf && particles.isStopped) {
                 particles.gameObject.SetActive(false);
-            }
+            }*/
         }
 
         public bool IsInsideMug(float xPosition) {
@@ -26,7 +27,7 @@ namespace CoffeeMinigame {
 
         private void OnPourComplete(object sender, CoffeePotController.CoffeeEventArgs e) {
             if (e.result)
-                particles.gameObject.SetActive(true);
+                Instantiate(starParticlePrefab, particleSpawnLocation);
         }
     }
 }
