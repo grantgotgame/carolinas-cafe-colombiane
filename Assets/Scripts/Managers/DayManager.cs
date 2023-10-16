@@ -7,6 +7,7 @@ public class DayManager : MonoBehaviour
 {
     public static DayManager Instance;
 
+    [SerializeField] private int goodEndingThreshold;
     [SerializeField, Range(0f, 5f)] private float transitionDelay;
 
     public DayDialogue dayOne;
@@ -14,6 +15,8 @@ public class DayManager : MonoBehaviour
     public DayDialogue dayThree;
     public DayDialogue dayFour;
     public DayDialogue dayFive;
+
+    public List<DialogNodeGraph> badEndings;
 
     private DayDialogue currentDay;
     private List<DayDialogue> dayCollection = new List<DayDialogue>();
@@ -64,7 +67,15 @@ public class DayManager : MonoBehaviour
                 StartCoroutine(TransitionToNewDay());
                 return;
             }
-            DialogBehaviour.Instance.StartDialog(currentDay.GetCurrentConversation());
+
+            Debug.Log($"Speaker {currentDay.currentDialogue - 1} has {PointSystem.GetPoints(currentDay.currentDialogue - 1)} points");
+
+            if (day == 5 && PointSystem.GetPoints(currentDay.currentDialogue - 1) < goodEndingThreshold) {
+                Debug.Log($"Speaker {currentDay.currentDialogue - 1} Bad Ending");
+                DialogBehaviour.Instance.StartDialog(badEndings[currentDay.currentDialogue - 1]);
+            } else {
+                DialogBehaviour.Instance.StartDialog(currentDay.GetCurrentConversation());
+            }
         } else {
             DialogBehaviour.Instance.StartDialog(currentDay.GetNextConversation(), result);
         }

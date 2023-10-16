@@ -25,4 +25,18 @@ public static class PointSystem
         }
         return PlayerPrefs.GetInt(character.ToString(), 0);
     }
+
+    public static int GetPoints(int id) {
+        /*
+        switch (id) {
+            case 0:
+
+        }
+        if (character.ToString() == "Alejandro" || character.ToString() == "Alex") {
+            return PlayerPrefs.GetInt("Alejandro", 0) + PlayerPrefs.GetInt("Alex", 0);
+        }
+        return PlayerPrefs.GetInt(character.ToString(), 0);
+        */
+        return 1;
+    }
 }
