@@ -6,7 +6,7 @@ using TMPro;
 namespace CoffeeMinigame {
     public class CoffeeText : MonoBehaviour {
         private string[] STREAK = { "One", "Two", "Three" };
-        private string[] RESPONSE = { "Mal...", "BIEN", "BIEN", "PERFECTO!"};
+        private string[] RESPONSE = { "Mal...", "BIEN", "BIEN", "¡PERFECTO!"};
         private const string FINISH = "Finish";
 
         [SerializeField] private CoffeePotController potController;

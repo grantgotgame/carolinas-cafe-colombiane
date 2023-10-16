@@ -70,7 +70,7 @@ public class DayManager : MonoBehaviour
 
             Debug.Log($"Speaker {currentDay.currentDialogue - 1} has {PointSystem.GetPoints(currentDay.currentDialogue - 1)} points");
 
-            if (day == 5 && PointSystem.GetPoints(currentDay.currentDialogue - 1) < goodEndingThreshold) {
+            if (day == 5 && currentDay.currentDialogue > 0 && PointSystem.GetPoints(currentDay.currentDialogue - 1) < goodEndingThreshold) {
                 Debug.Log($"Speaker {currentDay.currentDialogue - 1} Bad Ending");
                 DialogBehaviour.Instance.StartDialog(badEndings[currentDay.currentDialogue - 1]);
             } else {
