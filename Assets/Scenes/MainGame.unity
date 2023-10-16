@@ -3530,6 +3530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b4708d0886b44a4389a2665b4464be7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goodEndingThreshold: 10
   transitionDelay: 1.1
   dayOne:
     dialogGraphs:
@@ -3576,6 +3577,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 05f163981e353074d960370b65bdde69, type: 2}
     - {fileID: 11400000, guid: 0a65808f70c0ca941bf313709b04a8d9, type: 2}
     currentDialogue: 0
+  badEndings: []
 --- !u!4 &1830102279
 Transform:
   m_ObjectHideFlags: 0
