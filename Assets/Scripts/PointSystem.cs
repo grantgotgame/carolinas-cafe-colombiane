@@ -46,6 +46,5 @@ public static class PointSystem
         }
         return PlayerPrefs.GetInt(character.ToString(), 0);
         */
-        return 1;
     }
 }
