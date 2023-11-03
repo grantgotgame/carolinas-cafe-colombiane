@@ -308,7 +308,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: La bebida first, please. Then I'll tell todos.
+    sentence: La bebida first, please. Then I'll tell todo.
   parentNode: {fileID: -6958869623029679648}
   childNode: {fileID: -1721416731897428691}
   letter: c

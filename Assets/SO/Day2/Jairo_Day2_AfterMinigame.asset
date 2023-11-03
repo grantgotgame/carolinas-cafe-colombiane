@@ -452,7 +452,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: "S\xED, I hear you! Anything for you Carolina, todos."
+    sentence: "S\xED, I hear you! Anything for you Carolina, todo."
   parentNode: {fileID: 6239631128649927118}
   childNode: {fileID: -4701328968806411351}
   letter: 

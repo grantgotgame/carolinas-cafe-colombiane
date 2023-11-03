@@ -457,7 +457,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: 'I''ve stayed clean for so long. But I''m still afraid of . . . todos. '
+    sentence: 'I''ve stayed clean for so long. But I''m still afraid of . . . todo. '
   parentNode: {fileID: 3422476295643145714}
   childNode: {fileID: -5662810162435596163}
   letter: 
