@@ -494,17 +494,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Carolina\u2019s Caf\xE9 Colombiane\r\n\r\n\n\n\n\n\nPresented by Party
-    Dog Digital\r\n\n\n\n\n\n\nGrant Brown: Master-Man With a Master-Plan!\r\n- Directing,
+    Dog Digital\r\n\n\n\n\n\n\nGrant Brown: The Man with The Plan!\r\n- Directing,
     Game Design, Testing -\r\n\r\nKim \u201CZeromus\u201D Gr\xF6nlund: The Storyweaver\r\n-
-    Narrative Design and Writing, Character Designs -\r\n\r\nVittorio Chiuselli:
-    The Strong Foundation\r\n- Coding, Production -\r\n\r\nJustin Salanga: The One
-    We Can All Depend On!\r\n- Coding, Production -\r\n\r\nRenato Ramundo Orlando:
-    The Beauty of Art\r\n- Spritework, Backdrops, etc. -\r\n\r\n Christian \u201CFallharbor\u201D
-    Farf\xE1n: Spicy-Tunes Dealer\r\n- Composing -\r\n\u201CCarolina's Cafe Colombia\u201D\r\n\u201CLluvia
-    Esperanzada\u201D\r\n\u201CRoc\xEDo\u201D\r\n\r\n\r\nAnd a special-thanks to:
+    Narrative Design and Writing, Character Designs -\r\n\r\nJustin Salanga: The
+    One We Can All Depend On!\r\n- Coding, Production, Testing -\r\n\r\nVittorio
+    Chiuselli: The Strong Foundation\r\n- Coding -\r\n\r\nRenato Ramundo Orlando:
+    The Beauty of Art\r\n- Spritework, Backdrops, etc. -\r\n\r\nChristian \u201CFallharbor\u201D
+    Farf\xE1n: The Spicy-Tunes Dealer\r\n- Composing -\r\n\u201CCarolina's Cafe Colombia\u201D\r\n\u201CLluvia
+    Esperanzada\u201D\r\n\u201CRoc\xEDo\u201D\r\n\r\n\r\nAnd a Special Thanks to:
     \r\n\r\nCarolina Pati\xF1o Brown: The Cheerful Chef ~\r\n- Cultural Liaison,
-    Title Character -\r\n\r\n\r\nThis game is dedicated to Carolina, you\u2019re
-    awesome!\r\n"
+    Title Character -\r\n\r\n\r\nThis game is dedicated to Carolina! You Are:\r\nCaring\r\nAwesome\r\nRadical\r\nOpulent\r\nLatine\r\nIndependent\r\nNatural\r\nAlways\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -615,7 +614,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000047684, y: 497}
+  m_AnchoredPosition: {x: 0, y: 497}
   m_SizeDelta: {x: 1282, y: 331}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &243717676
@@ -883,7 +882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -125.00012}
+  m_AnchoredPosition: {x: 0, y: -125}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &585059021
@@ -1432,8 +1431,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 322696953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.000000059604645, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.99999994, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1932,7 +1931,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 745146049}
   m_HandleRect: {fileID: 745146048}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2148,8 +2147,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1072694211}
   m_HandleRect: {fileID: 1072694210}
   m_Direction: 2
-  m_Value: 0.9882984
-  m_Size: 0.30389237
+  m_Value: 0.98830396
+  m_Size: 0.303563
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2224,7 +2223,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 646038686}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.68796206}
+  m_AnchorMin: {x: 0, y: 0.68829143}
   m_AnchorMax: {x: 1, y: 0.9918544}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -2303,7 +2302,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 25.230007}
-  m_SizeDelta: {x: 0, y: 3097.3875}
+  m_SizeDelta: {x: 0, y: 4000}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1243774877
 GameObject:
