@@ -519,7 +519,7 @@ MonoBehaviour:
     isOnLeftSide: 1
     otherSpeaker: 1
   sentence:
-    sentence: So, quieres decirme what's off today?
+    sentence: So, quiere decirme what's off today?
   parentNode: {fileID: 4008037124278355676}
   childNode: {fileID: 6159756516413628965}
   letter: 

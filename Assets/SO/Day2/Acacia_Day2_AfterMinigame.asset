@@ -378,7 +378,7 @@ MonoBehaviour:
     isOnLeftSide: 1
     otherSpeaker: 5
   sentence:
-    sentence: Aww, why's that? I've seen your moves, bailas tan bien! And I can tell
+    sentence: Aww, why's that? I've seen your moves, baila tan bien! And I can tell
       that you have a lot of passion for this.
   parentNode: {fileID: 4528466143863795688}
   childNode: {fileID: -3893654160483447961}

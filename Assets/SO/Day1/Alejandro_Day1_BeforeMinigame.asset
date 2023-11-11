@@ -346,7 +346,7 @@ MonoBehaviour:
     isOnLeftSide: 1
     otherSpeaker: 3
   sentence:
-    sentence: "Tienes hambre already, \xBFeh? *Chuckles*"
+    sentence: "Tiene hambre already, \xBFeh? *Chuckles*"
   parentNode: {fileID: 1996565386661345612}
   childNode: {fileID: 8950634911715654117}
   letter: b

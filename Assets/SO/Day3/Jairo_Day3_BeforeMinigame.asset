@@ -178,7 +178,7 @@ MonoBehaviour:
     isOnLeftSide: 0
     otherSpeaker: 0
   sentence:
-    sentence: "Heyyyy Carolina, \xBFtienes un momentito? I have to come clean about
+    sentence: "Heyyyy Carolina, \xBFtiene un momentito? I have to come clean about
       one thing."
   parentNode: {fileID: 5541718070598055207}
   childNode: {fileID: -8800262054454542832}
